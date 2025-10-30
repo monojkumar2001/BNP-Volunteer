@@ -1,0 +1,551 @@
+@media (max-width: 1400px) {
+  .mass-event-btn-group .mass-btn::before {
+    left: 0;
+  }
+
+  .mass-event-btn-group .get-qucte-btn::before {
+    right: 0;
+  }
+}
+
+@media (max-width: 1220px) {
+
+  section.section-content {
+    width: 100%;
+  }
+
+  .evangelisation-single-page {
+    width: 100%;
+  }
+
+  section.hero-section {
+    padding-top: 60px;
+  }
+
+  .slider-content {
+    width: 70%;
+  }
+
+  .newsletter-left .section-title {
+    font-size: 45px;
+  }
+
+  .newsletter-wrapper {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+
+  .newsletter-right {
+    width: 100%;
+  }
+
+  .newsletter-right img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .slider-content {
+    width: 80%;
+  }
+
+  .minitries-header .section-title {
+    font-size: 40px;
+  }
+
+  .community-wrapper .section-title {
+    font-size: 40px;
+
+  }
+
+  .touch-wrapper {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .minitries-header {
+    width: 80%;
+  }
+
+  .adoration-content h2 {
+    font-size: 40px;
+  }
+
+  .minitries-item {
+    margin-bottom: 24px;
+  }
+
+  .community-img img {
+    padding: 10px;
+    border: 3px solid var(--primary-color);
+  }
+
+  .notice-left h2 {
+    font-size: 30px;
+  }
+
+  .notice-left {
+    padding: 30px;
+  }
+
+  .team-section-title {
+    width: 80%;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .booking-img img {
+    padding: 10px;
+    border: 3px solid var(--primary-color);
+  }
+
+  .mass-event-left h1 {
+    font-size: 40px;
+  }
+
+  .mass-event-img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .mass-event-btn-group .mass-btn::before {
+    display: none;
+  }
+
+  .mass-event-btn-group .get-qucte-btn::before {
+    display: none;
+  }
+
+  .mass-event-contnet-item {
+    width: 75%;
+  }
+
+  .mass-event-img {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    z-index: 11;
+  }
+
+  .mass-event-item {
+    border-radius: 10px;
+    border: 3px solid #3F3F3F;
+    box-shadow: 7px -7px 20px 5px rgba(0, 0, 0, 0.10);
+    padding: 20px 20px;
+    position: relative;
+  }
+
+  .mass-event-contnet-item h4 {
+    padding-bottom: 0;
+    font-size: 18px;
+
+  }
+
+  section.adoration-room {
+    padding: 70px 0;
+
+  }
+
+  .touch-content .section-title {
+    font-size: 40px;
+  }
+
+  .contact-us-header {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .team-item {
+    margin-bottom: 30px;
+  }
+
+  .footer-quick-link {
+    padding-top: 30px;
+  }
+
+  .footer-quick-title {
+    padding-bottom: 20px;
+  }
+
+  .footer-quick-title h3 {
+    font-size: 25px;
+
+  }
+}
+
+@media (max-width: 768px) {
+  section.contact-us {
+    width: 100%;
+  }
+
+  .reflection-content {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .donate-banner {
+    min-height: 300px;
+    margin-top: 59px;
+  }
+
+  .reflection-img img {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .reflection-item {
+    flex-direction: column;
+  }
+
+  .liturgy-content {
+    width: 100%;
+  }
+
+  .liturgy-img-item {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .liturgy-item-list {
+    flex-direction: column;
+  }
+
+  .liturgy-header-item {
+    width: 100%;
+  }
+
+  .churchsuite-wrapper {
+    padding: 100px 0px 0px 0px;
+  }
+
+  .liturgy-section-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .liturgy-section-item img {
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .churchsuite-header h3 {
+    font-size: 23px;
+  }
+
+  .churchsuite-header {
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+  }
+
+  .churchsuite-form {
+    padding: 30px 15px 30px 15px;
+    box-shadow: 0px 0px 10px #0000003d;
+    border-radius: 10px;
+  }
+
+  .checkbox-item {
+    grid-template-columns: 100%;
+    gap: 5px;
+  }
+
+  .submit-btn-item {
+    margin-top: 30px;
+  }
+
+  .submit-btn-item button {
+    font-size: 16px;
+  }
+
+  .churchsuite-header h5 {
+    font-size: 18px;
+  }
+
+  .churchsuite-wrapper {
+    width: 100%;
+  }
+
+  .slider-item-btn a {
+    width: 120px;
+    font-size: 16px;
+    padding: 8px 0;
+  }
+
+  .slider-content h1 {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+
+  .slider-item-con {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    flex-direction: column;
+  }
+
+  .sider-img {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .sider-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .slider-content {
+    width: 90%;
+    bottom: 50px;
+    gap: 10px;
+  }
+
+  .new-here-right {
+    margin-top: 30px;
+  }
+
+  .parish-content p {
+    font-size: 16px;
+  }
+
+  .booking-content {
+    margin-top: 30px;
+  }
+
+  .mass-event-btn-group {
+    gap: 12px;
+  }
+
+  .newsletter-left .section-title {
+    font-size: 30px;
+  }
+
+  section.new-here {
+    padding: 40px 0;
+  }
+
+  .team-section-title {
+    width: 100%;
+  }
+
+  .parish-contentss {
+    margin-bottom: 30px;
+  }
+
+  .parish-btn-group {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  footer.footer {
+    margin-top: 50px;
+  }
+
+  .mass-event-left h1 {
+    font-size: 30px;
+  }
+
+  .contact-us-header {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .touch-wrapper {
+    padding: 30px;
+  }
+
+  .touch-content .section-title {
+    font-size: 30px;
+  }
+
+  .how-to-find-btn-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .notice-left {
+    margin-bottom: 30px;
+    height: fit-content;
+  }
+
+  .slider-content h1 {
+    font-size: 30px;
+  }
+
+  .adoration-btn-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding-top: 0px;
+    flex-direction: column;
+  }
+
+  section.adoration-room {
+    padding: 40px 0;
+
+  }
+
+  .adoration-btn-group .custom-btn {
+    border-radius: 10px;
+
+  }
+
+  .adoration-content {
+    margin-top: 40px;
+  }
+
+  .minitries-item {
+    padding: 30px 20px;
+  }
+
+  .adoration-content h2 {
+    font-size: 30px;
+  }
+
+  .minitries-header {
+    width: 100%;
+  }
+
+  .community-wrapper .section-title {
+    font-size: 30px;
+  }
+
+
+  .community-img {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .minitries-header .section-title {
+    font-size: 30px;
+  }
+
+  .minitries-img img {
+    width: 50px;
+  }
+
+  .minitries-content h3 {
+    font-size: 20px;
+  }
+
+  ul.adoration-url-list {
+    margin-top: 20px;
+  }
+
+  .newsletter-left .mass-event-btn-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .new-image-left img {
+    padding: 10px;
+    border: 3px solid var(--white-color);
+  }
+
+  .see-more-btn {
+    margin-top: 20px;
+  }
+
+  .banner-wrapper {
+    width: 100%;
+  }
+
+  .banner-wrapper .banner-title {
+    font-size: 35px;
+    padding-bottom: 10px;
+  }
+
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .hamburger-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  a.navbar-brand {
+    padding: 0;
+  }
+
+  .banner-item-btn {
+    gap: 15px;
+    padding-top: 20px;
+    flex-direction: column;
+  }
+
+  .banner-item-btn a {
+    font-size: 16px;
+  }
+
+  section.banner {
+    padding: 100px 0 50px 0;
+  }
+
+  .banner-wrapper .banner-text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  h2.about-section-title {
+    font-size: 32px;
+    padding-bottom: 15px;
+  }
+
+  .sacramental-wrapper {
+    width: 100%;
+  }
+
+  .about-img {
+    margin-top: 30px;
+  }
+
+  h2.section-title-2 {
+    font-size: 27px;
+    padding-bottom: 20px;
+  }
+
+  li.section-content-list p {
+    padding-bottom: 20px;
+    line-height: 160%;
+    font-size: 18px;
+  }
+
+  h4.section-text-second {
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height: 150%;
+    width: 90%;
+  }
+
+  .section-titlee-2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+    line-height: 150%;
+    width: 90%;
+  }
+
+  footer.footer {
+    padding: 40px 0 40px 0;
+    margin-top: 50px;
+  }
+}

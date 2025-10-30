@@ -1,0 +1,80 @@
+.header-section {
+  position: fixed;
+  width: 100%;
+  padding-top: 27px;
+  z-index: 999;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  padding: 14px 15px 14px 24px;
+  border-radius: 50px;
+}
+.main-menu ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.main-menu ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black-color);
+
+  transition: 0.3s;
+}
+.main-menu ul li a:hover {
+  color: rgba(33, 136, 4, 0.8);
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 41px;
+}
+.header-action {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.header-search-item {
+  position: relative;
+}
+.header-search-item button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header-language-item button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.main-menu a.active {
+  font-weight: 600;
+}
+.header-btn .latest-btn {
+  width: fit-content;
+  padding: 10.5px 15px;
+  border-radius: 50px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.4s;
+  border: 1px solid #000000;
+}
+.header-btn .latest-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}

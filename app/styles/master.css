@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/*===== VARIABLES CSS =====*/
+
+:root {
+  /*========== Colors ==========*/
+  --primary-color: rgba(33, 136, 4, 0.8);
+  --secoundary-color: rgba(33, 136, 4, 0.8);
+  --black-color: #0d0d0d;
+  --white-color: #ffffff;
+  --body-color: #ffffff;
+  --primary-font: "Inter", sans-serif;
+  --body-font: "Inter", sans-serif;
+
+  --sec-title-font: 25px;
+  --p-font: 18px;
+  --m-title: 25px;
+  --l-title: 36px;
+  --p-font-height: 24px;
+  --lp-font-height: 50px;
+  /*========== Font weight ==========*/
+  --font-medium: 400;
+  --font-semi-bold: 600;
+}
+
+/*========== BASE ==========*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+div#__next {
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--white-color);
+  color: #11142d;
+  font-size: var(--p-font);
+  font-weight: 400;
+  font-family: var(--body-font) !important;
+  line-height: var(--p-font-height);
+  overflow-x: hidden;
+}
+
+img {
+  vertical-align: middle;
+  height: auto;
+}
+
+a {
+  text-decoration: none !important;
+  display: inline-block;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+ul,
+ol {
+  padding-left: 0 !important;
+  list-style: none;
+}
+ul {
+  margin-bottom: 0 !important;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* ============================GENERAL STYLE END======= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+span,
+label {
+  margin: 0;
+  margin-bottom: 0 !important;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+.cpb-0 {
+  padding: 0 !important;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+table.table {
+  white-space: nowrap;
+}
+
+/* ===================custom button============ */
+
+.custom-btn {
+  width: fit-content;
+  padding: 13px 24px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  transition: 0.3s;
+  background: var(--black-color);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.custom-btn:hover {
+  color: var(--white-color);
+  background: #0d0d0d;
+  transform: translateY(-3px);
+}
+
+.custom-btn-alt {
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+  font-size: 20px;
+  transition: 0.3s;
+  background: transparent;
+  display: flex;
+  border: 1px solid var(--primary-color);
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.custom-btn-alt:hover {
+  color: var(--white-color);
+  background: #0d0d0d;
+}
+
+.section-title {
+  color: var(--back-color);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 64px;
+  letter-spacing: 0.25px;
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1290px !important;
+  }
+}
+.cpy-5 {
+  padding: 50px 0;
+}
+
+.cpy-8 {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.cpy-6 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.cpt-6 {
+  padding-top: 100px;
+}
+
+.cpb-6 {
+  padding-bottom: 100px;
+}
+
+.cpt-7 {
+  padding-top: 80px;
+}
+
+.cpt-9 {
+  padding-top: 70px;
+}
+
+.cpb-7 {
+  padding-bottom: 80px;
+}
+
+@media screen and (max-width: 992px) {
+  .cpy-5 {
+    padding: 40px 0;
+  }
+
+  .cpy-8 {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+
+  .cpy-6 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .cpt-6 {
+    padding-top: 80px;
+  }
+
+  .cpb-6 {
+    padding-bottom: 80px;
+  }
+
+  .cpt-7 {
+    padding-top: 60px;
+  }
+
+  .cpt-9 {
+    padding-top: 30px;
+  }
+
+  .cpb-7 {
+    padding-bottom: 60px;
+  }
+
+  .cmt-4 {
+    margin-top: 30px;
+  }
+
+  .cmb-4 {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cpy-5 {
+    padding: 30px 0;
+  }
+
+  .cpy-8 {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .cpy-6 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .cpt-6 {
+    padding-top: 60px;
+  }
+
+  .cpb-6 {
+    padding-bottom: 60px;
+  }
+
+  .cpt-7 {
+    padding-top: 40px;
+  }
+
+  .cpb-7 {
+    padding-bottom: 40px;
+  }
+}
