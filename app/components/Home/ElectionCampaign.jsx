@@ -39,7 +39,7 @@ const ElectionCampaign = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [electionDate]); // ✅ dependency added to fix ESLint warning
+  }, []);
 
   return (
     <section className="election" data-aos="fade-up" data-aos-duration="3000">
