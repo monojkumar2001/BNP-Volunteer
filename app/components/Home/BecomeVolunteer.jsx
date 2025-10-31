@@ -21,13 +21,13 @@ const BecomeVolunteer = () => {
           </p>
           <div className="become-volunteer-btn">
             <Link href="#" className="custom-btn-alt">
-              <span> Get Involved</span>
+              <span> Find open positons</span>
               <span>
                 <GoArrowUpRight />
               </span>
             </Link>
             <Link href="#" className="custom-btn">
-              <span> Get Involved</span>
+              <span> Contact us for help</span>
               <span>
                 <GoArrowUpRight />
               </span>
