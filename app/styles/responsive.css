@@ -33,6 +33,7 @@
   }
   .hero-right-img {
     position: relative;
+    width: 100%;
   }
   .hero-content {
     flex-direction: column;
