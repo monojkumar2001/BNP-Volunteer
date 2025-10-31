@@ -201,6 +201,9 @@
   font-weight: 300;
   color: var(--black-color);
 }
+.leadership-titles {
+  letter-spacing: -3px;
+}
 .leadership-2 {
   padding-top: 140px;
 }
