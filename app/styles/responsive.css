@@ -442,3 +442,8 @@
     font-size: 17px;
   }
 }
+@media (max-width: 360px) {
+  .election-wrapper {
+    min-height: 854px;
+  }
+}
