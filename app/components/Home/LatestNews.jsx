@@ -82,10 +82,10 @@ const LatestNews = () => {
             }}
             spaceBetween={24}
             loop={true}
-            // autoplay={{
-            //   delay: 3000,
-            //   disableOnInteraction: false,
-            // }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
             speed={800}
             breakpoints={{
               320: {
