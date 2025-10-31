@@ -213,6 +213,11 @@
   gap: 69px;
   align-items: center;
 }
+.our-concern-list {
+  display: flex;
+  gap: 69px;
+  align-items: center;
+}
 .our-concern-wrapper .who-content {
   max-width: 414px;
 }
@@ -370,6 +375,10 @@
   justify-content: center;
   gap: 6px;
   flex-direction: column;
+  flex: 1;
+}
+.promise-tracker-item:last-child {
+  border-right: none;
 }
 .promise-tracker-item h4 {
   font-family: "Futura Now Headline", sans-serif;
@@ -614,7 +623,7 @@
 
 .slider-btns {
   display: flex;
-  gap: 10px;
+  gap: 16px;
 }
 
 .slider-btns button {

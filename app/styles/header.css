@@ -4,12 +4,14 @@
   padding-top: 27px;
   z-index: 999;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
 }
+
 .main-menu {
   display: flex;
   align-items: center;
@@ -19,51 +21,50 @@
   -webkit-backdrop-filter: blur(24px);
   padding: 14px 15px 14px 24px;
   border-radius: 50px;
+  transition: all 0.4s ease;
 }
+
 .main-menu ul {
   display: flex;
   align-items: center;
   gap: 32px;
 }
+
 .main-menu ul li a {
   font-size: 16px;
   font-weight: 400;
   color: var(--black-color);
-
   transition: 0.3s;
 }
+
 .main-menu ul li a:hover {
   color: rgba(33, 136, 4, 0.8);
 }
+
+.main-menu a.active {
+  font-weight: 600;
+}
+
 .header-right {
   display: flex;
   align-items: center;
   gap: 41px;
 }
+
 .header-action {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.header-search-item {
-  position: relative;
-}
-.header-search-item button {
-  background: transparent;
-  border: none;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-}
+
+.header-search-item button,
 .header-language-item button {
   background: transparent;
   border: none;
   font-size: 16px;
   cursor: pointer;
 }
-.main-menu a.active {
-  font-weight: 600;
-}
+
 .header-btn .latest-btn {
   width: fit-content;
   padding: 10.5px 15px;
@@ -74,7 +75,88 @@
   transition: 0.4s;
   border: 1px solid #000000;
 }
+.site-logo {
+  width: 141px;
+}
+.site-logo img {
+  width: 100%;
+}
+
 .header-btn .latest-btn:hover {
   background: #000000;
   color: #ffffff;
+}
+
+/* --- Responsive --- */
+
+.menu-btn-ber {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.menu-btn-ber.scrolled {
+  color: var(--black-color);
+}
+.close-menu-btn {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .menu-btn-ber {
+    display: block;
+  }
+
+  .main-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    transition: right 0.4s ease;
+    border-radius: 0;
+  }
+  .site-logo {
+    width: 80px;
+  }
+  .main-menu.open {
+    right: 0;
+  }
+
+  .main-menu ul {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .header-right {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .close-menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-menu {
+    width: 100%;
+  }
+
+  .header-section {
+    padding-top: 15px;
+  }
 }

@@ -1,551 +1,440 @@
-@media (max-width: 1400px) {
-  .mass-event-btn-group .mass-btn::before {
-    left: 0;
+@media (max-width: 1200px) {
+  .hero-content {
+    padding-top: 0;
   }
+  .our-concern-wrapper {
+    flex-direction: column;
+  }
+  .promise-tracker-item h4 {
+    font-size: 45px;
+  }
+  .promise-tracker-item {
+    padding: 0 40px;
+  }
+  .get-involed-live {
+    padding-top: 100px;
+  }
+  .become-volunteer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .footer {
+    padding-top: 100px;
+  }
+  .footer-wrapper {
+    gap: 50px;
+  }
+}
 
-  .mass-event-btn-group .get-qucte-btn::before {
+@media (max-width: 991px) {
+  .hero-wrapper {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero-right-img {
+    position: relative;
+  }
+  .hero-content {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 170px;
+  }
+  .hero-title-1 h1 {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .hero-form-content h2 {
+    font-size: 30px;
+    line-height: 150%;
+  }
+  .get-involed-live {
+    padding-top: 0;
+  }
+  .become-volunteer {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+  .latest-news {
+    padding: 70px 0 70px 0;
+    background: #f5f5f5;
+  }
+  .who-section {
+    padding: 80px 0 80px 0;
+  }
+  .get-involved-wrapper {
+    padding-top: 60px;
+  }
+  .who-section .who-content {
+    margin-top: 60px;
+  }
+  .leadership-title {
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  .leadership .who-content {
+    margin-top: 60px;
+  }
+  .leadership-2 {
+    padding-top: 80px;
+  }
+  .leadership-wrpp {
+    flex-direction: column-reverse;
+  }
+  .leadership-2 .who-content {
+    margin-top: 60px;
+  }
+  .our-concern {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .our-concern-wrapper {
+    gap: 40px;
+  }
+  .our-concern-item-img {
+    width: 100%;
+  }
+  .our-concern-list {
+    gap: 30px;
+  }
+  .election-content {
+    top: 126px;
+    width: 100%;
+  }
+  .election-card-item {
+    margin-bottom: 50px;
+  }
+  .promise-tracker {
+    top: -200px;
+  }
+  .promise-tracker-item {
+    flex-wrap: flex;
+  }
+  .promise-tracker-item h4 {
+    font-size: 45px;
+  }
+  .promise-tracker-item {
+    padding: 10px 40px;
+  }
+  .promise-tracker-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+  .why-choose-me {
+    position: relative;
+    top: -80px;
+    margin-top: 0;
+  }
+  .why-choose-me-content {
     right: 0;
   }
 }
 
-@media (max-width: 1220px) {
-
-  section.section-content {
+@media (max-width: 767px) {
+  .hero-form-input-wrap {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 24px;
     width: 100%;
   }
+  .promise-tracker-content {
+    display: grid;
 
-  .evangelisation-single-page {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+  .get-involved-title .section-title {
+    font-size: 30px;
+  }
+
+  .get-involed-live {
+    padding-top: 10px;
+  }
+  .get-involved-title {
+    display: flex;
+    gap: 40px;
+  }
+  .get-involved-content p {
+    padding-bottom: 25px;
+  }
+  .get-involved-content {
+    margin-top: 30px;
+  }
+  .promise-tracker-item h4 {
+    font-size: 35px;
+  }
+  .promise-tracker {
+    top: -175px;
+  }
+  .promise-tracker-title {
+    padding-bottom: 30px;
+  }
+  .promise-tracker-item {
+    border-right: none;
+    padding: 10px 20px;
+  }
+  .why-choose-list-text h5 {
+    font-size: 22px;
+    line-height: 160%;
+  }
+  .why-choose-list-text p {
+    font-size: 17px;
+  }
+  .why-choose-me-content {
     width: 100%;
+    padding: 45px 30px;
   }
-
-  section.hero-section {
-    padding-top: 60px;
+  .why-choose-me {
+    position: relative;
+    top: -105px;
+    margin-top: 0;
   }
-
-  .slider-content {
-    width: 70%;
+  .why-choose-me-content h4 {
+    font-weight: 800;
+    padding-top: 20px;
+    font-size: 35px;
+    line-height: 120%;
+    letter-spacing: -0.25px;
+    color: var(--white-color);
+    padding-bottom: 20px;
   }
-
-  .newsletter-left .section-title {
-    font-size: 45px;
+  .election-content {
+    padding-top: 100px;
+    position: relative;
+    top: 0;
   }
-
-  .newsletter-wrapper {
+  .election-location {
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 25px;
+    flex-direction: column;
+  }
+  .election-count-timer .timer-item .days {
+    font-size: 49px;
+    font-weight: 800;
+    line-height: 150%;
+  }
+  .election-count-timer {
+    padding: 30px 0;
+  }
+  .election-card {
+    position: relative;
+    top: -200px;
+  }
+  .election-wrapper {
+    position: relative;
+  }
+  .election-card-item {
+    margin-bottom: 40px;
+  }
+  .section-title {
+    font-size: 40px;
+    line-height: 140%;
+  }
+  .concern-list-items {
+    display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 30px 20px;
-  }
-
-  .newsletter-right {
     width: 100%;
   }
-
-  .newsletter-right img {
+  .our-concern-list {
+    gap: 40px;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .our-concern-wrapper .who-content {
     max-width: 100%;
-    height: auto;
-    width: 100%;
   }
-}
-
-@media (max-width: 992px) {
-
-  .slider-content {
-    width: 80%;
+  .concern-list-items li::before {
+    width: 8px;
+    height: 30px;
   }
-
-  .minitries-header .section-title {
-    font-size: 40px;
+  .concern-list-items li {
+    line-height: 30px;
   }
-
-  .community-wrapper .section-title {
-    font-size: 40px;
-
+  .why-choose-me-content {
+    position: initial;
   }
-
-  .touch-wrapper {
-    width: 100%;
-    grid-template-columns: 1fr;
+  .why-choose-me-wrapper {
+    height: inherit;
   }
-
-  .minitries-header {
-    width: 80%;
-  }
-
-  .adoration-content h2 {
-    font-size: 40px;
-  }
-
-  .minitries-item {
-    margin-bottom: 24px;
-  }
-
-  .community-img img {
-    padding: 10px;
-    border: 3px solid var(--primary-color);
-  }
-
-  .notice-left h2 {
+  .become-volunteer-content h2 {
     font-size: 30px;
+    line-height: 140%;
   }
-
-  .notice-left {
-    padding: 30px;
+  .become-volunteer-content {
+    padding: 38px 34px;
   }
-
-  .team-section-title {
-    width: 80%;
+  .footer {
+    padding-top: 70px;
   }
-
-  .section-title {
-    font-size: 40px;
+  .footer-wrapper {
+    gap: 30px;
   }
-
-  .booking-img img {
-    padding: 10px;
-    border: 3px solid var(--primary-color);
-  }
-
-  .mass-event-left h1 {
-    font-size: 40px;
-  }
-
-  .mass-event-img img {
-    width: 80px;
-    height: 80px;
-  }
-
-  .mass-event-btn-group .mass-btn::before {
-    display: none;
-  }
-
-  .mass-event-btn-group .get-qucte-btn::before {
-    display: none;
-  }
-
-  .mass-event-contnet-item {
-    width: 75%;
-  }
-
-  .mass-event-img {
-    position: absolute;
-    top: -20px;
-    right: 10px;
-    z-index: 11;
-  }
-
-  .mass-event-item {
-    border-radius: 10px;
-    border: 3px solid #3F3F3F;
-    box-shadow: 7px -7px 20px 5px rgba(0, 0, 0, 0.10);
-    padding: 20px 20px;
-    position: relative;
-  }
-
-  .mass-event-contnet-item h4 {
-    padding-bottom: 0;
-    font-size: 18px;
-
-  }
-
-  section.adoration-room {
-    padding: 70px 0;
-
-  }
-
-  .touch-content .section-title {
-    font-size: 40px;
-  }
-
-  .contact-us-header {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 40px;
-  }
-
-  .team-item {
-    margin-bottom: 30px;
-  }
-
-  .footer-quick-link {
-    padding-top: 30px;
-  }
-
-  .footer-quick-title {
+  .footer-content h2 {
+    font-size: 27px;
+    line-height: 140%;
     padding-bottom: 20px;
   }
-
-  .footer-quick-title h3 {
-    font-size: 25px;
-
-  }
 }
-
-@media (max-width: 768px) {
-  section.contact-us {
-    width: 100%;
+@media (max-width: 576px) {
+  .hero-title-1 h1 {
+    font-size: 30px;
+    font-weight: 800;
   }
-
-  .reflection-content {
+  .footer-copyright {
     width: 100%;
+    gap: 20px;
     padding-bottom: 30px;
-  }
-
-  .donate-banner {
-    min-height: 300px;
-    margin-top: 59px;
-  }
-
-  .reflection-img img {
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .reflection-item {
-    flex-direction: column;
-  }
-
-  .liturgy-content {
-    width: 100%;
-  }
-
-  .liturgy-img-item {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .liturgy-item-list {
-    flex-direction: column;
-  }
-
-  .liturgy-header-item {
-    width: 100%;
-  }
-
-  .churchsuite-wrapper {
-    padding: 100px 0px 0px 0px;
-  }
-
-  .liturgy-section-item {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .liturgy-section-item img {
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .churchsuite-header h3 {
-    font-size: 23px;
-  }
-
-  .churchsuite-header {
-    padding-bottom: 24px;
-    margin-bottom: 30px;
-  }
-
-  .churchsuite-form {
-    padding: 30px 15px 30px 15px;
-    box-shadow: 0px 0px 10px #0000003d;
-    border-radius: 10px;
-  }
-
-  .checkbox-item {
-    grid-template-columns: 100%;
-    gap: 5px;
-  }
-
-  .submit-btn-item {
-    margin-top: 30px;
-  }
-
-  .submit-btn-item button {
-    font-size: 16px;
-  }
-
-  .churchsuite-header h5 {
-    font-size: 18px;
-  }
-
-  .churchsuite-wrapper {
-    width: 100%;
-  }
-
-  .slider-item-btn a {
-    width: 120px;
-    font-size: 16px;
-    padding: 8px 0;
-  }
-
-  .slider-content h1 {
-    margin-bottom: 0;
-    font-size: 24px;
-  }
-
-  .slider-item-con {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 350px;
-    flex-direction: column;
-  }
-
-  .sider-img {
-    position: absolute;
-    inset: 0;
-    z-index: 0;
-  }
-
-  .sider-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .slider-content {
-    width: 90%;
-    bottom: 50px;
-    gap: 10px;
-  }
-
-  .new-here-right {
-    margin-top: 30px;
-  }
-
-  .parish-content p {
-    font-size: 16px;
-  }
-
-  .booking-content {
-    margin-top: 30px;
-  }
-
-  .mass-event-btn-group {
-    gap: 12px;
-  }
-
-  .newsletter-left .section-title {
-    font-size: 30px;
-  }
-
-  section.new-here {
-    padding: 40px 0;
-  }
-
-  .team-section-title {
-    width: 100%;
-  }
-
-  .parish-contentss {
-    margin-bottom: 30px;
-  }
-
-  .parish-btn-group {
-    flex-direction: column;
-    gap: 15px;
-    align-items: flex-start;
-  }
-
-  footer.footer {
-    margin-top: 50px;
-  }
-
-  .mass-event-left h1 {
-    font-size: 30px;
-  }
-
-  .contact-us-header {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 30px;
-  }
-
-  .touch-wrapper {
-    padding: 30px;
-  }
-
-  .touch-content .section-title {
-    font-size: 30px;
-  }
-
-  .how-to-find-btn-group {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .notice-left {
-    margin-bottom: 30px;
-    height: fit-content;
-  }
-
-  .slider-content h1 {
-    font-size: 30px;
-  }
-
-  .adoration-btn-group {
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    padding-top: 0px;
-    flex-direction: column;
-  }
-
-  section.adoration-room {
-    padding: 40px 0;
-
-  }
-
-  .adoration-btn-group .custom-btn {
-    border-radius: 10px;
-
-  }
-
-  .adoration-content {
-    margin-top: 40px;
-  }
-
-  .minitries-item {
-    padding: 30px 20px;
-  }
-
-  .adoration-content h2 {
-    font-size: 30px;
-  }
-
-  .minitries-header {
-    width: 100%;
-  }
-
-  .community-wrapper .section-title {
-    font-size: 30px;
-  }
-
-
-  .community-img {
-    margin-top: 30px;
-    width: 100%;
-    height: auto;
-  }
-
-  .section-title {
-    font-size: 30px;
-  }
-
-  .minitries-header .section-title {
-    font-size: 30px;
-  }
-
-  .minitries-img img {
-    width: 50px;
-  }
-
-  .minitries-content h3 {
-    font-size: 20px;
-  }
-
-  ul.adoration-url-list {
-    margin-top: 20px;
-  }
-
-  .newsletter-left .mass-event-btn-group {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .new-image-left img {
-    padding: 10px;
-    border: 3px solid var(--white-color);
-  }
-
-  .see-more-btn {
-    margin-top: 20px;
-  }
-
-  .banner-wrapper {
-    width: 100%;
-  }
-
-  .banner-wrapper .banner-title {
-    font-size: 35px;
-    padding-bottom: 10px;
-  }
-
-  .navbar {
-    padding: 10px 0;
-  }
-
-  .hamburger-toggle {
-    width: 40px;
-    height: 40px;
-  }
-
-  a.navbar-brand {
-    padding: 0;
-  }
-
-  .banner-item-btn {
-    gap: 15px;
-    padding-top: 20px;
-    flex-direction: column;
-  }
-
-  .banner-item-btn a {
-    font-size: 16px;
-  }
-
-  section.banner {
-    padding: 100px 0 50px 0;
-  }
-
-  .banner-wrapper .banner-text {
-    font-size: 18px;
-    line-height: 150%;
-  }
-
-  h2.about-section-title {
-    font-size: 32px;
+    flex-direction: column-reverse;
+  }
+  .latest-news {
+    padding: 50px 0 50px 0;
+    background: #f5f5f5;
+  }
+  .latest-news-header .bar {
+    width: 60px;
+    height: 7px;
+    background-color: #ff0000;
+    margin-top: 16px;
+  }
+  .latest-news-content .news-title {
     padding-bottom: 15px;
   }
-
-  .sacramental-wrapper {
-    width: 100%;
+  .become-volunteer-btn {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
   }
-
-  .about-img {
-    margin-top: 30px;
+  .latest-news-header {
+    gap: 10px;
   }
-
-  h2.section-title-2 {
-    font-size: 27px;
+  .custom-btn-alt {
+    padding: 11px 24px;
+    font-size: 17px;
+  }
+  .become-volunteer {
+    margin-top: 45px;
+    margin-bottom: 65px;
+  }
+  .promise-tracker {
+    top: -100px;
+  }
+  .get-involved-title {
+    gap: 25px;
+  }
+  .who-section {
+    padding: 60px 0px;
+  }
+  .who-section .who-content {
+    margin-top: 40px;
+  }
+  .election-content {
+    padding-top: 60px;
+  }
+  .get-involed-live {
+    padding-top: 0px;
+  }
+  .get-involved-card-content p {
+    font-size: 16px;
+    line-height: 50px;
+  }
+  .get-involved-card-content h3 {
+    font-size: 24px;
     padding-bottom: 20px;
   }
-
-  li.section-content-list p {
-    padding-bottom: 20px;
-    line-height: 160%;
-    font-size: 18px;
+  .get-involved-wrapper {
+    padding-top: 50px;
+  }
+  .our-concern {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .election-content .who-content p {
+    padding-bottom: 0;
+  }
+  .election-wrapper {
+    min-height: 881px;
+  }
+  .election-card {
+    top: -126px;
+  }
+  .election-card-item {
+    padding: 35px 20px;
+    border-radius: 12px;
+    gap: 20px;
+  }
+  .election-card-content {
+    gap: 20px;
+  }
+  .election-card-img img {
+    width: 60px;
+  }
+  .election-card-content h3 {
+    font-size: 24px;
+  }
+  .election-wrapper {
+    min-height: 824px;
   }
 
-  h4.section-text-second {
+  .why-choose-me {
+    position: relative;
+    top: -50px;
+    margin-top: 0;
+  }
+  .why-choose-list-text h5 {
     font-size: 20px;
-    padding-bottom: 20px;
-    line-height: 150%;
-    width: 90%;
   }
-
-  .section-titlee-2 {
+  .election-location .election-icon {
+    padding: 11px 16px;
+  }
+  .election-count-timer .timer-item .days {
+    font-size: 35px;
+  }
+  .why-choose-me-content h4 {
+    font-weight: 800;
+    padding-top: 20px;
     font-size: 25px;
-    padding-bottom: 20px;
-    line-height: 150%;
-    width: 90%;
+    line-height: 160%;
   }
-
-  footer.footer {
-    padding: 40px 0 40px 0;
-    margin-top: 50px;
+  .leadership-title {
+    padding-bottom: 40px;
+  }
+  .leadership-2 {
+    padding-top: 60px;
+  }
+  .leadership .who-content {
+    margin-top: 40px;
+  }
+  .section-title {
+    font-size: 30px;
+    line-height: 140%;
+  }
+  .site-logo {
+    width: 60px;
+  }
+  .hero-form-content h2 {
+    font-size: 25px;
+    line-height: 150%;
+  }
+  .hero-form {
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 798px;
+    z-index: 1;
+  }
+  .hero-content {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 140px;
+  }
+  .hero-form-input-wrap .custom-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .custom-btn {
+    padding: 11px 24px;
+    font-size: 17px;
   }
 }

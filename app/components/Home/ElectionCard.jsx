@@ -8,7 +8,7 @@ const ElectionCard = () => {
     <section className="election-card">
       <div className="container">
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-lg-4">
             <div className="election-card-item">
               <div className="election-card-img">
                 <Image
@@ -34,7 +34,7 @@ const ElectionCard = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4">
             <div className="election-card-item">
               <div className="election-card-img">
                 <Image
@@ -60,7 +60,7 @@ const ElectionCard = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-lg-4">
             <div className="election-card-item">
               <div className="election-card-img">
                 <Image

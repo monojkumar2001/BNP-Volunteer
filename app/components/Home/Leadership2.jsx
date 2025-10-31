@@ -7,8 +7,8 @@ const Leadership2 = () => {
   return (
     <section className="leadership-2">
       <div className="container">
-        <div className="row align-items-center">
-          <div className="col-md-6">
+        <div className="row align-items-center leadership-wrpp">
+          <div className="col-lg-6 ">
             <div className="who-content">
               <div className="subtitle">Barrister, The candidate</div>
               <h2 className="section-title">Nawshad Zamir</h2>
@@ -26,7 +26,7 @@ const Leadership2 = () => {
               </Link>
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-lg-6 ">
             <div className="leadership-item-img">
               <Image
                 src="/assets/images/leadership2.png"

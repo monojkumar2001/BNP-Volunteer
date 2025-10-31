@@ -12,7 +12,7 @@ const Leadership = () => {
           <h1 className="section-title"> A Future of Hope</h1>
         </div>
         <div className="row align-items-center">
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <div className="leadership-item-img">
               <Image
                 src="/assets/images/leadership.png"
@@ -22,7 +22,7 @@ const Leadership = () => {
               />
             </div>
           </div>
-          <div className="col-md-6">
+          <div className="col-lg-6">
             <div className="who-content">
               <div className="subtitle">Barrister, politician</div>
               <h2 className="section-title">Zamir Uddin Sirker</h2>
