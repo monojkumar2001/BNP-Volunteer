@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+  font-family: "Futura Now Headline";
+  src: url("/fonts/FuturaNowHeadlineBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 * {
   padding: 0;
   margin: 0;
@@ -143,24 +150,28 @@ table.table {
 
 .custom-btn-alt {
   width: fit-content;
-  padding: 10px 30px;
-  border-radius: 50px;
+  padding: 12px 23px;
+  border-radius: 8px;
   border: none;
   outline: none;
-  color: var(--primary-color);
+  color: var(--white-color);
   font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
   transition: 0.3s;
   background: transparent;
+  border: 1px solid var(--white-color);
   display: flex;
-  border: 1px solid var(--primary-color);
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   white-space: nowrap;
 }
 
 .custom-btn-alt:hover {
   color: var(--white-color);
   background: #0d0d0d;
+  border: 1px solid var(--black-color);
+  transform: translateY(-3px);
 }
 
 .section-title {

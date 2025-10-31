@@ -6,10 +6,6 @@ import React, { useEffect, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 
 const ElectionCampaign = () => {
-  // আজকের তারিখ থেকে ৫০ দিন পর ভোটের তারিখ নির্ধারণ
-  const electionDate = new Date();
-  electionDate.setDate(electionDate.getDate() + 50);
-
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -17,7 +13,10 @@ const ElectionCampaign = () => {
     seconds: 0,
   });
 
-  // countdown হিসাব
+  // Calculate election date (50 days from now)
+  const electionDate = new Date();
+  electionDate.setDate(electionDate.getDate() + 50);
+
   useEffect(() => {
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -25,12 +24,7 @@ const ElectionCampaign = () => {
 
       if (distance < 0) {
         clearInterval(timer);
-        setTimeLeft({
-          days: 0,
-          hours: 0,
-          minutes: 0,
-          seconds: 0,
-        });
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
         return;
       }
 
@@ -45,7 +39,7 @@ const ElectionCampaign = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [electionDate]); // ✅ dependency added to fix ESLint warning
 
   return (
     <section className="election">
