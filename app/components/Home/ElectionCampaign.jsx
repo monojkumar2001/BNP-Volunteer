@@ -42,7 +42,7 @@ const ElectionCampaign = () => {
   }, [electionDate]); // ✅ dependency added to fix ESLint warning
 
   return (
-    <section className="election">
+    <section className="election" data-aos="fade-up" data-aos-duration="3000">
       <div className="container">
         <div className="election-wrapper">
           <div className="election-content">

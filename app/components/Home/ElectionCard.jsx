@@ -5,7 +5,11 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const ElectionCard = () => {
   return (
-    <section className="election-card">
+    <section
+      className="election-card"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-4">

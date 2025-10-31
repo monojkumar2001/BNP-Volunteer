@@ -4,7 +4,11 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const BecomeVolunteer = () => {
   return (
-    <section className="become-volunteer">
+    <section
+      className="become-volunteer"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="container">
         <div className="become-volunteer-content">
           <span className="subtitle">Become volunteer</span>

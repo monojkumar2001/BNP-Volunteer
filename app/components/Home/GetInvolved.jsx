@@ -5,7 +5,11 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const GetInvolved = () => {
   return (
-    <section className="get-involed-live">
+    <section
+      className="get-involed-live"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="container">
         <div className="get-involved-header">
           <div className="row">

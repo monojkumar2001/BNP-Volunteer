@@ -47,7 +47,11 @@ const LatestNews = () => {
   ];
 
   return (
-    <section className="latest-news">
+    <section
+      className="latest-news"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="container">
         <div className="latest-news-header">
           <div>

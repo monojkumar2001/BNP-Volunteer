@@ -5,7 +5,11 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Leadership2 = () => {
   return (
-    <section className="leadership-2">
+    <section
+      className="leadership-2"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="container">
         <div className="row align-items-center leadership-wrpp">
           <div className="col-lg-6 ">

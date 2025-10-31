@@ -3,7 +3,11 @@ import React from "react";
 
 const WhyChooseUs = () => {
   return (
-    <section className="why-choose-me">
+    <section
+      className="why-choose-me"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="container">
         <div className="why-choose-me-wrapper">
           <div className="why-choose-me-content">

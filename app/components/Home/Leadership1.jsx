@@ -5,7 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 
 const Leadership = () => {
   return (
-    <section className="leadership">
+    <section className="leadership" data-aos="fade-up" data-aos-duration="3000">
       <div className="container">
         <div className="leadership-title">
           <h4>A Legacy of Leadership</h4>

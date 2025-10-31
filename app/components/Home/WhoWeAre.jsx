@@ -31,7 +31,11 @@ const WhoWeAre = () => {
 
   return (
     <>
-      <section className="who-section">
+      <section
+        className="who-section"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+      >
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">

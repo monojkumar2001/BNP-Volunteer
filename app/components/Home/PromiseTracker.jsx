@@ -2,7 +2,11 @@ import React from "react";
 
 const PromiseTracker = () => {
   return (
-    <section className="promise-tracker">
+    <section
+      className="promise-tracker"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="container">
         <div className="leadership-title promise-tracker-title">
           <h4>66 Promises</h4>

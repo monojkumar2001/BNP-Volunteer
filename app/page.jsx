@@ -15,6 +15,9 @@ export const metadata = {
   title: "Together for a Better Tomorrow",
   description: "",
   keywords: "",
+  icons: {
+    icon: "/assets/favicon.ico",
+  },
 };
 export default function Home() {
   return (
