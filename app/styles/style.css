@@ -105,9 +105,8 @@
   background: none;
 }
 
-.play-btn svg {
-  width: 36px;
-  height: 36px;
+.play-btn img {
+  width: 104px;
 }
 
 .who-content .subtitle {
