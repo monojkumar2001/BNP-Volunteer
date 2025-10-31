@@ -8,7 +8,9 @@ const BecomeVolunteer = () => {
       <div className="container">
         <div className="become-volunteer-content">
           <span className="subtitle">Become volunteer</span>
-          <h2>Interested in joining our team? Let's make a better future.</h2>
+          <h2>
+            Interested in joining our team? Let&apos;s make a better future.
+          </h2>
           <p>
             Parturient dis torquent nostra mattis congue ut sagittis nibh luctus
             viverra.
