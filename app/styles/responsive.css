@@ -552,6 +552,9 @@
     padding: 15px 20px;
     gap: 10px;
   }
+  .faq-item.active .faq-answer {
+    padding: 0px 20px 15px 20px;
+  }
   .event-campain {
     padding-top: 40px;
   }
