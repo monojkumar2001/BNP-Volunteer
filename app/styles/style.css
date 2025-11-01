@@ -690,3 +690,223 @@
   font-size: 14px;
   color: #9b9696;
 }
+/* ====================== About Page ============= */
+.banner {
+  position: relative;
+
+  overflow: hidden;
+}
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  opacity: 0.5;
+  z-index: 1;
+}
+.banner-content {
+  position: relative;
+  z-index: 3;
+  min-height: 556px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+  padding-top: 80px;
+}
+.banner-content h1 {
+  font-size: 60px;
+  color: var(--white-color);
+  font-weight: 800;
+  line-height: 64px;
+  padding-bottom: 16px;
+  letter-spacing: 0.25px;
+}
+.banner-content p {
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  line-height: 150%;
+}
+/* my promises */
+
+.my-promises {
+  background: url("../../public/assets/images/promiss.png") no-repeat center
+    center/cover;
+  position: relative;
+}
+.my-promises-wrapper {
+  min-height: 562px;
+  width: 100%;
+}
+.my-promises-header {
+  padding-top: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.schedule-btn {
+  background: #ff383c;
+}
+.my-promises-title span {
+  font-size: 18px;
+  line-height: 64px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+.my-promises-title .section-title {
+  color: var(--white-color);
+}
+.promises-card {
+  top: -200px;
+}
+.about-become-volunteer .become-volunteer {
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  top: -22px;
+}
+
+.faq-section {
+  padding-top: 140px;
+}
+
+.faq-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 662px;
+  border-radius: 40px;
+  background-color: #f0f1f4;
+  padding: 47px 60px;
+  gap: 20px;
+  align-items: start;
+}
+.faq-left .section-subtitle {
+  padding-top: 16px;
+}
+
+.faq-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-item {
+  background: var(--white-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 22px 40px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+  height: 100%;
+}
+.faq-item.active .faq-question {
+  padding-bottom: 14px;
+}
+.faq-question span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #000000;
+  text-align: start;
+}
+
+.faq-icon {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  background-color: #fff;
+}
+
+.faq-item.active .faq-answer {
+  padding: 0px 40px 22px 40px;
+}
+
+.faq-answer p {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--black-color);
+}
+/* gallery section */
+.gallery-section {
+  padding-bottom: 136px;
+}
+.gallery-header ul {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+  padding-bottom: 54px;
+}
+.gallery-header ul li {
+  font-size: 24px;
+  letter-spacing: 0.25px;
+  line-height: 150%;
+}
+.gallery-header ul li.active {
+  font-weight: 600;
+}
+.gallery-card-img {
+  width: 100%;
+  margin-bottom: 26px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.gallery-card-img img {
+  width: 100%;
+  transition: transform 0.8s ease, filter 0.5s ease;
+}
+
+.gallery-card-img:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+.gallery-model-content {
+  position: relative;
+  width: 900px;
+}
+.gallery-model-content img {
+  width: 100%;
+}
+
+.gallery-campaign .election-wrapper {
+  min-height: 792px;
+}
+.gallery-concern .our-concern {
+  padding-top: 136px;
+  padding-bottom: 111px;
+}
+.gallery-become-volunteer .become-volunteer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.event-campain {
+  padding-top: 125px;
+}

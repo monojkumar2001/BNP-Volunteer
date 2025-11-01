@@ -15,7 +15,7 @@
 .main-menu {
   display: flex;
   align-items: center;
-  gap: 70px;
+  gap: 65px;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -48,7 +48,7 @@
 .header-right {
   display: flex;
   align-items: center;
-  gap: 41px;
+  gap: 35px;
 }
 
 .header-action {
@@ -76,10 +76,18 @@
   border: 1px solid #000000;
 }
 .site-logo {
-  width: 141px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.site-logo .logo-name {
+  font-family: "Italianno", cursive;
+  font-size: 64px;
+  letter-spacing: -0.25px;
+  color: var(--white-color);
 }
 .site-logo img {
-  width: 100%;
+  width: 141px;
 }
 
 .header-btn .latest-btn:hover {
@@ -110,7 +118,9 @@
   right: 25px;
   cursor: pointer;
 }
-
+.logo-name.scrolled {
+  color: var(--black-color);
+}
 @media (max-width: 1200px) {
   .menu-btn-ber {
     display: block;
@@ -129,8 +139,16 @@
     transition: right 0.4s ease;
     border-radius: 0;
   }
+  .site-logo img {
+    width: 60px;
+  }
   .site-logo {
-    width: 80px;
+    gap: 14px;
+  }
+
+  .site-logo .logo-name {
+    font-size: 40px;
+    line-height: 50px;
   }
   .main-menu.open {
     right: 0;

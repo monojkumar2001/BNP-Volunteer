@@ -25,9 +25,9 @@ const Header = () => {
   }, []);
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/#", label: "About Us" },
-    { href: "/#", label: "Programs" },
-    { href: "/#", label: "Media" },
+    { href: "/about", label: "About Us" },
+    { href: "/events", label: "Programs" },
+    { href: "/gallery", label: "Media" },
     { href: "/#", label: "Contact" },
   ];
 
@@ -43,6 +43,9 @@ const Header = () => {
               width={141}
               height={141}
             />
+            <span className={`logo-name ${scrolled ? "scrolled" : ""}`}>
+              Nawshad Zamir
+            </span>
           </Link>
 
           {/* Menu Button for Mobile */}
