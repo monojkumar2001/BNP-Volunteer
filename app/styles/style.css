@@ -856,6 +856,7 @@
 /* gallery section */
 .gallery-section {
   padding-bottom: 136px;
+  position: relative;
 }
 .gallery-header ul {
   display: flex;
@@ -888,9 +889,16 @@
   transform: scale(1.1);
   filter: brightness(1.2);
 }
+
+.gallery-section[data-aos="fade-up"] {
+  transform: none !important;
+}
 .gallery-model-content {
   position: relative;
   width: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .gallery-model-content img {
   width: 100%;
