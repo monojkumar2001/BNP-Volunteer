@@ -40,7 +40,7 @@ const HeroSection = () => {
               src="/assets/images/hero-img.png"
               alt="Hero Image"
               width={587}
-              height={768}
+              height={730}
             />
           </div>
         </div>
