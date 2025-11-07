@@ -13,14 +13,40 @@
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 88px;
+  gap: 40px;
   color: var(--white-color);
-  padding-top: 100px;
+  padding-top: 130px;
+  max-width: 768px;
 }
-.hero-title-1 h1 {
+.lang-hero-bn .hero-content {
+  padding-top: 140px;
+}
+.lang-hero-bn .hero-title-1 h1 {
   font-size: 60px;
   font-weight: 800;
-  line-height: 64px;
+  line-height: 70px;
+  color: var(--white-color);
+  font-family: "SolaimanLipi", sans-serif;
+}
+.lang-hero-bn .hero-title-1 {
+  padding-bottom: 30px;
+}
+.lang-hero-bn .hero-form-content h2 {
+  font-size: 40px;
+  line-height: 60px;
+  font-family: "SolaimanLipi", sans-serif;
+}
+.lang-hero-bn .custom-btn {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 20px;
+}
+.hero-title-1 {
+  padding-bottom: 30px;
+}
+.hero-title-1 h1 {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 59px;
   color: var(--white-color);
 }
 .hero-title-item p {

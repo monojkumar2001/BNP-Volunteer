@@ -42,10 +42,10 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+export default function Home({ language }) {
   return (
     <>
-      <HeroSection />
+      <HeroSection language={language} />
       <WhoWeAre />
       <Leadership1 />
       <Leadership2 />

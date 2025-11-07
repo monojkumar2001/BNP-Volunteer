@@ -5,12 +5,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-
+import { useLanguage } from "../../../context/languageContext";
 const Header = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
+  const { language, setLanguage } = useLanguage();
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -23,16 +23,23 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About Us" },
-    { href: "/events", label: "Programs" },
-    { href: "/gallery", label: "Media" },
-    { href: "/#contact", label: "Contact" },
-  ];
+  const navLinks = {
+    bn: [
+      { href: "/", label: "হোম" },
+      { href: "/about", label: "আমার সম্পর্কে" },
+      { href: "/events", label: "ইভেন্ট" },
+      { href: "/gallery", label: "মিডিয়া" },
+    ],
+    en: [
+      { href: "/", label: "Home" },
+      { href: "/about", label: "About Us" },
+      { href: "/events", label: "Event" },
+      { href: "/gallery", label: "Media" },
+    ],
+  };
 
   return (
-    <header className="header-section">
+    <header className={`header-section`}>
       <div className="container">
         <div className="header-nav">
           {/* Logo */}
@@ -43,8 +50,12 @@ const Header = () => {
               width={141}
               height={141}
             />
-            <span className={`logo-name ${scrolled ? "scrolled" : ""}`}>
-              Nawshad Zamir
+            <span
+              className={`logo-name ${scrolled ? "scrolled" : ""} ${
+                language === "bn" ? "logo-bn" : "logo-en"
+              }`}
+            >
+              {language === "bn" ? "নওশাদ জামির" : "Nawshad Zamir"}
             </span>
           </Link>
 
@@ -66,9 +77,8 @@ const Header = () => {
             >
               <IoMdClose />
             </button>
-
             <ul>
-              {navLinks.map((link) => (
+              {navLinks[language]?.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -93,13 +103,28 @@ const Header = () => {
                     />
                   </button>
                 </div>
-                <div className="header-language-item">
-                  <button>EN</button>
+                <div className="header-language-switcher">
+                  <div className="header-language-item">
+                    <button
+                      onClick={() => setLanguage("bn")}
+                      className={language === "bn" ? "active" : ""}
+                    >
+                      বাং
+                    </button>
+                  </div>
+                  <div className="header-language-item">
+                    <button
+                      onClick={() => setLanguage("en")}
+                      className={language === "en" ? "active" : ""}
+                    >
+                      EN
+                    </button>
+                  </div>
                 </div>
               </div>
               <div className="header-btn">
                 <Link href="#" className="latest-btn">
-                  Latest Update
+                  {language === "bn" ? "সর্বশেষ আপডেট" : "Latest Update"}
                 </Link>
               </div>
             </div>

@@ -181,6 +181,10 @@
     font-size: 20px;
     white-space: nowrap;
   }
+  .lang-hero-bn .hero-title-1 h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -189,6 +193,13 @@
     gap: 15px;
     margin-top: 24px;
     width: 100%;
+  }
+  .lang-hero-bn .hero-title-1 h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  span.logo-name.logo-bn {
+    font-size: 35px;
   }
   .promise-tracker-content {
     display: grid;
@@ -371,14 +382,36 @@
   .faq-question span {
     font-size: 18px;
   }
+  .hero-form-input-wrap .custom-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .hero-content {
+    width: 100%;
+  }
 }
 @media (max-width: 576px) {
   .hero-title-1 h1 {
     font-size: 30px;
     font-weight: 800;
   }
+  .lang-hero-bn .hero-title-1 h1 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .lang-hero-bn .hero-title-1 {
+    padding-bottom: 20px;
+  }
+  .lang-hero-bn .hero-form-content h2 {
+    font-size: 29px;
+    line-height: 39px;
+  }
   .play-btn img {
     width: 60px;
+  }
+  .lang-hero-bn .hero-content {
+    padding-top: 120px;
+    gap: 15px;
   }
   .footer-copyright {
     width: 100%;
@@ -518,13 +551,10 @@
   }
   .hero-content {
     flex-direction: column;
-    gap: 30px;
-    padding-top: 140px;
+    gap: 15px;
+    padding-top: 117px;
   }
-  .hero-form-input-wrap .custom-btn {
-    width: 100%;
-    justify-content: center;
-  }
+
   .custom-btn {
     padding: 11px 24px;
     font-size: 17px;

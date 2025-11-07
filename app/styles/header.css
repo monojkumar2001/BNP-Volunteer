@@ -94,7 +94,15 @@
   background: #000000;
   color: #ffffff;
 }
-
+.header-language-switcher {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header-language-switcher .header-language-item .active {
+  font-weight: 600;
+  color: var(--primary-color);
+}
 /* --- Responsive --- */
 
 .menu-btn-ber {
@@ -120,6 +128,10 @@
 }
 .logo-name.scrolled {
   color: var(--black-color);
+}
+span.logo-name.logo-bn {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 50px;
 }
 @media (max-width: 1200px) {
   .menu-btn-ber {
