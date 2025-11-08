@@ -142,7 +142,13 @@
   font-weight: 700;
   margin-bottom: 18px;
 }
-
+.lang-who-bn .who-content .section-title {
+  font-family: "SolaimanLipi", sans-serif;
+}
+.lang-who-bn .who-content p {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 24px;
+}
 .who-content p {
   color: #5f5f5f;
   font-size: 20px;
@@ -201,13 +207,81 @@
   height: 100%;
   border: 0;
 }
+.lang-leadership-bn .section-title {
+  font-family: "SolaimanLipi", sans-serif;
+  padding-bottom: 20px;
+}
+.leadership-single {
+  padding-top: 140px;
+}
+.lang-leadership-en .who-content ul {
+  padding: 25px 0 10px 0;
+}
+.leader-ship-single-content {
+  margin-top: 70px;
+}
+.leader-ship-single-content h4 {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 44px;
+  padding-bottom: 20px;
+  color: var(--black-color);
+}
+.leader-ship-single-content p {
+  font-size: 20px;
+  line-height: 35px;
+  color: #5f5f5f;
+  padding-bottom: 20px;
+}
+.lang-leadership-bn .leader-ship-single-content p {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+}
+.lang-leadership-bn .leader-ship-single-content h4 {
+  font-family: "SolaimanLipi", sans-serif;
+  margin-top: 30px;
+  font-size: 40px;
+  line-height: 44px;
+}
+.lang-leadership-en .who-content ul li {
+  font-size: 18px;
+  line-height: 30px;
+  color: #5f5f5f;
+  padding-bottom: 15px;
+}
+.lang-leadership-bn ul li {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  color: #5f5f5f;
+  padding-bottom: 20px;
+}
+.lang-leadership-bn .custom-btn {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 20px;
+}
 .leadership-item-img {
   overflow: hidden;
   border-radius: 16px;
   position: relative;
   cursor: pointer;
 }
-
+.lang-leadership2-bn .who-content p {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+}
+.lang-leadership2-bn .who-content .custom-btn {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 20px;
+}
+.lang-leadership2-bn .leadership2-single-content {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  padding-top: 50px;
+}
 .leadership-item-img img {
   width: 100%;
   transition: transform 0.8s ease, filter 0.5s ease;
@@ -250,7 +324,20 @@
 .our-concern-wrapper .who-content {
   max-width: 414px;
 }
-
+.lang-concern-bn .subtitle {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.lang-concern-bn .section-title {
+  font-family: "SolaimanLipi", sans-serif;
+}
+.lang-concern-bn .concern-list-items li {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+}
 .our-concern-item-img img {
   width: 100%;
   border-radius: 16px;
@@ -291,6 +378,7 @@
   height: 35px;
   position: absolute;
   left: 0;
+  top: 6px;
   background: var(--primary-color);
 }
 .election {
@@ -389,6 +477,10 @@
 .promise-tracker-title {
   padding-bottom: 65px;
 }
+.lang-promise-bn .section-title {
+  font-family: "SolaimanLipi", sans-serif;
+  padding-top: 10px;
+}
 .promise-tracker-content {
   display: flex;
   align-items: center;
@@ -435,7 +527,7 @@
   position: absolute;
   right: 105px;
   height: 100%;
-  padding: 76px 57px;
+  padding: 76px 50px;
 }
 .why-choose-me-content span {
   font-size: 18px;
@@ -446,11 +538,21 @@
 .why-choose-me-content h4 {
   font-weight: 800;
   padding-top: 20px;
-  font-size: 44px;
-  line-height: 64px;
+  font-size: 35px;
+  line-height: 50px;
   letter-spacing: -0.25px;
   color: var(--white-color);
   padding-bottom: 20px;
+}
+.lang-choose-bn .why-choose-me-content h4 {
+  font-family: "SolaimanLipi", sans-serif;
+  line-height: 60px;
+  font-size: 40px;
+}
+.lang-choose-bn .lang-choose-content {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
 }
 .why-choose-me-content p {
   font-size: 20px;
@@ -597,6 +699,17 @@
   margin-top: 215px;
   margin-bottom: 205px;
 }
+.lang-volunteer-bn .become-volunteer-content h2 {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 40px;
+  line-height: 60px;
+}
+.lang-volunteer-bn .become-volunteer-content p {
+  font-family: "SolaimanLipi", sans-serif;
+  font-size: 24px;
+  line-height: 35px;
+  padding-bottom: 10px;
+}
 .become-volunteer-content {
   background: var(--primary-color);
   padding: 76px 57px;
@@ -649,7 +762,9 @@
   background-color: #ff0000;
   margin-top: 24px;
 }
-
+.lang-news-bn .section-title {
+  font-family: "SolaimanLipi", sans-serif;
+}
 .slider-btns {
   display: flex;
   gap: 16px;

@@ -9,10 +9,11 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
+import { useLanguage } from "../../../context/languageContext";
 
 const LatestNews = () => {
   const swiperRef = useRef(null);
-
+  const { language } = useLanguage();
   const newsItems = [
     {
       id: 1,
@@ -48,14 +49,20 @@ const LatestNews = () => {
 
   return (
     <section
-      className="latest-news"
+      className={`latest-news ${
+        language === "bn" ? "lang-news-bn" : "lang-news-en"
+      }`}
       data-aos="fade-up"
       data-aos-duration="3000"
     >
       <div className="container">
         <div className="latest-news-header">
           <div>
-            <h2 className="section-title">Latest News & Articles</h2>
+            <h2 className="section-title">
+              {language === "bn"
+                ? "সাম্প্রতিক সংবাদ ও নিবন্ধসমূহ"
+                : "Recent News and Articles"}
+            </h2>
             <div className="bar"></div>
           </div>
 

@@ -1,17 +1,20 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Image from "next/image";
+import { useLanguage } from "../../../context/languageContext";
 
 const Footer = () => {
+  const { language } = useLanguage();
   return (
     <footer className="footer" id="contact">
       <div className="container">
         <div className="footer-wrapper">
           <div className="footer-content">
-            <h2>Contact US</h2>
+            <h2> {language === "bn" ? "যোগাযোগ করুন" : "Contact US"}</h2>
             <p>Head Office:</p>
             <p>Dhaka: Level 3, House 5, Dhanmandi 1212</p>
           </div>

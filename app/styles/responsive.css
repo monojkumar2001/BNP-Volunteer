@@ -389,6 +389,26 @@
   .hero-content {
     width: 100%;
   }
+  .leadership-single {
+    padding-top: 60px;
+  }
+  .leader-ship-single-content {
+    margin-top: 0px;
+  }
+  .lang-leadership-bn .leader-ship-single-content h4 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .lang-leadership2-bn .leadership2-single-content {
+    padding-top: 20px;
+  }
+  .lang-volunteer-bn .become-volunteer-content h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .leadership-titles {
+    letter-spacing: 0px;
+  }
 }
 @media (max-width: 576px) {
   .hero-title-1 h1 {

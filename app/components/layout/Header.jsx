@@ -106,7 +106,10 @@ const Header = () => {
                 <div className="header-language-switcher">
                   <div className="header-language-item">
                     <button
-                      onClick={() => setLanguage("bn")}
+                      onClick={() => {
+                        setLanguage("bn");
+                        setMenuOpen(false);
+                      }}
                       className={language === "bn" ? "active" : ""}
                     >
                       বাং
@@ -114,7 +117,10 @@ const Header = () => {
                   </div>
                   <div className="header-language-item">
                     <button
-                      onClick={() => setLanguage("en")}
+                      onClick={() => {
+                        setLanguage("en");
+                        setMenuOpen(false);
+                      }}
                       className={language === "en" ? "active" : ""}
                     >
                       EN

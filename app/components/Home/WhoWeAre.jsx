@@ -5,10 +5,11 @@ import Image from "next/image";
 import { GoArrowUpRight } from "react-icons/go";
 import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
+import { useLanguage } from "../../../context/languageContext";
 
 const WhoWeAre = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const { language } = useLanguage();
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "Escape") setIsModalOpen(false);
@@ -32,9 +33,9 @@ const WhoWeAre = () => {
   return (
     <>
       <section
-        className="who-section"
-        data-aos="fade-up"
-        data-aos-duration="3000"
+        className={`who-section ${
+          language === "bn" ? "lang-who-bn" : "lang-who-en"
+        }`}
       >
         <div className="container">
           <div className="row align-items-center">
@@ -64,18 +65,18 @@ const WhoWeAre = () => {
             </div>
             <div className="col-lg-6">
               <div className="who-content">
-                <div className="subtitle">WHO WE ARE</div>
                 <h2 className="section-title">
-                  If you want a better future, Vote for us.
+                  {language === "bn"
+                    ? "আমার দর্শন / কিভাবে দেশ গড়বো? / ভবিষ্যতের ভাবনা"
+                    : "My philosophy / How to build a country? / Thoughts on the future"}
                 </h2>
                 <p>
-                  Parturient dis torquent nostra mattis congue ut sagittis nibh
-                  luctus viverra. Enim convallis tristique magna torquent
-                  egestas dictumst consectetur. Malesuada mus dictumst orci
-                  litora nisl iaculis duis nostra enim vestibulum.
+                  {language === "bn"
+                    ? "আমরা চাই একটি দায়িত্বশীল, অন্তর্ভুক্তিমূলক ও ভবিষ্যতের প্রতি যত্নপরায়ণ গণতান্ত্রিক বাংলাদেশ, যেখানে প্রতিটি নাগরিক তার ন্যায্য অধিকার, মর্যাদা ও সুযোগ পাবে। দুর্নীতি-মুক্ত প্রশাসন, শিক্ষা ও স্বাস্থ্য ব্যবস্থার সার্বভৌম গুণগত উন্নয়ন, এবং তরুণদের নেতৃত্বে দেশ গঠনের লক্ষ্যে নিরলসভাবে কাজ করতে আমরা বদ্ধ পরিকর। আমরা পারস্পরিক সম্মান, জবাবদিহিতা এবং আইনের ভিত্তিতে সুশাসন নিশ্চিত করে স্থায়ী প্রগতির পথে কাজ করব।"
+                    : "We want a responsible, inclusive and future-oriented democratic Bangladesh, where every citizen gets their just rights, dignity and opportunities. We are committed to working relentlessly towards a corruption-free administration, sovereign quality development of education and health systems, and youth-led nation-building. We will work towards sustainable progress by ensuring mutual respect, accountability and good governance based on the law."}
                 </p>
                 <Link href="#" className="custom-btn">
-                  <span> Learn more</span>
+                  <span>{language === "bn" ? "আরও জানুন" : " Learn More"}</span>
                   <span>
                     <GoArrowUpRight />
                   </span>

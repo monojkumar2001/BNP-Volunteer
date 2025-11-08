@@ -55,7 +55,7 @@ const ElectionCard = () => {
                   eu turpis leo aenean
                 </p>
 
-                <Link href="#" className="custom-btn">
+                <Link href="/events" className="custom-btn">
                   <span> View Schedule</span>
                   <span>
                     <GoArrowUpRight />
@@ -81,7 +81,7 @@ const ElectionCard = () => {
                   eu turpis leo aenean
                 </p>
 
-                <Link href="#" className="custom-btn">
+                <Link href="/#contact" className="custom-btn">
                   <span> Contact Us</span>
                   <span>
                     <GoArrowUpRight />

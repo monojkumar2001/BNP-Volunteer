@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { useLanguage } from "../../../context/languageContext";
 
 const ElectionCampaign = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -12,7 +13,7 @@ const ElectionCampaign = () => {
     minutes: 0,
     seconds: 0,
   });
-
+  const { language } = useLanguage();
   // Calculate election date (50 days from now)
   const electionDate = new Date();
   electionDate.setDate(electionDate.getDate() + 50);
@@ -68,7 +69,9 @@ const ElectionCampaign = () => {
             </div>
 
             <div className="who-content">
-              <h2 className="section-title">Election Campaign</h2>
+              <h2 className="section-title">
+                {language === "bn" ? "নির্বাচনী প্রচারণা" : "Election Campaign"}
+              </h2>
               <p>
                 Urna risus himenaeos dui sociosqu purus nisi magnis. Conubia
                 integer eu ante molestie vitae sapien dis tristique si praesent

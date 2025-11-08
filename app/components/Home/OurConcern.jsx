@@ -1,12 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { useLanguage } from "../../../context/languageContext";
 
 const OurConcern = () => {
+  const { language } = useLanguage();
   return (
     <section
-      className="our-concern"
+      className={`our-concern ${
+        language === "bn" ? "lang-concern-bn" : "lang-concern-en"
+      }`}
       data-aos="fade-up"
       data-aos-duration="3000"
     >
@@ -22,9 +27,15 @@ const OurConcern = () => {
           </div>
           <div className="our-concern-list">
             <div className="who-content">
-              <div className="subtitle">Our concern issues</div>
+              <div className="subtitle">
+                {language === "bn"
+                  ? "আমাদের উদ্বেগের বিষয়গুলি"
+                  : "Our Concern Issues"}
+              </div>
               <h2 className="section-title">
-                Right leader at right time for the right reson
+                {language === "bn"
+                  ? "উপযুক্ত সময়ে উপযুক্ত কাজের জন্য উপযুক্ত নেতা"
+                  : "The right leader for the right job at the right time"}
               </h2>
               <p>
                 Parturient dis torquent nostra mattis congue ut sagittis nibh
@@ -39,12 +50,36 @@ const OurConcern = () => {
               </Link>
             </div>
             <ul className="concern-list-items">
-              <li>Education System</li>
-              <li>Public Health Issues </li>
-              <li>Corruption Issues </li>
-              <li>Public Transportation System </li>
-              <li>Climate Change Issues </li>
-              <li>Human Right & Law</li>
+              <li>
+                {language === "bn"
+                  ? "শিক্ষাব্যবস্থা আধুনিকীকরণ"
+                  : "Modernization of the education system"}
+              </li>
+              <li>
+                {language === "bn"
+                  ? "জনস্বাস্থ্য ব্যবস্থার সার্বিক উন্নয়ন"
+                  : "Overall development of the public health system"}
+              </li>
+              <li>
+                {language === "bn"
+                  ? "দুর্নীতি প্রতিরোধ"
+                  : "Corruption prevention"}
+              </li>
+              <li>
+                {language === "bn"
+                  ? "গণ যোগাযোগ ব্যবস্থা যুগপোযগীকরণ"
+                  : "Modernization of mass communication systems"}
+              </li>
+              <li>
+                {language === "bn"
+                  ? "জলবায়ু বিপর্যয় ব্যবস্থাপনা "
+                  : "Climate disaster management"}
+              </li>
+              <li>
+                {language === "bn"
+                  ? "আইন ও মানবাধিকার সুরক্ষা"
+                  : "Law and human rights protection"}
+              </li>
             </ul>
           </div>
         </div>
