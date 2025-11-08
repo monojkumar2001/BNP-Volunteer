@@ -13,32 +13,56 @@
 .hero-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 82px;
   color: var(--white-color);
   padding-top: 130px;
-  max-width: 768px;
 }
 .lang-hero-bn .hero-content {
   padding-top: 140px;
 }
 .lang-hero-bn .hero-title-1 h1 {
   font-size: 60px;
-  font-weight: 800;
-  line-height: 70px;
+  font-weight: 600;
+  line-height: 64px;
   color: var(--white-color);
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: "Kohinoor Bangla";
+  letter-spacing: 0.25px;
+}
+.lang-hero-bn .hero-title-item p {
+  font-family: "Kohinoor Bangla";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
 }
 .lang-hero-bn .hero-title-1 {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .lang-hero-bn .hero-form-content h2 {
-  font-size: 40px;
+  font-size: 42 px;
   line-height: 60px;
-  font-family: "SolaimanLipi", sans-serif;
+  font-weight: 700;
+  font-family: "Kohinoor Bangla";
+  letter-spacing: 0.25px;
+}
+.lang-hero-bn .hero-form-content p {
+  font-family: "Kohinoor Bangla";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.25px;
 }
 .lang-hero-bn .custom-btn {
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: "Kohinoor Bangla";
   font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.lang-hero-bn .hero-form-input-wrap input::placeholder {
+  color: #737373;
+  font-family: "Kohinoor Bangla";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 .hero-title-1 {
   padding-bottom: 30px;

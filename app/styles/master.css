@@ -13,9 +13,33 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "SolaimanLipi";
-  src: url("/fonts/SolaimanLipi.ttf") format("truetype");
+  font-family: "Kohinoor Bangla";
+  src: url("/fonts/KohinoorBangla-Light.otf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kohinoor Bangla";
+  src: url("/fonts/KohinoorBangla-Regular.otf") format("truetype");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kohinoor Bangla";
+  src: url("/fonts/KohinoorBangla-Medium.otf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kohinoor Bangla";
+  src: url("/fonts/KohinoorBangla-Semibold.otf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kohinoor Bangla";
+  src: url("/fonts/KohinoorBangla-Bold.otf") format("truetype");
+  font-weight: 700;
   font-style: normal;
 }
 

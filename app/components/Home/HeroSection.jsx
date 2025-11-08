@@ -23,18 +23,11 @@ const HeroSection = () => {
                     : "Come on, let's build the Country together!"}
                 </h1>
               </div>
-              <div className="hero-title-1">
-                <h1>
-                  {language === "bn"
-                    ? "দেশ গড়ায় যোগ দিন"
-                    : "Join in building the Country"}
-                </h1>
-                <h1>
-                  {language === "bn"
-                    ? "ভলান্টিয়ার হিসেবে নাম লেখান"
-                    : "Sign up as a Volunteer"}
-                </h1>
-              </div>
+              <p>
+                {language === "bn"
+                  ? "দেশ গড়ায় যোগ দিন ভলান্টিয়ার হিসেবে নাম লেখান "
+                  : "Join in building the Country, Sign up as a Volunteer"}
+              </p>
             </div>
             <div className="hero-form">
               <form action="">
