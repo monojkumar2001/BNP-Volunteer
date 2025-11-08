@@ -164,8 +164,8 @@ const ZamirUddinPage = () => {
                     work of the Parliament Building complex designed by
                     world-renowned architect Louis Kahn was unfinished. He
                     collected its preserved designs and drawings. As a result,
-                    the Parliament Building became the "democratic center of the
-                    state" from a "usable building".
+                    the Parliament Building became the &quot;democratic center
+                    of the state&quot; from a &quot;usable building&quot;.
                   </>
                 )}
               </li>
@@ -189,8 +189,9 @@ const ZamirUddinPage = () => {
                     </strong>{" "}
                     - As the State Minister for Public Works and Urban
                     Development in 1979, he took charge of the construction of
-                    Dhaka's new international airport. He built a full-fledged
-                    international airport for the first time in Bangladesh.
+                    Dhaka&apos;s new international airport. He built a
+                    full-fledged international airport for the first time in
+                    Bangladesh.
                   </>
                 )}
               </li>
@@ -296,22 +297,23 @@ const ZamirUddinPage = () => {
                   While serving as the State Minister for Public Works and Urban
                   Development in the cabinet of late President Ziaur Rahman, he
                   completed the unfinished work of the current Parliament
-                  Building. Dhaka's Zia International Airport was built by him.
+                  Building. Dhaka&apos;s Zia International Airport was built by
+                  him.
                 </p>
                 <p>
                   He served as the Minister of State for Foreign Affairs in
-                  Abdus Sattar's cabinet. In the first cabinet of Begum Khaleda
-                  Zia in the fifth parliament, he first served as the Minister
-                  of State for Land and later as the Minister of Education. The
-                  National University and the Open University were established
-                  under his leadership. With his permission, the journey of the
-                  first private universities in Bangladesh began. His
-                  contribution to the establishment of Khulna Engineering
-                  University and the expansion of technical education to
-                  eliminate regional disparities is a glorious chapter in the
-                  history of the education system of Bangladesh. In the
-                  education sector of Panchagarh 1 alone, he did work worth
-                  ৳2,05,56,12,720, which is currently ৳14,80,04,11,584.
+                  Abdus Sattar&apos;s cabinet. In the first cabinet of Begum
+                  Khaleda Zia in the fifth parliament, he first served as the
+                  Minister of State for Land and later as the Minister of
+                  Education. The National University and the Open University
+                  were established under his leadership. With his permission,
+                  the journey of the first private universities in Bangladesh
+                  began. His contribution to the establishment of Khulna
+                  Engineering University and the expansion of technical
+                  education to eliminate regional disparities is a glorious
+                  chapter in the history of the education system of Bangladesh.
+                  In the education sector of Panchagarh 1 alone, he did work
+                  worth ৳2,05,56,12,720, which is currently ৳14,80,04,11,584.
                 </p>
                 <p>
                   In addition, he also served as the Minister of Science and
@@ -327,15 +329,15 @@ const ZamirUddinPage = () => {
                 <p>
                   Zamir Uddin Sarkar was born in 1931 in Nayabari village of
                   Tentulia, then British India. After completing his MA and LLB
-                  from Dhaka University and barristership from Lincoln's Inn,
-                  London, he was admitted to the Dhaka High Court in 1960 after
-                  obtaining a certificate from the then East Pakistan High
+                  from Dhaka University and barristership from Lincoln&apos;s
+                  Inn, London, he was admitted to the Dhaka High Court in 1960
+                  after obtaining a certificate from the then East Pakistan High
                   Court.
                 </p>
                 <p>Joined the legal profession.</p>
                 <p>
                   His political career began in 1945, when he was still a
-                  student, through the then Students' Federation. He was a
+                  student, through the then Students&apos; Federation. He was a
                   founding member of the Awami Muslim League and an associate of
                   Maulana Bhasani.
                 </p>
@@ -343,30 +345,31 @@ const ZamirUddinPage = () => {
                   Zamir Uddin Sarkar was one of the group of lawyers who played
                   an active role in the Liberation War in the High Court in
                   1971. Due to his reputation and fame in the legal profession,
-                  late President Ziaur Rahman sent him as Bangladesh's
+                  late President Ziaur Rahman sent him as Bangladesh&apos;s
                   representative to the United Nations General Assembly five
                   times from 1977 to 1981. When Ziaur Rahman formed the Jagdal
-                  in the first stage of the party's formation, he joined it.
-                  Later, when the BNP was established, he became a member of the
-                  standing committee.
+                  in the first stage of the party&apos;s formation, he joined
+                  it. Later, when the BNP was established, he became a member of
+                  the standing committee.
                 </p>
                 <p>
                   His profound scholarship and ease in both the worlds of law
-                  and politics left an unforgettable mark on the country's
-                  political arena. He was one of Bangladesh's pioneers in
+                  and politics left an unforgettable mark on the country&apos;s
+                  political arena. He was one of Bangladesh&apos;s pioneers in
                   complex and specialized fields such as industrial and
                   commercial law, maritime law, environmental law, and
                   international treaty drafting.
                 </p>
                 <p>
                   Under his visionary leadership, important tasks such as
-                  demarcation of Bangladesh's maritime boundaries, creation of
-                  an investment-friendly environment, and protection of natural
-                  resources gained momentum. He was a strong advocate for the
-                  rights of coastal countries in international forums, which
-                  safeguarded Bangladesh's interests on the world stage. His
-                  deep love for the country and relentless efforts played a
-                  significant role in building Bangladesh into a strong nation.
+                  demarcation of Bangladesh&apos;s maritime boundaries, creation
+                  of an investment-friendly environment, and protection of
+                  natural resources gained momentum. He was a strong advocate
+                  for the rights of coastal countries in international forums,
+                  which safeguarded Bangladesh&apos;s interests on the world
+                  stage. His deep love for the country and relentless efforts
+                  played a significant role in building Bangladesh into a strong
+                  nation.
                 </p>
               </>
             )}

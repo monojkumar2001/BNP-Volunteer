@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
             ) : (
               <p className="lang-choose-content">
                 <strong>
-                  Come, let's make this country a better and more beautiful
+                  Come, let&apos;s make this country a better and more beautiful
                   place to live
                 </strong>{" "}
                 A prosperous Bangladesh for everyone. Where it will be nice to

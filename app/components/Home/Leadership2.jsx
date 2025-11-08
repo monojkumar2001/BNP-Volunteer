@@ -32,9 +32,9 @@ const Leadership2 = () => {
                   <>
                     <p>
                       মুহম্মদ নওশাদ জমির একজন অভিজ্ঞ আইনজীবী। তিনি লন্ডনের
-                      লিঙ্কন'স ইন থেকে ব্যারিস্টার (১৯৯৯) এবং বাংলাদেশ সুপ্রিম
-                      কোর্টের একজন অ্যাডভোকেট (১৯৯৬) হিসেবে স্বীকৃতি লাভ করেন।
-                      তিনি বিশ্বখ্যাত হার্ভার্ড বিশ্ববিদ্যালয় থেকে LLM এবং
+                      লিঙ্কন&apos;স ইন থেকে ব্যারিস্টার (১৯৯৯) এবং বাংলাদেশ
+                      সুপ্রিম কোর্টের একজন অ্যাডভোকেট (১৯৯৬) হিসেবে স্বীকৃতি লাভ
+                      করেন। তিনি বিশ্বখ্যাত হার্ভার্ড বিশ্ববিদ্যালয় থেকে LLM এবং
                       অক্সফোর্ড বিশ্ববিদ্যালয় থেকে MSc in Taxation স্নাতকোত্তর
                       অর্জন করেন।
                     </p>
@@ -50,11 +50,11 @@ const Leadership2 = () => {
                   <>
                     <p>
                       Muhammad Naushad is an experienced lawyer by profession.
-                      He was admitted as a Barrister from Lincoln's Inn, London
-                      (1999) and an Advocate of the Supreme Court of Bangladesh
-                      (1996). He holds an LLM from the world-renowned Harvard
-                      University and an MSc in Taxation from the University of
-                      Oxford.
+                      He was admitted as a Barrister from Lincoln&apos;s Inn,
+                      London (1999) and an Advocate of the Supreme Court of
+                      Bangladesh (1996). He holds an LLM from the world-renowned
+                      Harvard University and an MSc in Taxation from the
+                      University of Oxford.
                     </p>
                     <p>
                       He has been directly involved in politics since 2001. In
