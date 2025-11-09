@@ -33,9 +33,15 @@ const OurConcern = () => {
                   : "Our Concern Issues"}
               </div>
               <h2 className="section-title">
+                {language === "bn" ? "উপযুক্ত সময়ে " : "At the right time"}
+              </h2>
+              <h2 className="section-title">
                 {language === "bn"
-                  ? "উপযুক্ত সময়ে উপযুক্ত কাজের জন্য উপযুক্ত নেতা"
-                  : "The right leader for the right job at the right time"}
+                  ? "উপযুক্ত কাজের জন্য "
+                  : "For the right job"}
+              </h2>
+              <h2 className="section-title">
+                {language === "bn" ? " উপযুক্ত নেতা" : "The right leader"}
               </h2>
               <p>
                 Parturient dis torquent nostra mattis congue ut sagittis nibh
@@ -43,7 +49,9 @@ const OurConcern = () => {
                 dictumst consectetur.
               </p>
               <Link href="#" className="custom-btn">
-                <span> Learn more</span>
+                <span>
+                  {language === "bn" ? "আরও প্রোগ্রাম" : "More Program"}
+                </span>
                 <span>
                   <GoArrowUpRight />
                 </span>

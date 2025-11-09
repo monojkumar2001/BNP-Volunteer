@@ -65,10 +65,13 @@ const WhoWeAre = () => {
             </div>
             <div className="col-lg-6">
               <div className="who-content">
+                <div className="subtitle">
+                  {language === "bn" ? "আমরা কারা" : "Who are we"}
+                </div>
                 <h2 className="section-title">
                   {language === "bn"
-                    ? "আমার দর্শন / কিভাবে দেশ গড়বো? / ভবিষ্যতের ভাবনা"
-                    : "My philosophy / How to build a country? / Thoughts on the future"}
+                    ? "যদি তুমি আরও ভালো ভবিষ্যৎ চাও, তাহলে আমাদের ভোট দাও।"
+                    : "Who we are If you want a better future, Vote for us."}
                 </h2>
                 <p>
                   {language === "bn"

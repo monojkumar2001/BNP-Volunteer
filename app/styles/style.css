@@ -167,11 +167,22 @@
   margin-bottom: 18px;
 }
 .lang-who-bn .who-content .section-title {
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: var(--bangla-font);
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
 }
 .lang-who-bn .who-content p {
-  font-family: "SolaimanLipi", sans-serif;
-  font-size: 24px;
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.lang-who-bn .custom-btn {
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  font-weight: 400;
 }
 .who-content p {
   color: #5f5f5f;
@@ -232,8 +243,32 @@
   border: 0;
 }
 .lang-leadership-bn .section-title {
-  font-family: "SolaimanLipi", sans-serif;
-  padding-bottom: 20px;
+  font-family: var(--bangla-font);
+  font-size: 50px;
+  line-height: 64px;
+  font-weight: 700;
+}
+.lang-leadership-bn .leadership-title h4 {
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.25px;
+}
+.lang-leadership-bn .who-content .subtitle {
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 64px;
+  margin-bottom: 0;
+  color: #838383;
+}
+.lang-leadership-bn .leadership-title h4 {
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0.25px;
 }
 .leadership-single {
   padding-top: 140px;
@@ -243,6 +278,11 @@
 }
 .leader-ship-single-content {
   margin-top: 70px;
+}
+.leader-ship-single-content ul {
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
 }
 .leader-ship-single-content h4 {
   font-size: 34px;
@@ -258,37 +298,53 @@
   padding-bottom: 20px;
 }
 .lang-leadership-bn .leader-ship-single-content p {
-  font-family: "SolaimanLipi", sans-serif;
-  font-size: 24px;
-  line-height: 28px;
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  color: var(--black-color);
+  padding-bottom: 30px;
 }
 .lang-leadership-bn .leader-ship-single-content h4 {
-  font-family: "SolaimanLipi", sans-serif;
-  margin-top: 30px;
+  font-family: var(--bangla-font);
+  margin-top: 60px;
   font-size: 40px;
   line-height: 44px;
+  padding-bottom: 40px;
+  font-weight: 700;
+}
+.lang-leadership-en .who-content ul {
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 24px;
 }
 .lang-leadership-en .who-content ul li {
   font-size: 20px;
   line-height: 35px;
   color: #5f5f5f;
-  padding-bottom: 15px;
 }
 .leader-ship-single-content ul li {
   font-size: 20px;
   line-height: 35px;
   color: #5f5f5f;
-  padding-bottom: 15px;
 }
 .lang-leadership-bn ul li {
-  font-family: "SolaimanLipi", sans-serif;
-  font-size: 24px;
-  line-height: 35px;
-  color: #5f5f5f;
-  padding-bottom: 20px;
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--black-color);
+}
+.lang-leadership-bn .who-content ul {
+  padding: 25px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-bottom: 24px;
 }
 .lang-leadership-bn .custom-btn {
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: var(--bangla-font);
   font-size: 20px;
 }
 .leadership-item-img {
@@ -298,18 +354,19 @@
   cursor: pointer;
 }
 .lang-leadership2-bn .who-content p {
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: var(--bangla-font);
   font-size: 24px;
   line-height: 35px;
 }
 .lang-leadership2-bn .who-content .custom-btn {
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: var(--bangla-font);
   font-size: 20px;
 }
-.lang-leadership2-bn .leadership2-single-content {
-  font-family: "SolaimanLipi", sans-serif;
-  font-size: 24px;
+.lang-leadership-bn .leadership2-single-content {
+  font-family: var(--bangla-font);
+  font-size: 20px;
   line-height: 35px;
+  font-weight: 400;
   padding-top: 50px;
 }
 .leadership-item-img img {
@@ -329,7 +386,7 @@
 .leadership-title h4 {
   font-size: 20px;
   font-weight: 300;
-  color: var(--black-color);
+  color: #838383;
 }
 .leadership-titles {
   letter-spacing: -3px;
@@ -355,18 +412,29 @@
   max-width: 414px;
 }
 .lang-concern-bn .subtitle {
-  font-family: "SolaimanLipi", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 0;
 }
 .lang-concern-bn .section-title {
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: var(--bangla-font);
 }
 .lang-concern-bn .concern-list-items li {
-  font-family: "SolaimanLipi", sans-serif;
-  font-size: 24px;
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  font-weight: 400;
   line-height: 35px;
+}
+.lang-concern-bn .concern-list-items li::before {
+  top: 0;
+}
+.lang-concern-bn .custom-btn {
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
 }
 .our-concern-item-img img {
   width: 100%;
@@ -508,8 +576,15 @@
   padding-bottom: 65px;
 }
 .lang-promise-bn .section-title {
-  font-family: "SolaimanLipi", sans-serif;
-  padding-top: 10px;
+  font-family: var(--bangla-font);
+  font-size: 50px;
+}
+.lang-promise-bn .leadership-title h4 {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--bangla-font);
+  line-height: 64px;
+  color: #838383;
 }
 .promise-tracker-content {
   display: flex;
@@ -539,6 +614,13 @@
   line-height: 120%;
 }
 
+.lang-promise-bn .promise-tracker-item p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+  font-family: var(--bangla-font);
+  color: #5f5f5f;
+}
 /* why choose me */
 .why-choose-me {
   margin-top: 80px;
@@ -575,14 +657,21 @@
   padding-bottom: 20px;
 }
 .lang-choose-bn .why-choose-me-content h4 {
-  font-family: "SolaimanLipi", sans-serif;
-  line-height: 60px;
+  font-family: var(--bangla-font);
+  line-height: 53px;
+  font-weight: 700;
   font-size: 40px;
 }
 .lang-choose-bn .lang-choose-content {
-  font-family: "SolaimanLipi", sans-serif;
-  font-size: 24px;
-  line-height: 32px;
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+}
+.lang-choose-bn .why-choose-me-content span {
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 700;
 }
 .why-choose-me-content p {
   font-size: 20px;
@@ -665,8 +754,18 @@
 .get-involved-img {
   overflow: hidden;
   width: 100%;
+  position: relative;
 }
-
+.get-involved-img::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
 .get-involved-img img {
   width: 100%;
   display: block;
@@ -730,15 +829,28 @@
   margin-bottom: 205px;
 }
 .lang-volunteer-bn .become-volunteer-content h2 {
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: var(--bangla-font);
   font-size: 40px;
   line-height: 60px;
+  font-weight: 700;
+  letter-spacing: -0.25px;
 }
 .lang-volunteer-bn .become-volunteer-content p {
-  font-family: "SolaimanLipi", sans-serif;
-  font-size: 24px;
+  font-family: var(--bangla-font);
+  font-size: 20px;
   line-height: 35px;
+  font-weight: 400;
   padding-bottom: 10px;
+}
+.lang-volunteer-bn .custom-btn {
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  font-weight: 500;
+}
+.lang-volunteer-bn .custom-btn-alt {
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  font-weight: 500;
 }
 .become-volunteer-content {
   background: var(--primary-color);
@@ -751,6 +863,11 @@
   color: var(--white-color);
   font-weight: 600;
   text-transform: uppercase;
+}
+.lang-volunteer-bn .become-volunteer-content .subtitle {
+  font-family: var(--bangla-font);
+  font-weight: 700;
+  line-height: 64px;
 }
 .become-volunteer-content h2 {
   font-size: 44px;
@@ -793,7 +910,9 @@
   margin-top: 24px;
 }
 .lang-news-bn .section-title {
-  font-family: "SolaimanLipi", sans-serif;
+  font-family: var(--bangla-font);
+  font-weight: 700;
+  letter-spacing: 0.25px;
 }
 .slider-btns {
   display: flex;
@@ -896,6 +1015,13 @@
   font-weight: 800;
   line-height: 64px;
   padding-bottom: 16px;
+  letter-spacing: 0.25px;
+}
+.lang-banner-bn .banner-content h1 {
+  font-family: var(--bangla-font);
+  font-size: 50px;
+  line-height: 64px;
+  font-weight: 700;
   letter-spacing: 0.25px;
 }
 .banner-content p {

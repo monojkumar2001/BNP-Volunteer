@@ -13,7 +13,7 @@ const ZamirUddinPage = () => {
   };
   return (
     <>
-      <Banner bannerData={bannerData} />
+      <Banner language={language} bannerData={bannerData} />
       <section
         className={`leadership leadership-single ${
           language === "bn" ? "lang-leadership-bn" : "lang-leadership-en"
@@ -50,20 +50,16 @@ const ZamirUddinPage = () => {
                   <li>
                     {language === "bn" ? (
                       <>
-                        <strong>
-                          বেসরকারী বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন
-                        </strong>{" "}
-                        – ফলশ্রুতিতে বর্তমানে দেশে ১১২ টি নিবন্ধিত বেসরকারী
-                        বিশ্ববিদ্যালয়ে ৩,৫৮,৪১৪ জন শিক্ষার্থী পড়াশুনা করছে
-                        (বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন, ২০২৩)
+                        বেসরকারী বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন – ফলশ্রুতিতে
+                        বর্তমানে দেশে ১১২ টি নিবন্ধিত বেসরকারী বিশ্ববিদ্যালয়ে
+                        ৩,৫৮,৪১৪ জন শিক্ষার্থী পড়াশুনা করছে (বাংলাদেশ
+                        বিশ্ববিদ্যালয় মঞ্জুরী কমিশন, ২০২৩)
                       </>
                     ) : (
                       <>
-                        <strong>
-                          Enacted the Private Universities Act 1992
-                        </strong>{" "}
-                        – as a result, currently 3,58,414 students are studying
-                        in 112 registered private universities in the country
+                        Enacted the Private Universities Act 1992 – as a result,
+                        currently 3,58,414 students are studying in 112
+                        registered private universities in the country
                         (Bangladesh University Grants Commission, 2023)
                       </>
                     )}
@@ -71,44 +67,37 @@ const ZamirUddinPage = () => {
                   <li>
                     {language === "bn" ? (
                       <>
-                        <strong>
-                          বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন
-                        </strong>{" "}
-                        - তালিকাভুক্ত শিক্ষার্থী সংখ্যার ভিত্তিতে এটি বিশ্বের ৮ম
+                        বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন -
+                        তালিকাভুক্ত শিক্ষার্থী সংখ্যার ভিত্তিতে এটি বিশ্বের ৮ম
                         বৃহত্তম বিশ্ববিদ্যালয় (উইকিপিডিয়া)। ২০২০ সালে বাউবির
                         সমস্ত আনুষ্ঠানিক প্রোগ্রামে মোট শিক্ষার্থীর সংখ্যা ছিল
                         ৯,৬৫,৮৩৮।
                       </>
                     ) : (
                       <>
-                        <strong>Bangladesh Open University Act 1992</strong> -
-                        It is the 8th largest university in the world based on
-                        the number of enrolled students (Wikipedia). In 2020,
-                        BAU had a total enrollment of 965,838 students in all
-                        formal programs.
+                        Bangladesh Open University Act 1992 - It is the 8th
+                        largest university in the world based on the number of
+                        enrolled students (Wikipedia). In 2020, BAU had a total
+                        enrollment of 965,838 students in all formal programs.
                       </>
                     )}
                   </li>
                   <li>
                     {language === "bn" ? (
                       <>
-                        <strong>
-                          জাতীয় বিশ্ববিদ্যালয় আইন, ১৯৯২ প্রণয়ন করেন
-                        </strong>{" "}
-                        – শিক্ষার্থীর সংখ্যা অনুযায়ী এটি বিশ্বের দ্বিতীয়
-                        বৃহত্তম বিশ্ববিদ্যালয়। অধিভুক্ত ২২৫৭ টি শিক্ষা
-                        প্রতিষ্ঠানে ৩৪,২৫,৮৩২ জন শিক্ষার্থী লেখাপড়া করছে (জাতীয়
+                        জাতীয় বিশ্ববিদ্যালয় আইন, ১৯৯২ প্রণয়ন করেন – শিক্ষার্থীর
+                        সংখ্যা অনুযায়ী এটি বিশ্বের দ্বিতীয় বৃহত্তম
+                        বিশ্ববিদ্যালয়। অধিভুক্ত ২২৫৭ টি শিক্ষা প্রতিষ্ঠানে
+                        ৩৪,২৫,৮৩২ জন শিক্ষার্থী লেখাপড়া করছে (জাতীয়
                         বিশ্ববিদ্যালয় ওয়েবসাইট)।
                       </>
                     ) : (
                       <>
-                        <strong>
-                          Enacted the National University Act, 1992
-                        </strong>{" "}
-                        – It is the second largest university in the world in
-                        terms of student population. 34,25,832 students are
-                        studying in 2,257 affiliated educational institutions
-                        (National University website).
+                        Enacted the National University Act, 1992 – It is the
+                        second largest university in the world in terms of
+                        student population. 34,25,832 students are studying in
+                        2,257 affiliated educational institutions (National
+                        University website).
                       </>
                     )}
                   </li>
@@ -121,43 +110,34 @@ const ZamirUddinPage = () => {
               <li>
                 {language === "bn" ? (
                   <>
-                    <strong>
-                      খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (KUET)
-                    </strong>{" "}
-                    - ২০০৩ সালে বিআইটি খুলনাকে পরিপূর্ণ গবেষণাধর্মী
-                    বিশ্ববিদ্যালয়ে পরিণত করেন। এখানে প্রায় আট হাজার জন
-                    ছাত্রছাত্রী স্নাতক ও স্নাতকোত্তর প্রকৌশল ও প্রযুক্তি নিয়ে
-                    পড়াশোনা করছে।
+                    খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (KUET) - ২০০৩ সালে
+                    বিআইটি খুলনাকে পরিপূর্ণ গবেষণাধর্মী বিশ্ববিদ্যালয়ে পরিণত
+                    করেন। এখানে প্রায় আট হাজার জন ছাত্রছাত্রী স্নাতক ও
+                    স্নাতকোত্তর প্রকৌশল ও প্রযুক্তি নিয়ে পড়াশোনা করছে।
                   </>
                 ) : (
                   <>
-                    <strong>
-                      Khulna University of Engineering and Technology (KUET)
-                    </strong>{" "}
-                    - In 2003, BIT transformed Khulna into a full-fledged
-                    research university. Around eight thousand students are
-                    studying undergraduate and postgraduate engineering and
-                    technology here.
+                    Khulna University of Engineering and Technology (KUET) - In
+                    2003, BIT transformed Khulna into a full-fledged research
+                    university. Around eight thousand students are studying
+                    undergraduate and postgraduate engineering and technology
+                    here.
                   </>
                 )}
               </li>
               <li>
                 {language === "bn" ? (
                   <>
-                    <strong>বাংলাদেশ জাতীয় সংসদ ভবন উদ্বোধন</strong> - ১৯৭৯ তিনি
-                    গণপূর্ত ও নগর উন্নয়ন মন্ত্রণালয়ের দায়িত্বভার নেয়ার পর
-                    পূর্ণাঙ্গ সংসদ অধিবেশন পরিচালনার উপযুক্ত হয়। সেসময়
-                    বিশ্বখ্যাত স্থপতি লুই কানের ডিজাইন করা সংসদ ভবন কমপ্লেক্সের
-                    ৭০-৮০ ভাগ কাজই অসমাপ্ত ছিল। তিনি এর সংরক্ষিত নকশা ও অঙ্কন
-                    সংগ্রহ করেন। ফলে সংসদ ভবন “ব্যবহারযোগ্য” থেকে “রাষ্ট্রের
-                    গণতান্ত্রিক কেন্দ্র” হয়ে ওঠে।
+                    বাংলাদেশ জাতীয় সংসদ ভবন উদ্বোধন - ১৯৭৯ তিনি গণপূর্ত ও নগর
+                    উন্নয়ন মন্ত্রণালয়ের দায়িত্বভার নেয়ার পর পূর্ণাঙ্গ সংসদ
+                    অধিবেশন পরিচালনার উপযুক্ত হয়। সেসময় বিশ্বখ্যাত স্থপতি লুই
+                    কানের ডিজাইন করা সংসদ ভবন কমপ্লেক্সের ৭০-৮০ ভাগ কাজই অসমাপ্ত
+                    ছিল। তিনি এর সংরক্ষিত নকশা ও অঙ্কন সংগ্রহ করেন। ফলে সংসদ ভবন
+                    “ব্যবহারযোগ্য” থেকে “রাষ্ট্রের গণতান্ত্রিক কেন্দ্র” হয়ে ওঠে।
                   </>
                 ) : (
                   <>
-                    <strong>
-                      Inauguration of the Bangladesh National Parliament
-                      Building
-                    </strong>{" "}
+                    Inauguration of the Bangladesh National Parliament Building
                     - 1979 After he took charge of the Ministry of Public Works
                     and Urban Development, he was able to conduct a full
                     parliamentary session. At that time, 70-80 percent of the
@@ -172,26 +152,21 @@ const ZamirUddinPage = () => {
               <li>
                 {language === "bn" ? (
                   <>
-                    <strong>
-                      জিয়া আন্তর্জাতিক বিমানবন্দর (বর্তমানে হযরত শাহজালাল
-                      আন্তর্জাতিক বিমানবন্দর) নির্মাণ
-                    </strong>{" "}
-                    - ১৯৭৯ সালে গণপূর্ত ও নগর উন্নয়ন প্রতিমন্ত্রী হিসেবে তিনি
-                    ঢাকার নতুন আন্তর্জাতিক বিমানবন্দর নির্মাণ কাজের দায়িত্ব নেন।
-                    প্রথমবারের মতো বাংলাদেশে একটি পূর্ণাঙ্গ আন্তর্জাতিক
-                    বিমানবন্দর গড়ে তোলেন তিনি।
+                    জিয়া আন্তর্জাতিক বিমানবন্দর (বর্তমানে হযরত শাহজালাল
+                    আন্তর্জাতিক বিমানবন্দর) নির্মাণ - ১৯৭৯ সালে গণপূর্ত ও নগর
+                    উন্নয়ন প্রতিমন্ত্রী হিসেবে তিনি ঢাকার নতুন আন্তর্জাতিক
+                    বিমানবন্দর নির্মাণ কাজের দায়িত্ব নেন। প্রথমবারের মতো
+                    বাংলাদেশে একটি পূর্ণাঙ্গ আন্তর্জাতিক বিমানবন্দর গড়ে তোলেন
+                    তিনি।
                   </>
                 ) : (
                   <>
-                    <strong>
-                      Construction of Zia International Airport (now Hazrat
-                      Shahjalal International Airport)
-                    </strong>{" "}
-                    - As the State Minister for Public Works and Urban
-                    Development in 1979, he took charge of the construction of
-                    Dhaka&apos;s new international airport. He built a
-                    full-fledged international airport for the first time in
-                    Bangladesh.
+                    Construction of Zia International Airport (now Hazrat
+                    Shahjalal International Airport) - As the State Minister for
+                    Public Works and Urban Development in 1979, he took charge
+                    of the construction of Dhaka&apos;s new international
+                    airport. He built a full-fledged international airport for
+                    the first time in Bangladesh.
                   </>
                 )}
               </li>

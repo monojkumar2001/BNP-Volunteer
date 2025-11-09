@@ -44,7 +44,67 @@ const GetInvolved = () => {
               <div className="get-involved-card">
                 <div className="get-involved-img">
                   <Image
-                    src={"/assets/images/get-involved.png"}
+                    src={"/assets/images/event/1.png"}
+                    width={414}
+                    alt="event"
+                    height={575}
+                  />
+                </div>
+                <div className="get-involved-date">
+                  <Image
+                    src={"/assets/images/icon/date.svg"}
+                    width={24}
+                    height={24}
+                  />
+                  <span>30 May 2025</span>
+                </div>
+                <div className="get-involved-card-content">
+                  <p>Tetulia, Panchagarh</p>
+                  <h3>Human Rights Conference</h3>
+                  <Link href="#" className="custom-btn">
+                    <span> Get Involved</span>
+                    <span>
+                      <GoArrowUpRight />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="get-involved-card">
+                <div className="get-involved-img">
+                  <Image
+                    src={"/assets/images/event/2.png"}
+                    width={414}
+                    height={575}
+                    alt="event"
+                  />
+                </div>
+                <div className="get-involved-date">
+                  <Image
+                    src={"/assets/images/icon/date.svg"}
+                    width={24}
+                    height={24}
+                  />
+                  <span>30 May 2025</span>
+                </div>
+                <div className="get-involved-card-content">
+                  <p>Tetulia, Panchagarh</p>
+                  <h3>Human Rights Conference</h3>
+                  <Link href="#" className="custom-btn">
+                    <span> Get Involved</span>
+                    <span>
+                      <GoArrowUpRight />
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="get-involved-card">
+                <div className="get-involved-img">
+                  <Image
+                    src={"/assets/images/event/3.png"}
                     width={414}
                     height={575}
                   />
@@ -73,7 +133,7 @@ const GetInvolved = () => {
               <div className="get-involved-card">
                 <div className="get-involved-img">
                   <Image
-                    src={"/assets/images/get-involved.png"}
+                    src={"/assets/images/event/4.png"}
                     width={414}
                     height={575}
                   />
@@ -102,7 +162,7 @@ const GetInvolved = () => {
               <div className="get-involved-card">
                 <div className="get-involved-img">
                   <Image
-                    src={"/assets/images/get-involved.png"}
+                    src={"/assets/images/event/5.png"}
                     width={414}
                     height={575}
                   />
@@ -131,65 +191,7 @@ const GetInvolved = () => {
               <div className="get-involved-card">
                 <div className="get-involved-img">
                   <Image
-                    src={"/assets/images/get-involved.png"}
-                    width={414}
-                    height={575}
-                  />
-                </div>
-                <div className="get-involved-date">
-                  <Image
-                    src={"/assets/images/icon/date.svg"}
-                    width={24}
-                    height={24}
-                  />
-                  <span>30 May 2025</span>
-                </div>
-                <div className="get-involved-card-content">
-                  <p>Tetulia, Panchagarh</p>
-                  <h3>Human Rights Conference</h3>
-                  <Link href="#" className="custom-btn">
-                    <span> Get Involved</span>
-                    <span>
-                      <GoArrowUpRight />
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="get-involved-card">
-                <div className="get-involved-img">
-                  <Image
-                    src={"/assets/images/get-involved.png"}
-                    width={414}
-                    height={575}
-                  />
-                </div>
-                <div className="get-involved-date">
-                  <Image
-                    src={"/assets/images/icon/date.svg"}
-                    width={24}
-                    height={24}
-                  />
-                  <span>30 May 2025</span>
-                </div>
-                <div className="get-involved-card-content">
-                  <p>Tetulia, Panchagarh</p>
-                  <h3>Human Rights Conference</h3>
-                  <Link href="#" className="custom-btn">
-                    <span> Get Involved</span>
-                    <span>
-                      <GoArrowUpRight />
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="get-involved-card">
-                <div className="get-involved-img">
-                  <Image
-                    src={"/assets/images/get-involved.png"}
+                    src={"/assets/images/event/6.png"}
                     width={414}
                     height={575}
                   />

@@ -397,7 +397,8 @@
   }
   .lang-leadership-bn .leader-ship-single-content h4 {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 40px;
+    padding-bottom: 20px;
   }
   .lang-leadership2-bn .leadership2-single-content {
     padding-top: 20px;
@@ -408,6 +409,21 @@
   }
   .leadership-titles {
     letter-spacing: 0px;
+  }
+  .lang-who-bn .who-content .section-title {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .lang-leadership-bn .section-title {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .lang-promise-bn .section-title {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  .lang-choose-bn .why-choose-me-content h4 {
+    font-size: 35px;
   }
 }
 @media (max-width: 576px) {
@@ -423,8 +439,27 @@
     padding-bottom: 20px;
   }
   .lang-hero-bn .hero-form-content h2 {
-    font-size: 29px;
+    font-size: 22px;
     line-height: 39px;
+  }
+  .lang-hero-bn .custom-btn {
+    font-size: 18px;
+  }
+  .lang-who-bn .who-content .section-title {
+    font-size: 27px;
+    line-height: 40px;
+  }
+  .lang-choose-bn .why-choose-me-content h4 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .lang-leadership-bn .section-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .lang-leadership-bn .who-content ul {
+    gap: 25px;
+    padding: 15px 0 10px 0;
   }
   .play-btn img {
     width: 60px;
@@ -583,6 +618,12 @@
     font-size: 35px;
     padding-bottom: 10px;
   }
+  .lang-banner-bn .banner-content h1 {
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0px;
+  }
+
   .my-promises-wrapper {
     min-height: 390px;
   }

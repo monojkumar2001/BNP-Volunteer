@@ -23,7 +23,7 @@ const Leadership = () => {
               : "A Legacy of Leadership"}
           </h4>
           <h1 className="section-title leadership-titles">
-            {language === "bn" ? "আশার একটি ভবিষ্যত" : " A Future of Hope"}
+            {language === "bn" ? "আশার ভবিষ্যৎ" : " A Future of Hope"}
           </h1>
         </div>
         <div className="row align-items-center">
@@ -54,59 +54,54 @@ const Leadership = () => {
                 <li>
                   {language === "bn" ? (
                     <>
-                      <strong>
-                        বেসরকারী বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন
-                      </strong>{" "}
-                      – ফলশ্রুতিতে বর্তমানে দেশে ১১২ টি নিবন্ধিত বেসরকারী
-                      বিশ্ববিদ্যালয়ে ৩,৫৮,৪১৪ জন শিক্ষার্থী পড়াশুনা করছে
-                      (বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন, ২০২৩)
+                      বেসরকারী বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন – ফলশ্রুতিতে
+                      বর্তমানে দেশে ১১২ টি নিবন্ধিত বেসরকারী বিশ্ববিদ্যালয়ে
+                      ৩,৫৮,৪১৪ জন শিক্ষার্থী পড়াশুনা করছে (বাংলাদেশ
+                      বিশ্ববিদ্যালয় মঞ্জুরী কমিশন, ২০২৩)
                     </>
                   ) : (
                     <>
-                      <strong>Enacted the Private Universities Act 1992</strong>{" "}
-                      – as a result, currently 3,58,414 students are studying in
-                      112 registered private universities in the country
-                      (Bangladesh University Grants Commission, 2023)
+                      Enacted the Private Universities Act 1992 – as a result,
+                      currently 3,58,414 students are studying in 112 registered
+                      private universities in the country (Bangladesh University
+                      Grants Commission, 2023)
                     </>
                   )}
                 </li>
                 <li>
                   {language === "bn" ? (
                     <>
-                      <strong>
-                        বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন
-                      </strong>{" "}
-                      - তালিকাভুক্ত শিক্ষার্থী সংখ্যার ভিত্তিতে এটি বিশ্বের ৮ম
+                      বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন -
+                      তালিকাভুক্ত শিক্ষার্থী সংখ্যার ভিত্তিতে এটি বিশ্বের ৮ম
                       বৃহত্তম বিশ্ববিদ্যালয় (উইকিপিডিয়া)। ২০২০ সালে বাউবির
                       সমস্ত আনুষ্ঠানিক প্রোগ্রামে মোট শিক্ষার্থীর সংখ্যা ছিল
                       ৯,৬৫,৮৩৮।
                     </>
                   ) : (
                     <>
-                      <strong>Bangladesh Open University Act 1992</strong> - It
-                      is the 8th largest university in the world based on the
-                      number of enrolled students (Wikipedia). In 2020, BAU had
-                      a total enrollment of 965,838 students in all formal
-                      programs.
+                      Bangladesh Open University Act 1992 - It is the 8th
+                      largest university in the world based on the number of
+                      enrolled students (Wikipedia). In 2020, BAU had a total
+                      enrollment of 965,838 students in all formal programs.
                     </>
                   )}
                 </li>
                 <li>
                   {language === "bn" ? (
                     <>
-                      <strong>জাতীয় বিশ্ববিদ্যালয় আইন, ১৯৯২ প্রণয়ন করেন</strong>{" "}
-                      – শিক্ষার্থীর সংখ্যা অনুযায়ী এটি বিশ্বের দ্বিতীয় বৃহত্তম
+                      জাতীয় বিশ্ববিদ্যালয় আইন, ১৯৯২ প্রণয়ন করেন – শিক্ষার্থীর
+                      সংখ্যা অনুযায়ী এটি বিশ্বের দ্বিতীয় বৃহত্তম
                       বিশ্ববিদ্যালয়। অধিভুক্ত ২২৫৭ টি শিক্ষা প্রতিষ্ঠানে
                       ৩৪,২৫,৮৩২ জন শিক্ষার্থী লেখাপড়া করছে (জাতীয় বিশ্ববিদ্যালয়
                       ওয়েবসাইট)।
                     </>
                   ) : (
                     <>
-                      <strong>Enacted the National University Act, 1992</strong>{" "}
-                      – It is the second largest university in the world in
-                      terms of student population. 34,25,832 students are
-                      studying in 2,257 affiliated educational institutions
-                      (National University website).
+                      Enacted the National University Act, 1992 – It is the
+                      second largest university in the world in terms of student
+                      population. 34,25,832 students are studying in 2,257
+                      affiliated educational institutions (National University
+                      website).
                     </>
                   )}
                 </li>

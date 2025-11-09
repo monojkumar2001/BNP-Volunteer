@@ -17,31 +17,31 @@ const LatestNews = () => {
   const newsItems = [
     {
       id: 1,
-      img: "/assets/images/new.png",
+      img: "/assets/images/news/1.png",
       title: "Parturient dis torquent nostra mattis congue",
       date: "April 20, 2024",
     },
     {
       id: 2,
-      img: "/assets/images/new.png",
+      img: "/assets/images/news/2.png",
       title: "Euismod vulputate sit amet sapien dictum",
       date: "May 10, 2024",
     },
     {
       id: 3,
-      img: "/assets/images/new.png",
+      img: "/assets/images/news/3.png",
       title: "Consectetur adipiscing elit sed do eiusmod",
       date: "June 5, 2024",
     },
     {
       id: 4,
-      img: "/assets/images/new.png",
+      img: "/assets/images/news/4.png",
       title: "Felis donec et odio pellentesque diam volutpat",
       date: "July 15, 2024",
     },
     {
       id: 5,
-      img: "/assets/images/new.png",
+      img: "/assets/images/news/2.png",
       title: "Mauris in aliquam sem fringilla ut morbi",
       date: "August 2, 2024",
     },

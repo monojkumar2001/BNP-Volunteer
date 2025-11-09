@@ -1,9 +1,11 @@
 import React from "react";
 
-const Banner = ({ bannerData }) => {
+const Banner = ({ bannerData, language }) => {
   return (
     <section
-      className="banner"
+      className={`banner  ${
+        language === "bn" ? "lang-banner-bn" : "lang-banner-en"
+      }`}
       style={{
         backgroundImage: `url(${bannerData.img})`,
         backgroundSize: "cover",
