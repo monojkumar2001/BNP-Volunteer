@@ -6,7 +6,11 @@ import { MdOutlineMailOutline } from "react-icons/md";
 
 const ContactUs = () => {
   return (
-    <section className="contact-use">
+    <section
+      className="contact-use"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
