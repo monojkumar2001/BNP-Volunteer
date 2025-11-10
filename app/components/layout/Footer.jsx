@@ -6,18 +6,24 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Image from "next/image";
 import { useLanguage } from "../../../context/languageContext";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const pathname = usePathname();
+
+  const isContactPage = pathname === "/contact-us";
   const { language } = useLanguage();
   return (
     <footer className="footer" id="contact">
       <div className="container">
         <div className="footer-wrapper">
-          <div className="footer-content">
-            <h2> {language === "bn" ? "যোগাযোগ করুন" : "Contact US"}</h2>
-            <p>Head Office:</p>
-            <p>Dhaka: Level 3, House 5, Dhanmandi 1212</p>
-          </div>
+          {!isContactPage && (
+            <div className="footer-content">
+              <h2> {language === "bn" ? "যোগাযোগ করুন" : "Contact US"}</h2>
+              <p>Head Office:</p>
+              <p>Dhaka: Level 3, House 5, Dhanmandi 1212</p>
+            </div>
+          )}
           <div className="footer-social-media">
             <ul>
               <li>

@@ -1,5 +1,8 @@
 import React from "react";
+import { GoArrowUpRight } from "react-icons/go";
 import { GrLocation } from "react-icons/gr";
+import { FiPhone } from "react-icons/fi";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 const ContactUs = () => {
   return (
@@ -27,20 +30,20 @@ const ContactUs = () => {
                 </li>
                 <li>
                   <div className="contact-icon">
-                    <GrLocation />
+                    <FiPhone />
                   </div>
                   <div className="contact-list-text">
-                    <h4>Location</h4>
-                    <p>Dhaka: Level 3, House 5, Dhanmandi 1212</p>
+                    <h4>Phone Number</h4>
+                    <a href="tel:+880170000000">+880170000000</a>
                   </div>
                 </li>
                 <li>
                   <div className="contact-icon">
-                    <GrLocation />
+                    <MdOutlineMailOutline />
                   </div>
                   <div className="contact-list-text">
-                    <h4>Location</h4>
-                    <p>Dhaka: Level 3, House 5, Dhanmandi 1212</p>
+                    <h4>Email Address</h4>
+                    <a href="mailto:info@gmail.com">info@gmail.com</a>
                   </div>
                 </li>
               </ul>
@@ -105,12 +108,14 @@ const ContactUs = () => {
                       ></textarea>
                     </div>
                   </div>
-                  <button type="submit" className="custom-btn">
-                    <span>Send Message</span>
-                    <span>
-                      <GoArrowUpRight />
-                    </span>
-                  </button>
+                  <div className="contact-us-btn">
+                    <button type="submit" className="custom-btn">
+                      <span>Send Message</span>
+                      <span>
+                        <GoArrowUpRight />
+                      </span>
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>

@@ -29,17 +29,23 @@ const Header = () => {
       { href: "/about", label: "আমার সম্পর্কে" },
       { href: "/events", label: "ইভেন্ট" },
       { href: "/gallery", label: "মিডিয়া" },
+      { href: "/contact-us ", label: "যোগাযোগ" },
     ],
     en: [
       { href: "/", label: "Home" },
       { href: "/about", label: "About Us" },
       { href: "/events", label: "Event" },
       { href: "/gallery", label: "Media" },
+      { href: "/contact-us ", label: "Contact" },
     ],
   };
 
   return (
-    <header className={`header-section`}>
+    <header
+      className={`header-section ${
+        language === "bn" ? "lang-header-bn" : "lang-header-en"
+      }`}
+    >
       <div className="container">
         <div className="header-nav">
           {/* Logo */}
@@ -82,7 +88,7 @@ const Header = () => {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={pathname === link.href ? "active" : ""}
+                    className={pathname === link.href.trim() ? "active" : ""}
                     onClick={() => setMenuOpen(false)}
                   >
                     {link.label}

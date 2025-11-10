@@ -36,27 +36,18 @@ export const metadata = {
     images: ["/assets/images/meta-img.jpg"], // same image works for Twitter
   },
 };
-const GalleryPage = () => {
+const ContactUsPage = () => {
   const bannerData = {
-    title: "Gallery",
+    title: "Contact Us",
     des: "Leadership, Experience, and values mean something",
-    img: "/assets/images/gallery.png",
+    img: "/assets/images/contact.png",
   };
   return (
     <>
       <Banner bannerData={bannerData} />
       <ContactUs />
-      <div className="gallery-campaign">
-        <ElectionCampaign />
-      </div>
-      <div className="gallery-concern">
-        <OurConcern />
-      </div>
-      <div className="gallery-become-volunteer">
-        <BecomeVolunteer />
-      </div>
     </>
   );
 };
 
-export default GalleryPage;
+export default ContactUsPage;

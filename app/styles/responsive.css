@@ -185,6 +185,12 @@
     font-size: 48px;
     line-height: 60px;
   }
+  section.contact-use {
+    padding-top: 60px;
+  }
+  .contact-us-right {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -439,7 +445,7 @@
     padding-bottom: 20px;
   }
   .lang-hero-bn .hero-form-content h2 {
-    font-size: 22px;
+    font-size: 21px;
     line-height: 39px;
   }
   .lang-hero-bn .custom-btn {
@@ -661,6 +667,28 @@
   .gallery-concern .our-concern {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .contact-list-text h4 {
+    font-size: 22px;
+  }
+  .contact-list-text p {
+    font-size: 17px;
+  }
+  .contact-list-text a {
+    font-size: 17px;
+  }
+  ul.contact-us-info {
+    gap: 25px;
+    padding-top: 30px;
+  }
+  .contact-us-right {
+    margin-top: 50px;
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+  span.logo-name.logo-bn {
+    font-size: 28px;
+    line-height: 40px;
   }
 }
 @media (max-width: 360px) {
