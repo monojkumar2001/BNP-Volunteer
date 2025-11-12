@@ -1,10 +1,72 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import toast from "react-hot-toast";
 import { useLanguage } from "../../../context/languageContext";
 const HeroSection = () => {
   const { language } = useLanguage();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  // Handle input change
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  // Handle form submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/volunteer`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await res.json();
+
+      if (res.ok) {
+        toast.success(
+          language === "bn" ? "সফলভাবে জমা হয়েছে!" : "Submitted successfully!",
+          {
+            duration: 4000, // 4 seconds
+            position: "top-right", // screen এর right side
+          }
+        );
+        setFormData({ name: "", phone: "" });
+      } else {
+        toast.error(
+          data.message ||
+            (language === "bn" ? "কিছু ভুল হয়েছে!" : "Something went wrong!"),
+          {
+            duration: 4000,
+            position: "top-right",
+          }
+        );
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error(
+        language === "bn" ? "সার্ভারে সমস্যা হচ্ছে!" : "Server error!"
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <section
       className={`hero-section ${
@@ -30,7 +92,7 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="hero-form">
-              <form action="">
+              <form onSubmit={handleSubmit}>
                 <div className="hero-form-content">
                   <h2>
                     {language === "bn"
@@ -46,6 +108,10 @@ const HeroSection = () => {
                 <div className="hero-form-input-wrap">
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    required
+                    onChange={handleChange}
                     placeholder={
                       language === "bn"
                         ? "আপনার পুরো/সম্পূর্ণ নাম"
@@ -54,6 +120,10 @@ const HeroSection = () => {
                   />
                   <input
                     type="text"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
                     placeholder={
                       language === "bn" ? "ফোন নম্বর" : "Phone Number"
                     }
@@ -65,6 +135,9 @@ const HeroSection = () => {
                     </span>
                   </button>
                 </div>
+                {message && (
+                  <p style={{ marginTop: "10px", color: "#fff" }}>{message}</p>
+                )}
               </form>
             </div>
           </div>
@@ -72,8 +145,8 @@ const HeroSection = () => {
             <Image
               src="/assets/images/hero-img.png"
               alt="Hero Image"
-              width={570}
-              height={730}
+              width={542}
+              height={769}
             />
           </div>
         </div>

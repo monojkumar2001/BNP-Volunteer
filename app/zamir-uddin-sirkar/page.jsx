@@ -42,7 +42,7 @@ const ZamirUddinPage = () => {
                 </div>
                 <h2 className="section-title">
                   {language === "bn"
-                    ? "জামীর উদ্দিন সরকার"
+                    ? "জমিরউদ্দিন সরকার"
                     : " Zamir Uddin Sirker"}
                 </h2>
 

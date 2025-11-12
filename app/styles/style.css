@@ -16,6 +16,7 @@
   gap: 82px;
   color: var(--white-color);
   padding-top: 130px;
+  max-width: 800px;
 }
 .lang-hero-bn .hero-content {
   padding-top: 140px;
@@ -84,7 +85,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 560px;
+  width: 530px;
 }
 .hero-right-img img {
   width: 100%;
@@ -126,7 +127,7 @@
 /* WHo WE ARE */
 
 .who-section {
-  padding: 117px 0 140px 0;
+  padding: 117px 0 197px 0;
 }
 
 .who-image-wrapper {
@@ -392,15 +393,16 @@
   letter-spacing: -3px;
 }
 .leadership-2 {
-  padding-top: 140px;
+  padding-top: 197px;
 }
 .our-concern {
-  padding-top: 248px;
-  padding-bottom: 127px;
+  padding-top: 197px;
+  padding-bottom: 197px;
 }
 .our-concern-wrapper {
-  display: flex;
+  display: grid;
   gap: 69px;
+  grid-template-columns: 415px 1fr;
   align-items: center;
 }
 .our-concern-list {
@@ -623,7 +625,7 @@
 }
 /* why choose me */
 .why-choose-me {
-  margin-top: 80px;
+  /* margin-top: 80px; */
   background: url("../../public/assets/images/why.png") no-repeat center
     center/cover;
 }
@@ -714,7 +716,7 @@
   color: var(--white-color);
 }
 .get-involed-live {
-  padding-top: 182px;
+  padding-top: 197px;
 }
 .get-involved-title .section-title {
   font-size: 48px;
@@ -825,8 +827,8 @@
 /* Become volunteer */
 
 .become-volunteer {
-  margin-top: 215px;
-  margin-bottom: 205px;
+  margin-top: 177px;
+  margin-bottom: 197px;
 }
 .lang-volunteer-bn .become-volunteer-content h2 {
   font-family: var(--bangla-font);

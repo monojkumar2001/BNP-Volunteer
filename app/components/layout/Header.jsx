@@ -61,7 +61,7 @@ const Header = () => {
                 language === "bn" ? "logo-bn" : "logo-en"
               }`}
             >
-              {language === "bn" ? "নওশাদ জামির" : "Nawshad Zamir"}
+              {language === "bn" ? "নওশাদ জমির" : "Nawshad Zamir"}
             </span>
           </Link>
 

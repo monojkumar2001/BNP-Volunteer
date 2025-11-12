@@ -50,9 +50,9 @@ export default function Home({ language }) {
       <Leadership1 />
       <Leadership2 />
       <OurConcern />
-      <ElectionCampaign />
+      {/* <ElectionCampaign />
       <ElectionCard />
-      <PromiseTracker />
+      <PromiseTracker /> */}
       <WhyChooseUs />
       <GetInvolved />
       <BecomeVolunteer />
