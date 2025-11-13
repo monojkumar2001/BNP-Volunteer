@@ -1,10 +1,81 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { GrLocation } from "react-icons/gr";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineMailOutline } from "react-icons/md";
-
+import toast from "react-hot-toast";
+import { useLanguage } from "../../../context/languageContext";
 const ContactUs = () => {
+  const { language } = useLanguage();
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  // Handle input change
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/contact`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const data = await res.json();
+
+      if (res.ok) {
+        toast.success(
+          language === "bn" ? "সফলভাবে জমা হয়েছে!" : "Submitted successfully!",
+          {
+            duration: 4000, // 4 seconds
+            position: "top-right", // screen এর right side
+          }
+        );
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      } else {
+        toast.error(
+          data.message ||
+            (language === "bn" ? "কিছু ভুল হয়েছে!" : "Something went wrong!"),
+          {
+            duration: 4000,
+            position: "top-right",
+          }
+        );
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error(
+        language === "bn" ? "সার্ভারে সমস্যা হচ্ছে!" : "Server error!"
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <section
       className="contact-use"
@@ -55,13 +126,15 @@ const ContactUs = () => {
           </div>
           <div className="col-lg-6">
             <div className="contact-us-right">
-              <form action="#" className="contact-us-form">
+              <form onSubmit={handleSubmit} className="contact-us-form">
                 <div className="row">
                   <div className="col-lg-6">
                     <div className="form-group-item">
                       <label htmlFor="name">Your Name</label>
                       <input
                         type="text"
+                        value={formData.name}
+                        onChange={handleChange}
                         name="name"
                         id="name"
                         placeholder="Enter your name"
@@ -73,6 +146,8 @@ const ContactUs = () => {
                       <label htmlFor="email">Your E-mail</label>
                       <input
                         type="email"
+                        value={formData.email}
+                        onChange={handleChange}
                         name="email"
                         id="email"
                         placeholder="Enter your email"
@@ -84,6 +159,8 @@ const ContactUs = () => {
                       <label htmlFor="phone">Phone Number</label>
                       <input
                         type="number"
+                        value={formData.phone}
+                        onChange={handleChange}
                         name="phone"
                         id="phone"
                         placeholder="+8801XXXXXXXXX"
@@ -95,6 +172,8 @@ const ContactUs = () => {
                       <label htmlFor="subject">Subject</label>
                       <input
                         type="text"
+                        value={formData.subject}
+                        onChange={handleChange}
                         name="subject"
                         id="subject"
                         placeholder="Enter your subject"
@@ -106,6 +185,8 @@ const ContactUs = () => {
                       <label htmlFor="message">Message</label>
                       <textarea
                         name="message"
+                        value={formData.message}
+                        onChange={handleChange}
                         id="message"
                         cols="30"
                         rows="4"
