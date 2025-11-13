@@ -5,6 +5,7 @@ import { useLanguage } from "../../context/languageContext";
 import Image from "next/image";
 import Link from "next/link";
 import { GoArrowUpRight } from "react-icons/go";
+import { IoMdClose } from "react-icons/io";
 
 const NawshadZamirPage = () => {
   const { language } = useLanguage();
