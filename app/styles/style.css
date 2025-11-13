@@ -1181,7 +1181,7 @@
 }
 /* gallery section */
 .gallery-section {
-  padding-bottom: 136px;
+  padding-bottom: 197px;
   position: relative;
 }
 .gallery-header ul {
@@ -1234,8 +1234,8 @@
   min-height: 792px;
 }
 .gallery-concern .our-concern {
-  padding-top: 136px;
-  padding-bottom: 111px;
+  padding-top: 0;
+  padding-bottom: 197px;
 }
 .gallery-become-volunteer .become-volunteer {
   margin-top: 0;

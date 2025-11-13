@@ -48,8 +48,8 @@ const AboutPage = () => {
       <AboutSection />
       <WorkSection />
       <OurConcern />
-      <MyPromises />
-      <MyPromisesCard />
+      {/* <MyPromises /> */}
+      {/* <MyPromisesCard /> */}
       <div className="about-become-volunteer">
         <BecomeVolunteer />
       </div>

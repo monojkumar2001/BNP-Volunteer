@@ -46,9 +46,9 @@ const GalleryPage = () => {
       <Banner bannerData={bannerData} />
       <GalleryVideo />
       <GallerySection />
-      <div className="gallery-campaign">
+      {/* <div className="gallery-campaign">
         <ElectionCampaign />
-      </div>
+      </div> */}
       <div className="gallery-concern">
         <OurConcern />
       </div>
