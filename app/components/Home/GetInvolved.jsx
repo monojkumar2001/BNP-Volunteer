@@ -1,12 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { useLanguage } from "../../../context/languageContext";
 
 const GetInvolved = () => {
+  const { language } = useLanguage();
   return (
     <section
-      className="get-involed-live"
+      className={`get-involed-live ${
+        language === "bn" ? "lang-involed-bn" : "lang-involed-en"
+      }`}
       data-aos="fade-up"
       data-aos-duration="3000"
     >
@@ -16,7 +21,16 @@ const GetInvolved = () => {
             <div className="col-md-6">
               <div className="get-involved-title">
                 <h1 className="section-title">
-                  We will Make this country a better place to live
+                  {language === "bn" ? (
+                    <>
+                      মানুষের তরে, মানুষের মাঝে <br /> ঘরে ঘরে, জনে জনে
+                    </>
+                  ) : (
+                    <>
+                      Among people, among people, <br /> from house to house,
+                      one by one
+                    </>
+                  )}
                 </h1>
                 <div className="bar-item"></div>
               </div>
@@ -24,9 +38,18 @@ const GetInvolved = () => {
             <div className="col-md-6">
               <div className="get-involved-content">
                 <p>
-                  Parturient dis torquent nostra mattis congue ut sagittis nibh
-                  luctus viverra. Enim convallis tristique magna torquent
-                  egestas dictumst consectetur.
+                  {language === "bn" ? (
+                    <>
+                      তৃণমূল উদ্যোগ কিংবা কমিউনিটি এনগেজমেন্ট – আপনাদের সাথে আছি
+                      আমি প্রতিক্ষণ। একসাথে গড়বো শান্তির সমৃদ্ধিময় পঞ্চগড়।
+                    </>
+                  ) : (
+                    <>
+                      Grassroots initiatives or community engagement – ​​I am
+                      with you every moment. Together we will build a peaceful
+                      and prosperous Panchagarh.
+                    </>
+                  )}
                 </p>
                 <Link href="#" className="custom-btn">
                   <span>Discover more</span>

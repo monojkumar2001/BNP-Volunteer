@@ -1,15 +1,19 @@
 "use client";
-import React, { useState, useEffect } from "react";
-
+import React, { useEffect, useState } from "react";
+import Banner from "../components/Section/Banner";
+import { useLanguage } from "../../context/languageContext";
 import Image from "next/image";
-import { GoArrowUpRight } from "react-icons/go";
-import { IoMdClose } from "react-icons/io";
 import Link from "next/link";
-import { useLanguage } from "../../../context/languageContext";
+import { GoArrowUpRight } from "react-icons/go";
 
-const WhoWeAre = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+const NawshadZamirPage = () => {
   const { language } = useLanguage();
+
+  const bannerData = {
+    title: language === "bn" ? "নওশাদ জামির" : "Nawshad Zamir",
+    img: "/assets/images/about-bg.png",
+  };
+  const [isModalOpen, setIsModalOpen] = useState(false);
   useEffect(() => {
     const handleKey = (e) => {
       if (e.key === "Escape") setIsModalOpen(false);
@@ -29,11 +33,11 @@ const WhoWeAre = () => {
   }, [isModalOpen]);
 
   const closeModal = () => setIsModalOpen(false);
-
   return (
     <>
+      <Banner language={language} bannerData={bannerData} />
       <section
-        className={`who-section ${
+        className={`who-section who-single-section ${
           language === "bn" ? "lang-who-bn" : "lang-who-en"
         }`}
       >
@@ -86,15 +90,15 @@ const WhoWeAre = () => {
                     ? "বাংলাদেশের মানুষ সম্মানের মাথা উঁচু করে বাঁচতে চায়। কিন্তু জনস্বার্থে সকলে মিলে দীর্ঘমেয়াদী পরিকল্পনা বাস্তবায়নে আমরা কতটা সক্ষম? যখন আমি অক্সফোর্ডে পড়ি, তখন দেখতাম, নানান গোষ্ঠীর মাঝে যতই বিরোধ থাকুক, স্থানীয় সমস্যার সমাধানে সবাই মিলে কাজ করে। ক্ষুদ্র ব্যক্তিস্বার্থের তুলনায় সামষ্টিক সমৃদ্ধি বেশি প্রাধান্য পায়। নিজেদের ভবিষ্যতের স্বার্থে আমরা কেন পারবো না একযোগে কাজ করতে?"
                     : "The people of Bangladesh want to live with dignity. But how capable are we of working together to implement long-term plans for the common good? When I was studying at Oxford, I saw that no matter how much conflict there was between different groups, everyone worked together to solve local problems. Collective prosperity took precedence over petty individual interests. Why can't we work together for our own future?"}
                 </p>
-                <Link href="/how-to-build" className="custom-btn">
-                  <span>{language === "bn" ? "আরও জানুন" : " Learn More"}</span>
-                  <span>
-                    <GoArrowUpRight />
-                  </span>
-                </Link>
               </div>
             </div>
           </div>
+
+          <p className="who-single-content">
+            {language === "bn"
+              ? "আমরা তো চাই একটি দায়িত্বশীল, অন্তর্ভুক্তিমূলক ও ভবিষ্যতের প্রতি যত্নপরায়ণ গণতান্ত্রিক বাংলাদেশ, যেখানে প্রতিটি নাগরিক তার ন্যায্য অধিকার, মর্যাদা ও সুযোগ পাবে। দুর্নীতি-মুক্ত প্রশাসন, শিক্ষা ও স্বাস্থ্য ব্যবস্থার সার্বভৌম গুণগত উন্নয়ন, এবং তরুণদের নেতৃত্বে দেশ গঠনের লক্ষ্যে নিরলসভাবে কাজ করতে আমরা বদ্ধ পরিকর। আমরা পারস্পরিক সম্মান, জবাবদিহিতা এবং আইনের ভিত্তিতে সুশাসন নিশ্চিত করে স্থায়ী প্রগতির পথে কাজ করব।"
+              : "We want a responsible, inclusive and future-oriented democratic Bangladesh, where every citizen gets their fair rights, dignity and opportunities. We are committed to working relentlessly towards a corruption-free administration, sovereign quality development of education and health systems, and youth-led nation-building. We will work towards sustainable progress by ensuring mutual respect, accountability and good governance based on the law."}
+          </p>
         </div>
       </section>
       {isModalOpen && (
@@ -133,4 +137,4 @@ const WhoWeAre = () => {
   );
 };
 
-export default WhoWeAre;
+export default NawshadZamirPage;

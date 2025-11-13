@@ -44,9 +44,9 @@ const OurConcern = () => {
                 {language === "bn" ? " উপযুক্ত নেতা" : "The right leader"}
               </h2>
               <p>
-                Parturient dis torquent nostra mattis congue ut sagittis nibh
-                luctus viverra. Enim convallis tristique magna torquent egestas
-                dictumst consectetur.
+                {language === "bn"
+                  ? " পঞ্চগড়ের জনগণের সমস্যাগুলো সমাধানে বিগত দুই দশকে তেমন কোন কাজ হয়নি। এবার সুযোগ এসেছে অপূর্ণ প্রতিশ্রুতিগুলো পূরণ করে মানুষের মুখে নিশ্চিন্ত হাসি ফোটাবার।"
+                  : "Not much has been done in the last two decades to solve the problems of the people of Panchagarh. Now is the time to fulfill the unfulfilled promises and bring a smile to the faces of the people."}
               </p>
               <Link href="#" className="custom-btn">
                 <span>
