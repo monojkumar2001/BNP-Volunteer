@@ -1076,6 +1076,11 @@
   justify-content: space-between;
   width: 100%;
 }
+
+.lang-involed-bn .custom-btn {
+  font-family: var(--bangla-font);
+  font-size: 20px;
+}
 .schedule-btn {
   background: #ff383c;
 }

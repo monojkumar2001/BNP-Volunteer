@@ -51,8 +51,8 @@ const GetInvolved = () => {
                     </>
                   )}
                 </p>
-                <Link href="#" className="custom-btn">
-                  <span>Discover more</span>
+                <Link href="/events" className="custom-btn">
+                  <span>{language === "bn" ? "আরও জানুন" : " Learn More"}</span>
                   <span>
                     <GoArrowUpRight />
                   </span>
