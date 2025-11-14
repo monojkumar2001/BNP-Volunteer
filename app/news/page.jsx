@@ -4,8 +4,8 @@ import AllNewsItem from "../components/News/AllNewsItem";
 
 const AllNewsPage = () => {
   const bannerData = {
-    title_en: "Nawshad Zamir",
-    title_bn: "নওশাদ জামির",
+    title_en: "All News",
+    title_bn: "সকল খবর",
     img: "/assets/images/about-bg.png",
   };
   return (
