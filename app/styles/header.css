@@ -3,6 +3,7 @@
   width: 100%;
   padding-top: 27px;
   z-index: 999;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-nav {
@@ -144,6 +145,9 @@ span.logo-name.logo-bn {
 .lang-header-bn .main-menu ul li a.active {
   font-weight: 600;
 }
+.header-section.scrolled span.logo-name.logo-bn {
+  color: var(--black-color);
+}
 @media (max-width: 1200px) {
   .menu-btn-ber {
     display: block;
@@ -157,13 +161,14 @@ span.logo-name.logo-bn {
     height: 100vh;
     flex-direction: column;
     justify-content: center;
+    background: var(--white-color);
     align-items: center;
     gap: 40px;
     transition: right 0.4s ease;
     border-radius: 0;
   }
   .site-logo img {
-    width: 60px;
+    width: 55px;
   }
   .site-logo {
     gap: 14px;
@@ -190,6 +195,15 @@ span.logo-name.logo-bn {
   .close-menu-btn {
     display: block;
   }
+  .header-section.scrolled {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    padding: 12px 0;
+  }
+  .header-section.scrolled span.logo-name.logo-bn {
+    color: var(--black-color);
+  }
 }
 
 @media (max-width: 480px) {
@@ -198,6 +212,6 @@ span.logo-name.logo-bn {
   }
 
   .header-section {
-    padding-top: 15px;
+    padding-top: 12px;
   }
 }

@@ -42,9 +42,9 @@ const Header = () => {
 
   return (
     <header
-      className={`header-section ${
-        language === "bn" ? "lang-header-bn" : "lang-header-en"
-      }`}
+      className={`header-section 
+  ${scrolled ? "scrolled" : ""} 
+  ${language === "bn" ? "lang-header-bn" : "lang-header-en"}`}
     >
       <div className="container">
         <div className="header-nav">
@@ -57,7 +57,7 @@ const Header = () => {
               height={141}
             />
             <span
-              className={`logo-name ${scrolled ? "scrolled" : ""} ${
+              className={`logo-name ${
                 language === "bn" ? "logo-bn" : "logo-en"
               }`}
             >
