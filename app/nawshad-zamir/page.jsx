@@ -8,10 +8,10 @@ const NawshadZamirPage = () => {
   const { language } = useLanguage();
 
   const bannerData = {
-    title: language === "bn" ? "নওশাদ জামির" : "Nawshad Zamir",
+    title_en: "Nawshad Zamir",
+    title_bn: "নওশাদ জমির",
     img: "/assets/images/about-bg.png",
   };
-
   return (
     <>
       <Banner language={language} bannerData={bannerData} />

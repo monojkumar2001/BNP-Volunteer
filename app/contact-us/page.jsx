@@ -38,8 +38,10 @@ export const metadata = {
 };
 const ContactUsPage = () => {
   const bannerData = {
-    title: "Contact Us",
-    des: "Leadership, Experience, and values mean something",
+    title_en: "Contact Us",
+    title_bn: "আমাদের সাথে যোগাযোগ করুন",
+    des_en: "Leadership, Experience, and values mean something",
+    des_bn: "নেতৃত্ব, অভিজ্ঞতা এবং মূল্যবোধের কিছু অর্থ আছে",
     img: "/assets/images/contact.png",
   };
   return (

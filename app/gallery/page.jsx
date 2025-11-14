@@ -37,8 +37,10 @@ export const metadata = {
 };
 const GalleryPage = () => {
   const bannerData = {
-    title: "Gallery",
-    des: "Leadership, Experience, and values mean something",
+    title_en: "Gallery",
+    title_bn: "গ্যালারি",
+    des_en: "Leadership, Experience, and values mean something",
+    des_bn: "নেতৃত্ব, অভিজ্ঞতা এবং মূল্যবোধের কিছু অর্থ আছে",
     img: "/assets/images/gallery.png",
   };
   return (

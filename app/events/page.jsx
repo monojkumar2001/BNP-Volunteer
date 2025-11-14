@@ -35,8 +35,10 @@ export const metadata = {
 };
 const EventsPage = () => {
   const bannerData = {
-    title: "Events",
-    des: "Together, we can make every corner of our country shine",
+    title_en: "Events",
+    title_bn: "ইভেন্টগুলি",
+    des_en: "Leadership, Experience, and values mean something",
+    des_bn: "নেতৃত্ব, অভিজ্ঞতা এবং মূল্যবোধের কিছু অর্থ আছে",
     img: "/assets/images/event.png",
   };
   return (

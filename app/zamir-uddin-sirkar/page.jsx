@@ -8,12 +8,13 @@ const ZamirUddinPage = () => {
   const { language } = useLanguage();
 
   const bannerData = {
-    title: language === "bn" ? "জামীর উদ্দিন সরকার" : "Zamir Uddin Sirker",
+    title_en: "Zamir Uddin Sirker",
+    title_bn: "জমিরউদ্দিন সরকার",
     img: "/assets/images/about-bg.png",
   };
   return (
     <>
-      <Banner language={language} bannerData={bannerData} />
+      <Banner bannerData={bannerData} />
       <section
         className={`leadership leadership-single ${
           language === "bn" ? "lang-leadership-bn" : "lang-leadership-en"

@@ -42,7 +42,9 @@ const WhyChooseUs = () => {
                 promise, this is our firm commitment.
               </p>
             )}
-
+            <div className="list-item-head">
+              <h2>{language === "bn" ? "আমার ওয়াদা:" : "My promise:"}</h2>
+            </div>
             <ul className="why-choose-list">
               <li>
                 <div className="why-choose-icon">

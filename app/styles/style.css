@@ -639,7 +639,7 @@
 }
 .why-choose-me-wrapper {
   position: relative;
-  height: 835px;
+  height: 870px;
 }
 .why-choose-me-content {
   width: 528px;
@@ -649,7 +649,7 @@
   position: absolute;
   right: 105px;
   height: 100%;
-  padding: 76px 50px;
+  padding: 60px 50px;
 }
 .why-choose-me-content span {
   font-size: 18px;
@@ -691,8 +691,7 @@
 .why-choose-list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding-top: 20px;
+  gap: 12px;
 }
 .why-choose-list li {
   display: flex;
@@ -721,11 +720,23 @@
 .lang-choose-bn .why-choose-list-text h5 {
   font-family: var(--bangla-font);
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 44px;
   color: var(--white-color);
 }
-
+.list-item-head h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+  color: var(--white-color);
+  padding: 15px 0;
+}
+.lang-choose-bn .list-item-head h2 {
+  font-family: var(--bangla-font);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 44px;
+}
 .why-choose-list-text p {
   font-size: 20px;
   line-height: 35px;

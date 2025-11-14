@@ -11,7 +11,8 @@ const NawshadZamirPage = () => {
   const { language } = useLanguage();
 
   const bannerData = {
-    title: language === "bn" ? "নওশাদ জামির" : "Nawshad Zamir",
+    title_en: "Nawshad Zamir",
+    title_bn: "নওশাদ জামির",
     img: "/assets/images/about-bg.png",
   };
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -36,7 +37,7 @@ const NawshadZamirPage = () => {
   const closeModal = () => setIsModalOpen(false);
   return (
     <>
-      <Banner language={language} bannerData={bannerData} />
+      <Banner bannerData={bannerData} />
       <section
         className={`who-section who-single-section ${
           language === "bn" ? "lang-who-bn" : "lang-who-en"
