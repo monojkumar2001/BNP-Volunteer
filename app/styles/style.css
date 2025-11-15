@@ -1020,7 +1020,7 @@
   transition: 0.4s;
   height: auto;
   text-transform: capitalize;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .lang-latest-news-bn .latest-news-content .news-title {
@@ -1409,4 +1409,43 @@ ul.contact-us-info li:hover .contact-icon {
 .all-news-item {
   background: #f5f5f5;
   padding: 117px 0 177px 0;
+}
+.single-news-item {
+  background: #f5f5f5;
+  padding: 250px 0 177px 0;
+}
+
+.lang-single-news-bn .single-news-content h1 {
+  font-size: 30px;
+  font-family: var(--bangla-font);
+  line-height: 50px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.lang-single-news-bn .single-news-content .news-meta {
+  font-family: var(--bangla-font);
+}
+.lang-single-news-bn .single-news-content .custom-btn {
+  font-family: var(--bangla-font);
+}
+.lang-single-news-bn .single-news-content .single-news-body {
+  font-family: var(--bangla-font);
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.lang-single-news-en .single-news-content h1 {
+  font-size: 30px;
+  line-height: 50px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.lang-single-news-en .single-news-content .single-news-body {
+  font-family: var(--bangla-font);
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
 }

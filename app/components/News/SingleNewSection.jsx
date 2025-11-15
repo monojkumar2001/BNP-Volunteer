@@ -2,7 +2,10 @@
 
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Skeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 import { useLanguage } from "../../../context/languageContext";
+import { GoArrowUpLeft } from "react-icons/go";
 
 const SingleNewSection = ({ slug }) => {
   const { language } = useLanguage();
@@ -35,9 +38,35 @@ const SingleNewSection = ({ slug }) => {
 
   if (loading) {
     return (
-      <section className="all-news-item">
+      <section className="single-news-item">
         <div className="container">
-          <p>Loading...</p>
+          <div className="row">
+            <div className="col-12">
+              <div className="latest-news-card" style={{ padding: 0 }}>
+                <div className="latest-news-img">
+                  <Skeleton height={400} />
+                </div>
+
+                <div className="latest-news-content">
+                  <h1 style={{ marginBottom: 10 }}>
+                    <Skeleton height={40} width="80%" />
+                  </h1>
+
+                  <p className="news-meta">
+                    <Skeleton height={16} width={150} />
+                  </p>
+
+                  <div className="news-body">
+                    <Skeleton height={20} count={5} />
+                  </div>
+
+                  <div style={{ marginTop: 24 }}>
+                    <Skeleton height={40} width={150} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     );
@@ -69,7 +98,11 @@ const SingleNewSection = ({ slug }) => {
     : "";
 
   return (
-    <section className="single-news-item">
+    <section
+      className={`single-news-item ${
+        language === "bn" ? "lang-single-news-bn" : "lang-single-news-en"
+      }`}
+    >
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -84,20 +117,13 @@ const SingleNewSection = ({ slug }) => {
                 </div>
               )}
 
-              <div className="latest-news-content">
-                <h1
-                  className={language === "bn" ? "lang-latest-news-bn" : ""}
-                  style={{ marginBottom: 10 }}
-                >
-                  {language === "bn"
-                    ? news.title_bn || news.title_en
-                    : news.title_en || news.title}
-                </h1>
+              <div className="latest-news-content single-news-content">
+                <h1>{language === "bn" ? news.title_bn : news.title_en}</h1>
 
                 <p className="news-meta">{formattedDate}</p>
 
                 <div
-                  className="news-body"
+                  className="single-news-body"
                   dangerouslySetInnerHTML={{
                     __html:
                       language === "bn"
@@ -108,11 +134,14 @@ const SingleNewSection = ({ slug }) => {
                   }}
                 />
 
-                <div style={{ marginTop: 24 }}>
-                  <Link href="/news" className="btn btn-secondary">
-                    {language === "bn" ? "পেছনে যান" : "Back to News"}
-                  </Link>
-                </div>
+                <Link href="/how-to-build" className="custom-btn">
+                  <span>
+                    <GoArrowUpLeft />
+                  </span>
+                  <span>
+                    {language === "bn" ? "পেছনে যান" : " Back to News"}
+                  </span>
+                </Link>
               </div>
             </div>
           </div>

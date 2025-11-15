@@ -11,6 +11,8 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { language, setLanguage } = useLanguage();
+
+  const isNewsPage = pathname.startsWith("/news/");
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -57,6 +59,9 @@ const Header = () => {
               height={141}
             />
             <span
+              style={{
+                color: isNewsPage ? "#000000" : "",
+              }}
               className={`logo-name ${
                 language === "bn" ? "logo-bn" : "logo-en"
               }`}
@@ -67,6 +72,9 @@ const Header = () => {
 
           {/* Menu Button for Mobile */}
           <button
+            style={{
+              color: isNewsPage ? "#000000" : "",
+            }}
             className={`menu-btn-ber ${scrolled ? "scrolled" : ""}`}
             onClick={() => setMenuOpen(true)}
             aria-label="Open Menu"
@@ -77,6 +85,9 @@ const Header = () => {
           {/* Navigation */}
           <nav className={`main-menu ${menuOpen ? "open" : ""}`}>
             <button
+              style={{
+                color: isNewsPage ? "#000000" : "",
+              }}
               className="close-menu-btn"
               onClick={() => setMenuOpen(false)}
               aria-label="Close Menu"
