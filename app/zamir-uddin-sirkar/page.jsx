@@ -9,7 +9,7 @@ const ZamirUddinPage = () => {
 
   const bannerData = {
     title_en: "Zamir Uddin Sirker",
-    title_bn: "জমিরউদ্দিন সরকার",
+    title_bn: "জমির উদ্দিন সরকার",
     img: "/assets/images/about-bg.png",
   };
   return (
@@ -43,7 +43,7 @@ const ZamirUddinPage = () => {
                 </div>
                 <h2 className="section-title">
                   {language === "bn"
-                    ? "জমিরউদ্দিন সরকার"
+                    ? "জমির উদ্দিন সরকার"
                     : " Zamir Uddin Sirker"}
                 </h2>
 
@@ -176,7 +176,7 @@ const ZamirUddinPage = () => {
               <>
                 <h4>বিস্তারিত</h4>
                 <p>
-                  পঞ্চগড়ের কৃতি সন্তান জমিরউদ্দিন সরকার একাধারে একজন প্রথিতযশা
+                  পঞ্চগড়ের কৃতি সন্তান জমির উদ্দিন সরকার একাধারে একজন প্রথিতযশা
                   আইনজীবী, প্রথম সারির প্রবীণ রাজনীতিবিদ এবং সদাসর্বদা
                   বাংলাদেশের স্বার্থরক্ষায় এক অকুতোভয় সৈনিক।
                 </p>

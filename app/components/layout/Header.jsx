@@ -129,7 +129,7 @@ const Header = () => {
                       }}
                       className={language === "bn" ? "active" : ""}
                     >
-                      বাং
+                      বাংলা
                     </button>
                   </div>
                   <div className="header-language-item">
@@ -140,7 +140,7 @@ const Header = () => {
                       }}
                       className={language === "en" ? "active" : ""}
                     >
-                      EN
+                      English
                     </button>
                   </div>
                 </div>

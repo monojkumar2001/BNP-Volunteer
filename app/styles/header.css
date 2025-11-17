@@ -16,7 +16,7 @@
 .main-menu {
   display: flex;
   align-items: center;
-  gap: 65px;
+  gap: 30px;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
@@ -139,7 +139,7 @@ span.logo-name.logo-bn {
 }
 .lang-header-bn .main-menu ul li a {
   font-family: var(--bangla-font);
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
 }
 .lang-header-bn .main-menu ul li a.active {

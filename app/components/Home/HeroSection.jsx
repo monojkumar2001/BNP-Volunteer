@@ -96,7 +96,7 @@ const HeroSection = () => {
                 <div className="hero-form-content">
                   <h2>
                     {language === "bn"
-                      ? "স্বেচ্ছাসেবী কমিউনিটিতে যোগ দিন"
+                      ? "স্বেচ্ছাসেবী/ভলান্টিয়ার কমিউনিটিতে যোগ দিন"
                       : "Join in building the country"}
                   </h2>
                   <p>
@@ -113,9 +113,7 @@ const HeroSection = () => {
                     required
                     onChange={handleChange}
                     placeholder={
-                      language === "bn"
-                        ? "আপনার পুরো/সম্পূর্ণ নাম"
-                        : "Full Name"
+                      language === "bn" ? "আপনার পুরো নাম" : "Your full name"
                     }
                   />
                   <input

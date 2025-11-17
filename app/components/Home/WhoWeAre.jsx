@@ -67,8 +67,8 @@ const WhoWeAre = () => {
               <div className="who-content">
                 <div className="subtitle">
                   {language === "bn"
-                    ? "কিভাবে দেশ গড়বো"
-                    : "How to build a country"}
+                    ? "কিভাবে দেশ গড়বো?"
+                    : "How to build a country?"}
                 </div>
                 <h2 className="section-title">
                   {language === "bn" ? (

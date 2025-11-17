@@ -45,7 +45,9 @@ const Leadership = () => {
                   : "Barrister, Politician"}
               </div>
               <h2 className="section-title">
-                {language === "bn" ? "জমিরউদ্দিন সরকার" : " Zamir Uddin Sirker"}
+                {language === "bn"
+                  ? "জমির উদ্দিন সরকার"
+                  : " Zamir Uddin Sirker"}
               </h2>
 
               <ul>
