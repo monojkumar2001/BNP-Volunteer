@@ -21,7 +21,10 @@ const Footer = () => {
             <div className="footer-content">
               <h2> {language === "bn" ? "যোগাযোগ করুন" : "Contact US"}</h2>
               <p>Head Office:</p>
-              <p>Dhaka: Level 3, House 5, Dhanmandi 1212</p>
+              <p>
+                Dhaka: Jurists Chambers, Level 3, House 39A, Road 7, Dhanmandi
+                1209
+              </p>
             </div>
           )}
           <div className="footer-social-media">

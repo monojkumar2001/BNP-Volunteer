@@ -271,6 +271,18 @@
   line-height: 44px;
   letter-spacing: 0.25px;
 }
+
+.lang-leadership-bn .leadership2-single-content {
+  font-family: var(--bangla-font);
+  font-size: 20px;
+  line-height: 36px;
+  color: var(--black-color);
+}
+.lang-leadership-en .leadership2-single-content {
+  font-size: 20px;
+  line-height: 35px;
+  color: #5f5f5f;
+}
 .leadership-single {
   padding-top: 140px;
 }
