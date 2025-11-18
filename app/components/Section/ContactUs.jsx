@@ -100,7 +100,10 @@ const ContactUs = () => {
                   </div>
                   <div className="contact-list-text">
                     <h4>Location</h4>
-                    <p>Dhaka: Level 3, House 5, Dhanmandi 1212</p>
+                    <p>
+                      Dhaka: Jurists Chambers, Level 3, House 39A, Road 7,
+                      Dhanmandi 1209
+                    </p>
                   </div>
                 </li>
                 <li>

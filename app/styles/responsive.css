@@ -237,6 +237,9 @@
   .promise-tracker {
     top: -175px;
   }
+  ul.contact-us-info li {
+    grid-template-columns: 1fr 86%;
+  }
   .promise-tracker-title {
     padding-bottom: 30px;
   }
@@ -625,6 +628,9 @@
   .banner-content h1 {
     font-size: 35px;
     padding-bottom: 10px;
+  }
+  ul.contact-us-info li {
+    grid-template-columns: 1fr 84%;
   }
   .lang-banner-bn .banner-content h1 {
     font-size: 35px;
