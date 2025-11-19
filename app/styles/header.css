@@ -88,7 +88,13 @@
   color: var(--white-color);
 }
 .site-logo img {
-  width: 141px;
+  width: 100px;
+}
+.logo-name-text {
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white-color);
 }
 
 .header-btn .latest-btn:hover {
@@ -133,9 +139,8 @@
 span.logo-name.logo-bn {
   font-family: "Kohinoor Bangla";
   font-weight: 500;
-
   font-size: 44px;
-  line-height: 64px;
+  line-height: 53px;
 }
 .lang-header-bn .main-menu ul li a {
   font-family: var(--bangla-font);
@@ -148,6 +153,14 @@ span.logo-name.logo-bn {
 .header-section.scrolled span.logo-name.logo-bn {
   color: var(--black-color);
 }
+.header-section.scrolled .header-nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  padding: 14px 15px 14px 24px;
+  border-radius: 50px;
+}
+
 @media (max-width: 1200px) {
   .menu-btn-ber {
     display: block;

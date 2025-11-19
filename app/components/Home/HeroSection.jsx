@@ -87,7 +87,7 @@ const HeroSection = () => {
               </div>
               <p>
                 {language === "bn"
-                  ? "দেশ গড়ায় যোগ দিন ভলান্টিয়ার হিসেবে নাম লেখান "
+                  ? "দেশ গড়ায় যোগ দিন, ভলান্টিয়ার হিসেবে নাম লেখান"
                   : "Join in building the Country, Sign up as a Volunteer"}
               </p>
             </div>
@@ -96,8 +96,8 @@ const HeroSection = () => {
                 <div className="hero-form-content">
                   <h2>
                     {language === "bn"
-                      ? "স্বেচ্ছাসেবী/ভলান্টিয়ার কমিউনিটিতে যোগ দিন"
-                      : "Join in building the country"}
+                      ? "ভলান্টিয়ার কমিউনিটিতে যোগ দিন"
+                      : "Join the volunteer community"}
                   </h2>
                   <p>
                     {language === "bn"

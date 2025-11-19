@@ -60,18 +60,18 @@ const OurConcern = () => {
             <ul className="concern-list-items">
               <li>
                 {language === "bn"
-                  ? "শিক্ষাব্যবস্থা আধুনিকীকরণ"
-                  : "Modernization of the education system"}
+                  ? "শিক্ষা ও স্বাস্থ্যব্যবস্থার নাজুক অবস্থা"
+                  : "Poor state of education and healthcare systems"}
               </li>
               <li>
                 {language === "bn"
-                  ? "জনস্বাস্থ্য ব্যবস্থার সার্বিক উন্নয়ন"
-                  : "Overall development of the public health system"}
+                  ? "ক্রমবর্ধমান বেকারত্ব ও অর্থনৈতিক মন্দা"
+                  : "Rising unemployment and economic recession"}
               </li>
               <li>
                 {language === "bn"
-                  ? "দুর্নীতি প্রতিরোধ"
-                  : "Corruption prevention"}
+                  ? "কৃষক-শ্রমিকের দুর্দশা "
+                  : "The plight of farmers and workers"}
               </li>
               <li>
                 {language === "bn"
@@ -80,13 +80,18 @@ const OurConcern = () => {
               </li>
               <li>
                 {language === "bn"
-                  ? "জলবায়ু বিপর্যয় ব্যবস্থাপনা "
-                  : "Climate disaster management"}
+                  ? "পৌর-অঞ্চলে সীমিত নাগরিক সুবিধা"
+                  : "Limited civic amenities in municipal areas"}
               </li>
               <li>
                 {language === "bn"
-                  ? "আইন ও মানবাধিকার সুরক্ষা"
-                  : "Law and human rights protection"}
+                  ? "রাস্তা-ঘাট সহ যোগাযোগ ব্যবস্থার সার্বিক দুরাবস্থা"
+                  : "Overall poor condition of the communication system, including roads and bridges"}
+              </li>
+              <li>
+                {language === "bn"
+                  ? "আইন-শৃঙ্খলা পরিস্থিতির তীব্র অবনতি"
+                  : "Severe deterioration of the law and order situation"}
               </li>
             </ul>
           </div>

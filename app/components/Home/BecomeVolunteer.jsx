@@ -17,7 +17,9 @@ const BecomeVolunteer = () => {
       <div className="container">
         <div className="become-volunteer-content">
           <span className="subtitle">
-            {language === "bn" ? "স্বেচ্ছাসেবক হন" : "Become volunteer"}
+            {language === "bn"
+              ? "ক্যাম্পেইন ভলান্টিয়ার হবার সুযোগ"
+              : "Opportunity to become a campaign volunteer"}
           </span>
           <h2>
             {language === "bn"

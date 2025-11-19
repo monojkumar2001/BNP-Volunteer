@@ -47,13 +47,15 @@ export default function Home({ language }) {
     <>
       <HeroSection language={language} />
       <WhoWeAre />
+      <OurConcern />
+      <WhyChooseUs />
       <Leadership1 />
       <Leadership2 />
-      <OurConcern />
+
       {/* <ElectionCampaign />
       <ElectionCard />
       <PromiseTracker /> */}
-      <WhyChooseUs />
+
       <GetInvolved />
       <BecomeVolunteer />
       <LatestNews />

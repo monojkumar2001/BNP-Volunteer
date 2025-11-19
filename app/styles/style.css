@@ -260,7 +260,8 @@
   font-family: var(--bangla-font);
   font-size: 18px;
   font-weight: 400;
-  line-height: 64px;
+  line-height: 20px;
+  padding-bottom: 15px;
   margin-bottom: 0;
   color: #838383;
 }
@@ -356,6 +357,7 @@
   gap: 35px;
   padding-bottom: 24px;
 }
+
 .lang-leadership-bn .custom-btn {
   font-family: var(--bangla-font);
   font-size: 20px;
@@ -414,17 +416,17 @@
 }
 .our-concern-wrapper {
   display: grid;
-  gap: 69px;
-  grid-template-columns: 415px 1fr;
+  gap: 50px;
+  grid-template-columns: 385px 1fr;
   align-items: center;
 }
 .our-concern-list {
   display: flex;
-  gap: 69px;
+  gap: 50px;
   align-items: center;
 }
 .our-concern-wrapper .who-content {
-  max-width: 414px;
+  max-width: 400px;
 }
 .lang-concern-bn .subtitle {
   font-family: var(--bangla-font);
@@ -442,6 +444,7 @@
 }
 .lang-concern-bn .section-title {
   font-family: var(--bangla-font);
+  font-size: 48px;
 }
 .lang-concern-bn .concern-list-items li {
   font-family: var(--bangla-font);
@@ -729,6 +732,7 @@
   color: var(--white-color);
   line-height: 30px;
 }
+
 .lang-choose-bn .why-choose-list-text h5 {
   font-family: var(--bangla-font);
   font-size: 20px;
@@ -761,6 +765,21 @@
   font-size: 48px;
 }
 
+.leadership-list-item .why-choose-list-text h5 {
+  color: var(--black-color);
+}
+
+.leadership-list-item li {
+  display: grid;
+  grid-template-columns: 30px 1fr !important;
+}
+
+.lang-leadership-bn .leadership-list-content ul {
+  gap: 23px;
+}
+.leadership-list-item .why-choose-icon {
+  background: #0000001e;
+}
 .lang-involed-bn .section-title {
   font-family: var(--bangla-font);
 }
@@ -1461,4 +1480,19 @@ ul.contact-us-info li:hover .contact-icon {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 30px;
+}
+.leadership-item-head h2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.leadership-item-head {
+  padding-top: 30px;
+}
+.lang-leadership-bn .leadership-item-head h2 {
+  font-family: var(--bangla-font);
+  padding-bottom: 0px;
+}
+.lang-leadership-bn .leadership-item-head {
+  padding-top: 40px;
 }

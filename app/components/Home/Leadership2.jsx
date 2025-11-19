@@ -18,7 +18,7 @@ const Leadership2 = () => {
       <div className="container">
         <div className="row align-items-center leadership-wrpp">
           <div className="col-lg-6 ">
-            <div className="who-content">
+            <div className="who-content leadership-list-content">
               <div className="subtitle">
                 {language === "bn"
                   ? "ব্যারিস্টার, প্রার্থী"
@@ -29,48 +29,61 @@ const Leadership2 = () => {
                   ? "মুহম্মদ নওশাদ জমির"
                   : "Muhammad Nawshad Zamir"}
               </h2>
-              <ul>
-                <li>
-                  {language === "bn" ? (
-                    <>
-                      মুহম্মদ নওশাদ জমির একজন অভিজ্ঞ আইনজীবী। তিনি লন্ডনের
-                      লিঙ্কন&apos;স ইন থেকে ব্যারিস্টার (১৯৯৯) এবং বাংলাদেশ
-                      সুপ্রিম কোর্টের একজন অ্যাডভোকেট (১৯৯৬) হিসেবে স্বীকৃতি লাভ
-                      করেন। তিনি বিশ্বখ্যাত হার্ভার্ড বিশ্ববিদ্যালয় থেকে LLM এবং
-                      অক্সফোর্ড বিশ্ববিদ্যালয় থেকে MSc in Taxation স্নাতকোত্তর
-                      অর্জন করেন।
-                    </>
-                  ) : (
-                    <>
-                      Muhammad Naushad is an experienced lawyer by profession.
-                      He was admitted as a Barrister from Lincoln&apos;s Inn,
-                      London (1999) and an Advocate of the Supreme Court of
-                      Bangladesh (1996). He holds an LLM from the world-renowned
-                      Harvard University and an MSc in Taxation from the
-                      University of Oxford.
-                    </>
-                  )}
-                </li>
-                <li>
-                  {language === "bn" ? (
-                    <>
-                      ২০০১ সালের থেকে তিনি রাজনীতির সাথে সরাসরি সম্পৃক্ত। ২০১৮
-                      সালে বাংলাদেশ জাতীয়তাবাদী দলের পঞ্চগড় ১ আসনে মনোনয়ন পান।
-                      তিনি প্রাক্তন প্রধানমন্ত্রী দেশনেত্রী বেগম খালেদা জিয়া এবং
-                      দেশ নায়ক জনাব তারেক রহমানের আইনজীবী হিসেবে দায়িত্ব পালন
-                      করেন।
-                    </>
-                  ) : (
-                    <>
-                      He has been directly involved in politics since 2001. In
-                      2018, he was nominated by the Bangladesh Nationalist Party
-                      from Panchagarh 1 constituency. He served as a lawyer for
-                      former Prime Minister Begum Khaleda Zia and national hero
-                      Mr. Tarique Rahman.
-                    </>
-                  )}
-                </li>
-              </ul>
+              <div className="leadership-item-head">
+                <h2>
+                  {language === "bn" ? "শিক্ষাজীবনঃ" : "Educational Career:"}
+                </h2>
+                <ul className="why-choose-list leadership-list-item">
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? "ঢাকা বিশ্ববিদ্যালয় (এলএলবি, এলএলএম – ফার্স্ট ক্লাস ফার্স্ট)"
+                          : "Dhaka University (LLB, LLM – First Class First)"}
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? "হার্ভার্ড ল স্কুল (এলএলএম)"
+                          : "Harvard Law School (LLM)"}
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? " অক্সফোর্ড বিশ্ববিদ্যালয় (এমএসসি)"
+                          : "University of Oxford (MSc)"}
+                      </h5>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
               <Link href="/nawshad-zamir" className="custom-btn">
                 <span>{language === "bn" ? "আরও জানুন" : " Learn More"}</span>

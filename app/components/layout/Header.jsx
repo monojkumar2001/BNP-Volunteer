@@ -58,16 +58,19 @@ const Header = () => {
               width={141}
               height={141}
             />
-            <span
-              style={{
-                color: isNewsPage ? "#000000" : "",
-              }}
-              className={`logo-name ${
-                language === "bn" ? "logo-bn" : "logo-en"
-              }`}
-            >
-              {language === "bn" ? "নওশাদ জমির" : "Nawshad Zamir"}
-            </span>
+            <div className="logo-name-item">
+              <span
+                style={{
+                  color: isNewsPage ? "#000000" : "",
+                }}
+                className={`logo-name ${
+                  language === "bn" ? "logo-bn" : "logo-en"
+                }`}
+              >
+                {language === "bn" ? "নওশাদ জমির" : "Nawshad Zamir"}
+              </span>
+              <p className="logo-name-text">আন্তর্জাতিক সম্পাদক - বিএনপি</p>
+            </div>
           </Link>
 
           {/* Menu Button for Mobile */}

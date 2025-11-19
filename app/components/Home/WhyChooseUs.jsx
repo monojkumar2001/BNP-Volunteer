@@ -57,70 +57,6 @@ const WhyChooseUs = () => {
                 <div className="why-choose-list-text">
                   <h5>
                     {language === "bn"
-                      ? "আধুনিক পৌরসভা ও উন্নত অবকাঠামো"
-                      : "Modern municipality and developed infrastructure"}
-                  </h5>
-                </div>
-              </li>
-              <li>
-                <div className="why-choose-icon">
-                  <Image
-                    src={"/assets/images/icon/check.svg"}
-                    width={20}
-                    height={20}
-                  />
-                </div>
-                <div className="why-choose-list-text">
-                  <h5>
-                    {language === "bn"
-                      ? "গ্রাম পর্যন্ত পাকা রাস্তার নেটওয়ার্ক"
-                      : "MPaved road network to the village"}
-                  </h5>
-                </div>
-              </li>
-              <li>
-                <div className="why-choose-icon">
-                  <Image
-                    src={"/assets/images/icon/check.svg"}
-                    width={20}
-                    height={20}
-                  />
-                </div>
-                <div className="why-choose-list-text">
-                  <h5>
-                    {language === "bn"
-                      ? " বেকারত্বের টেকসই সমাধান"
-                      : "Sustainable solution to unemployment"}
-                  </h5>
-                </div>
-              </li>
-              <li>
-                <div className="why-choose-icon">
-                  <Image
-                    src={"/assets/images/icon/check.svg"}
-                    width={20}
-                    height={20}
-                  />
-                </div>
-                <div className="why-choose-list-text">
-                  <h5>
-                    {language === "bn"
-                      ? " চিনিকল পুনরায় চালু"
-                      : "Sugar mill reopens"}
-                  </h5>
-                </div>
-              </li>
-              <li>
-                <div className="why-choose-icon">
-                  <Image
-                    src={"/assets/images/icon/check.svg"}
-                    width={20}
-                    height={20}
-                  />
-                </div>
-                <div className="why-choose-list-text">
-                  <h5>
-                    {language === "bn"
                       ? "বিশ্ববিদ্যালয় ও মেডিক্যাল কলেজ স্থাপন"
                       : "Establishment of universities and medical colleges"}
                   </h5>
@@ -137,8 +73,88 @@ const WhyChooseUs = () => {
                 <div className="why-choose-list-text">
                   <h5>
                     {language === "bn"
-                      ? "আইন ও মানবাধিকার সুরক্ষা"
-                      : "Law and human rights protection"}
+                      ? "বেকারত্বের টেকসই সমাধান"
+                      : "Sustainable solution to unemployment"}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn"
+                      ? " আধুনিক পৌরসভা ও উন্নত অবকাঠামো"
+                      : "Modern municipality and developed infrastructure"}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn"
+                      ? " গ্রাম পর্যন্ত পাকা রাস্তার নেটওয়ার্ক"
+                      : "Paved road network to the village"}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn"
+                      ? "দুর্নীতি প্রতিরোধ, আইন ও মানবাধিকারের সুরক্ষা"
+                      : "Preventing corruption, protecting the law and human rights"}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn"
+                      ? "সার, বীজ ও কৃষিজাত পণ্যের ন্যায্যমূল্য"
+                      : "Fair price of fertilizers, seeds and agricultural products"}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn"
+                      ? "পর্যটন শিল্পের সার্বিক উন্নয়ন"
+                      : "Overall development of the tourism industry"}
                   </h5>
                 </div>
               </li>
