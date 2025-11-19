@@ -33,7 +33,7 @@ const WhoWeAre = () => {
   return (
     <>
       <section
-        className={`who-section ${
+        className={`who-section who-single-section ${
           language === "bn" ? "lang-who-bn" : "lang-who-en"
         }`}
       >

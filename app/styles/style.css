@@ -243,6 +243,9 @@
   height: 100%;
   border: 0;
 }
+.leadership {
+  padding-top: 197px;
+}
 .lang-leadership-bn .section-title {
   font-family: var(--bangla-font);
   font-size: 50px;
@@ -654,7 +657,7 @@
 }
 .why-choose-me-wrapper {
   position: relative;
-  height: 870px;
+  height: 920px;
 }
 .why-choose-me-content {
   width: 528px;

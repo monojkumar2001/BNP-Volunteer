@@ -3,7 +3,9 @@
   width: 100%;
   padding-top: 27px;
   z-index: 999;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease;
+  background: transparent;
+  padding-bottom: 27px;
 }
 
 .header-nav {
@@ -138,7 +140,7 @@
 }
 span.logo-name.logo-bn {
   font-family: "Kohinoor Bangla";
-  font-weight: 500;
+  font-weight: 600;
   font-size: 44px;
   line-height: 53px;
 }
@@ -151,16 +153,33 @@ span.logo-name.logo-bn {
   font-weight: 600;
 }
 .header-section.scrolled span.logo-name.logo-bn {
-  color: var(--black-color);
+  color: var(--white-color);
 }
-.header-section.scrolled .header-nav {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
-  padding: 14px 15px 14px 24px;
-  border-radius: 50px;
+.header-section.scrolled {
+  background: #0000005c;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 12px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
+.header-section.scrolled .site-logo img {
+  width: 65px;
+}
+.header-section.scrolled .main-menu {
+  padding: 10px 15px 10px 24px;
+}
+.header-section.scrolled.header-btn .latest-btn {
+  padding: 8.5px 15px;
+}
+
+.header-section.scrolled span.logo-name.logo-bn {
+  font-size: 31px;
+  line-height: 44px;
+}
+.header-section.scrolled.logo-name-text {
+  font-size: 16px;
+}
 @media (max-width: 1200px) {
   .menu-btn-ber {
     display: block;
@@ -209,10 +228,11 @@ span.logo-name.logo-bn {
     display: block;
   }
   .header-section.scrolled {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 12px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   }
   .header-section.scrolled span.logo-name.logo-bn {
     color: var(--black-color);

@@ -82,6 +82,9 @@
   .leadership-2 {
     padding-top: 80px;
   }
+  .leadership {
+    padding-top: 80px;
+  }
   .leadership-wrpp {
     flex-direction: column-reverse;
   }
@@ -594,6 +597,9 @@
     padding-bottom: 40px;
   }
   .leadership-2 {
+    padding-top: 60px;
+  }
+  .leadership {
     padding-top: 60px;
   }
   .leadership .who-content {
