@@ -89,7 +89,7 @@ const FaqSection = () => {
                 </>
               ) : (
                 <>
-                  Got questions? We've got answers. Learn more about our
+                  Got questions? We&apos;ve got answers. Learn more about our
                   platform, features, and services below.
                 </>
               )}

@@ -174,8 +174,8 @@ const ZamirUddinPage = () => {
                         উপযুক্ত হয়। সেসময় বিশ্বখ্যাত স্থপতি লুই কানের ডিজাইন করা
                         সংসদ ভবন কমপ্লেক্সের ৭০-৮০ ভাগ কাজই অসমাপ্ত ছিল। তিনি এর
                         সংরক্ষিত নকশা ও অঙ্কন সংগ্রহ করেন। ফলে সংসদ ভবন কেবল
-                        “ব্যবহারযোগ্য” থেকে “রাষ্ট্রের গণতান্ত্রিক কেন্দ্র” হয়ে
-                        ওঠে।
+                        &quot;ব্যবহারযোগ্য&quot; থেকে &quot;রাষ্ট্রের
+                        গণতান্ত্রিক কেন্দ্র&quot; হয়ে ওঠে।
                       </>
                     ) : (
                       <>
@@ -187,8 +187,9 @@ const ZamirUddinPage = () => {
                         the work of the Parliament Building complex designed by
                         world-renowned architect Louis Kahn was unfinished. He
                         collected its preserved designs and drawings. As a
-                        result, the Parliament Building became the "democratic
-                        center of the state" from being merely "usable".
+                        result, the Parliament Building became the
+                        &quot;democratic center of the state&quot; from being
+                        merely &quot;usable&quot;.
                       </>
                     )}
                   </h5>
@@ -218,9 +219,9 @@ const ZamirUddinPage = () => {
                         Construction of Zia International Airport (now Hazrat
                         Shahjalal International Airport) - As the State Minister
                         for Public Works and Urban Development in 1979, he took
-                        charge of the construction of Dhaka's new international
-                        airport. He built a full-fledged international airport
-                        for the first time in Bangladesh.
+                        charge of the construction of Dhaka&apos;s new
+                        international airport. He built a full-fledged
+                        international airport for the first time in Bangladesh.
                       </>
                     )}
                   </h5>

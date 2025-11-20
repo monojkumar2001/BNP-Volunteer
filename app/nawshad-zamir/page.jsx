@@ -308,21 +308,23 @@ const NawshadZamirPage = () => {
                     সম্পৃক্ত হন।{" "}
                     <strong>একাদশ জাতীয় সংসদ নির্বাচনে (২০১৮)</strong> তিনি
                     পঞ্চগড়-১ আসনে বিএনপির প্রার্থী ছিলেন। নির্বাচনের সময় তিনি
-                    ‘লেভেল প্লেয়িং ফিল্ড’ না থাকার অভিযোগ করেন। তবুও গণতন্ত্র
-                    রক্ষার স্বার্থে তিনি নির্বাচনে অংশ নেন।
+                    &apos;লেভেল প্লেয়িং ফিল্ড&apos; না থাকার অভিযোগ করেন। তবুও
+                    গণতন্ত্র রক্ষার স্বার্থে তিনি নির্বাচনে অংশ নেন।
                   </p>
                   <p>
                     এছাড়াও, তিনি বিএনপি চেয়ারপারসনের ফরেন অ্যাফেয়ার্স
                     অ্যাডভাইজরি কমিটির সদস্য। পঞ্চগড় অঞ্চলের ব্যাপক উন্নয়নের
-                    জন্য তাঁর সুদূরপ্রসারী পরিকল্পনার কারণে তিনি ‘
-                    <strong>উত্তরবঙ্গের স্বপ্নদর্শী নেতা</strong>’ নামে পরিচিত।
+                    জন্য তাঁর সুদূরপ্রসারী পরিকল্পনার কারণে তিনি&apos;
+                    <strong>উত্তরবঙ্গের স্বপ্নদর্শী নেতা</strong>&apos; নামে
+                    পরিচিত।
                   </p>
                   <p>
                     <strong> ত্রয়োদশ জাতীয় সংসদ নির্বাচনে (২০২৬)</strong>{" "}
                     পঞ্চগড়-১ আসনের জন্য তিনি বিএনপির প্রাথমিক প্রার্থী হিসেবে
                     মনোনীত হয়েছেন। ২০২৫ সালের অক্টোবরে তিনি পঞ্চগড়ে বিএনপির ৩১
-                    দফা এবং ১৮০ দিনের কর্মসূচি মানুষের দোরগোড়ায় পৌঁছে দিতে ‘
-                    <strong> ঘরে ঘরে, জনে জনে</strong>’ নামক এক ব্যতিক্রমী
+                    দফা এবং ১৮০ দিনের কর্মসূচি মানুষের দোরগোড়ায় পৌঁছে দিতে
+                    &apos;
+                    <strong> ঘরে ঘরে, জনে জনে</strong>&apos; নামক এক ব্যতিক্রমী
                     গণসংযোগ কর্মসূচির নেতৃত্ব দেন। মানুষের সমস্যাগুলো শোনা এবং
                     সরকারের গঠনমূলক সমালোচনা করার এই উদ্যোগ স্থানীয় পর্যায়ে
                     ব্যাপক সাড়া ফেলে।
@@ -340,7 +342,8 @@ const NawshadZamirPage = () => {
                     গুরুত্বপূর্ণ পদে কাজ করেছেন নওশাদ। পাশাপাশি তিনি বাণিজ্যিক
                     প্রতিষ্ঠান, ব্যাংক, বীমা, আইটি, টেলিকম এবং শিপিং কোম্পানিকে
                     নিয়মিত আইনি পরামর্শ দিয়ে থাকেন। বাংলাদেশে এইচএসবিসি
-                    (HSBC)-এর ‘আমানাহ’ পোর্টালের জন্য <strong>শরিয়াহ</strong>
+                    (HSBC)-এর &apos;আমানাহ&apos; পোর্টালের জন্য{" "}
+                    <strong>শরিয়াহ</strong>
                     -সম্মত পণ্যগুলো তাঁর তদারকিতে তৈরি। রহিম আফরোজ এনার্জি
                     সার্ভিসেস লিমিটেড-এর জন্য মুদারাবা বন্ড কাঠামো তৈরিতেও তিনি
                     সহায়তা করেন। ইনফ্রাস্ট্রাকচার ইনভেস্টমেন্ট ফ্যাসিলিটেশন
@@ -365,7 +368,7 @@ const NawshadZamirPage = () => {
                     degree from the world-renowned Harvard Law School and an MSc
                     degree in taxation from Oxford University. He is an advocate
                     of the Supreme Court of Bangladesh and a Barrister-at-Law at
-                    Lincoln's Inn, London.
+                    Lincoln&apos;s Inn, London.
                   </p>
                   <p>
                     He is the lawyer of former Prime Minister and national
@@ -378,38 +381,42 @@ const NawshadZamirPage = () => {
                     constituency in the{" "}
                     <strong>11th National Parliament election (2018)</strong>.
                     During the election, he complained about the lack of a
-                    'level playing field'. Nevertheless, he participated in the
-                    election in the interest of protecting democracy.
+                    &apos;level playing field&apos;. Nevertheless, he
+                    participated in the election in the interest of protecting
+                    democracy.
                   </p>
                   <p>
                     He is also a member of the Foreign Affairs Advisory
                     Committee of the BNP Chairperson. He is known as the
-                    <strong>'Visionary Leader of North Bengal'</strong> due to
-                    his far-reaching plans for the comprehensive development of
-                    the Panchagarh region.
+                    <strong>
+                      &apos;Visionary Leader of North Bengal&apos;
+                    </strong>{" "}
+                    due to his far-reaching plans for the comprehensive
+                    development of the Panchagarh region.
                   </p>
                   <p>
                     He has been nominated as the primary candidate of BNP for
                     Panchagarh-1 constituency in the{" "}
                     <strong>13th National Parliament Election (2026)</strong>.
                     In October 2025, he led an exceptional mass outreach program
-                    called <strong>'Ghare Ghare, Jane Jane'</strong> in
-                    Panchagarh to take the BNP's 31-point and 180-day program to
-                    the doorsteps of the people. This initiative to listen to
-                    the problems of the people and constructively criticize the
-                    government received a huge response at the local level.
+                    called <strong>&apos;Ghare Ghare, Jane Jane&apos;</strong>{" "}
+                    in Panchagarh to take the BNP&apos;s 31-point and 180-day
+                    program to the doorsteps of the people. This initiative to
+                    listen to the problems of the people and constructively
+                    criticize the government received a huge response at the
+                    local level.
                   </p>
                   <p>
                     He is currently serving as the Acting Head of Chambers of
-                    the <strong>Jurists' Chambers</strong>, Dhaka. His legal
-                    practice mainly revolves around corporate law, Islamic
+                    the <strong>Jurists&apos; Chambers</strong>, Dhaka. His
+                    legal practice mainly revolves around corporate law, Islamic
                     finance, and constitutional writs.
                   </p>
                   <p>
                     During his career, Naushad has served in important positions
                     such as{" "}
                     <strong>
-                      Director General of the Prime Minister's Office
+                      Director General of the Prime Minister&apos;s Office
                     </strong>{" "}
                     and
                     <strong>
@@ -419,13 +426,13 @@ const NawshadZamirPage = () => {
                     . He also regularly provides legal advice to commercial
                     institutions, banks, insurance, IT, telecom and shipping
                     companies. He supervised the development of Sharia-compliant
-                    products for HSBC's 'Amanah' portal in Bangladesh. He also
-                    helped develop the Mudaraba bond structure for Rahim Afroz
-                    Energy Services Limited. As a consultant to the
-                    Infrastructure Investment Facilitation Center (IIFC), he
-                    helped develop the concession agreement for the New Mooring
-                    Container Terminal at Chittagong Port and the guidelines for
-                    BTRC's cellular license auction.
+                    products for HSBC&apos;s &apos;Amanah&apos; portal in
+                    Bangladesh. He also helped develop the Mudaraba bond
+                    structure for Rahim Afroz Energy Services Limited. As a
+                    consultant to the Infrastructure Investment Facilitation
+                    Center (IIFC), he helped develop the concession agreement
+                    for the New Mooring Container Terminal at Chittagong Port
+                    and the guidelines for BTRC&apos;s cellular license auction.
                   </p>
                   <p>
                     Outside of law and politics, he is a writer and thinker. His
@@ -451,17 +458,18 @@ const NawshadZamirPage = () => {
                     <h5>
                       {language === "bn" ? (
                         <>
-                          ২০২২ সালে তিনি ‘<strong>CUBE</strong>’ (Coalition for
-                          Upgradation of Bangladeshi Economy) উদ্বোধনী অনুষ্ঠানে
-                          বাংলাদেশের রপ্তানি ও নেগোসিয়েশন কৌশল নিয়ে গভীর
-                          আলোচনা করেন।
+                          ২০২২ সালে তিনি &apos;<strong>CUBE</strong>&apos;
+                          (Coalition for Upgradation of Bangladeshi Economy)
+                          উদ্বোধনী অনুষ্ঠানে বাংলাদেশের রপ্তানি ও নেগোসিয়েশন
+                          কৌশল নিয়ে গভীর আলোচনা করেন।
                         </>
                       ) : (
                         <>
                           In 2022, he gave an in-depth discussion on
-                          Bangladesh's export and negotiation strategies at the
-                          inaugural event of <strong>'CUBE'</strong> (Coalition
-                          for Upgradation of Bangladeshi Economy).
+                          Bangladesh&apos;s export and negotiation strategies at
+                          the inaugural event of{" "}
+                          <strong>&apos;CUBE&apos;</strong> (Coalition for
+                          Upgradation of Bangladeshi Economy).
                         </>
                       )}
                     </h5>
@@ -479,12 +487,13 @@ const NawshadZamirPage = () => {
                     <h5>
                       {language === "bn" ? (
                         <>
-                          তাঁর লেখা নিবন্ধ "
+                          {" "}
+                          &quot;
                           <strong>
                             ডু প্রিজনার্স হ্যাভ এ রাইট টু হেলথ অ্যান্ড মেডিকেল
                             কেয়ার ইন বাংলাদেশ?
                           </strong>
-                          " (Do prisoners have a right to health and medical
+                          &quot;(Do prisoners have a right to health and medical
                           care in Bangladesh?) ২০১৮ সালে বিখ্যাত{" "}
                           <strong>নিউ ইয়র্ক টাইমস</strong>-এ প্রকাশিত হয়।
                         </>
@@ -492,8 +501,8 @@ const NawshadZamirPage = () => {
                         <>
                           His article{" "}
                           <strong>
-                            "Do Prisoners Have a Right to Health and Medical
-                            Care in Bangladesh?"
+                            &quot;Do Prisoners Have a Right to Health and
+                            Medical Care in Bangladesh? &quot;
                           </strong>{" "}
                           was published in the famous{" "}
                           <strong>New York Times</strong> in 2018.
@@ -515,20 +524,20 @@ const NawshadZamirPage = () => {
                       {language === "bn" ? (
                         <>
                           ম্যাক্স প্ল্যাঙ্ক এনসাইক্লোপিডিয়া অফ পাবলিক
-                          ইন্টারন্যাশনাল ল-তে তিনি ‘
+                          ইন্টারন্যাশনাল ল-তে তিনি &apos;
                           <strong>
                             রান অফ কচ্ছ আরবিট্রেশন (ইন্ডো-পাকিস্তান ওয়েস্টার্ন
                             বাউন্ডারি)
                           </strong>
-                          ’ (Rann of Kutch Arbitration) নিয়ে লিখেছেন।
+                          &apos; (Rann of Kutch Arbitration) নিয়ে লিখেছেন।
                         </>
                       ) : (
                         <>
                           In the Max Planck Encyclopedia of Public International
                           Law, he wrote about the{" "}
                           <strong>
-                            'Rann of Kutch Arbitration (Indo-Pakistan Western
-                            Boundary)'
+                            &apos;Rann of Kutch Arbitration (Indo-Pakistan
+                            Western Boundary)&apos;
                           </strong>
                           .
                         </>
@@ -549,18 +558,19 @@ const NawshadZamirPage = () => {
                       {language === "bn" ? (
                         <>
                           ২০১৬ সালে <strong>নিউ এজ</strong> পত্রিকায় তাঁর লেখা
-                          "{" "}
+                          &quot;{" "}
                           <strong>
                             ইজ বাংলাদেশ ভায়োলেটিং ইন্টারন্যাশনাল ল?
                           </strong>{" "}
-                          " (Is Bangladesh violating international law?)
+                          &quot;(Is Bangladesh violating international law?)
                           নিবন্ধটি প্রকাশিত হয়।
                         </>
                       ) : (
                         <>
                           In 2016, his article{" "}
                           <strong>
-                            "Is Bangladesh violating international law?"
+                            &quot;Is Bangladesh violating international law?
+                            &quot;
                           </strong>
                           was published in the <strong>New Age</strong>{" "}
                           magazine.
@@ -583,8 +593,8 @@ const NawshadZamirPage = () => {
                         <>
                           ১৯৯৩ সালে দ্য <strong>বাংলাদেশ টাইমস</strong>-এ তিনি
                           <strong>
-                            "দ্য গ্যাঞ্জেস ওয়াটার ডিসপিউট – ইক্যুইটি উইল সাফার
-                            এ রং টু বি উইথআউট রেমিডি"
+                            &quot;দ্য গ্যাঞ্জেস ওয়াটার ডিসপিউট – ইক্যুইটি উইল
+                            সাফার এ রং টু বি উইথআউট রেমিডি&quot;
                           </strong>{" "}
                           (The Ganges Water dispute - Equity will suffer a wrong
                           to be without remedy) শিরোনামে গঙ্গার পানি বণ্টন নিয়ে
@@ -595,8 +605,8 @@ const NawshadZamirPage = () => {
                           In 1993, he wrote an important article in The
                           <strong>Bangladesh Times</strong> titled{" "}
                           <strong>
-                            "The Ganges Water Dispute - Equity will suffer a
-                            wrong to be without remedy"
+                            &quot;The Ganges Water Dispute - Equity will suffer
+                            a wrong to be without remedy&quot;
                           </strong>{" "}
                           on the sharing of Ganga water.
                         </>
@@ -604,7 +614,6 @@ const NawshadZamirPage = () => {
                     </h5>
                   </div>
                 </li>
-              
               </ul>
             </div>
           </div>
