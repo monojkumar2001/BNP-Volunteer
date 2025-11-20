@@ -118,7 +118,7 @@ const GetInvolved = () => {
           {loading ? (
             <div className="row">
               {[1, 2, 3, 4, 5, 6].map((index) => (
-                <div key={index} className="col-lg-4 col-md-6 mb-4">
+                <div key={index} className="col-lg-4  mb-4">
                   <div className="get-involved-card">
                     <div className="get-involved-img">
                       <ReactLoadingSkeleton height={575} />
@@ -142,18 +142,25 @@ const GetInvolved = () => {
                 const eventSlug = event.slug || event.id;
                 
                 return (
-                  <div key={event.id} className="col-lg-4 col-md-6">
+                  <div key={event.id} className="col-lg-4 ">
                     <Link href={`/events/${eventSlug}`}>
                       <div
                         className="get-involved-card"
                         style={{ cursor: "pointer" }}
                       >
-                        <div className="get-involved-img" style={{ position: "relative", overflow: "hidden" }}>
+                        <div
+                          className="get-involved-img"
+                          style={{ position: "relative", overflow: "hidden" }}
+                        >
                           <Image
                             src={imageUrl}
                             width={414}
                             height={575}
-                            alt={language === "bn" ? event.title_bn : event.title_en}
+                            alt={
+                              language === "bn"
+                                ? event.title_bn
+                                : event.title_en
+                            }
                             style={{ objectFit: "cover" }}
                           />
                         </div>
@@ -165,7 +172,9 @@ const GetInvolved = () => {
                             alt="date"
                           />
                           <span>
-                            {event.event_date ? formatDate(event.event_date) : ""}
+                            {event.event_date
+                              ? formatDate(event.event_date)
+                              : ""}
                           </span>
                         </div>
                         <div className="get-involved-card-content">

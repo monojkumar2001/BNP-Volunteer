@@ -333,7 +333,7 @@ const BecomeVolunteer = () => {
                     className="form-control"
                   />
                 </div>
-                <div className="opinion-form-btn become-volunteer-btn">
+                <div className="opinion-form-btn ">
                   <button
                     type="button"
                     onClick={() => setIsModalOpen(false)}

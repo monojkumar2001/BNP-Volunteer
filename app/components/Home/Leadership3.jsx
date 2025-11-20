@@ -16,7 +16,7 @@ const Leadership3 = () => {
       data-aos-duration="3000"
     >
       <div className="container">
-        <div className="row align-items-center leadership-wrpp">
+        <div className="row align-items-center ">
           <div className="col-lg-6 ">
             <div className="leadership-item-img">
               <Image

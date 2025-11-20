@@ -78,8 +78,10 @@ const ContactUs = () => {
   };
   return (
     <section
-      className="contact-use"
       data-aos="fade-up"
+      className={`contact-use ${
+        language === "bn" ? "lang-contact-bn" : "lang-contact-en"
+      }`}
       data-aos-duration="3000"
     >
       <div className="container">
@@ -90,16 +92,21 @@ const ContactUs = () => {
                 {language === "bn" ? "যোগাযোগ করুন" : "Contact Us"}
               </h2>
               <h1 className="section-title">
-                {language === "bn" ? "আমাদের সাথে যোগাযোগ করুন" : "Get In Touch With Us"}
+                {language === "bn"
+                  ? "আমাদের সাথে যোগাযোগ করুন"
+                  : "Get In Touch With Us"}
               </h1>
               <p>
                 {language === "bn" ? (
                   <>
-                    আপনার কোনো প্রশ্ন, পরামর্শ বা সহায়তা প্রয়োজন হলে নির্দ্বিধায় আমাদের সাথে যোগাযোগ করুন। আমরা সর্বদা আপনার পাশে আছি।
+                    আপনার কোনো প্রশ্ন, পরামর্শ বা সহায়তা প্রয়োজন হলে
+                    নির্দ্বিধায় আমাদের সাথে যোগাযোগ করুন। আমরা সর্বদা আপনার
+                    পাশে আছি।
                   </>
                 ) : (
                   <>
-                    Feel free to contact us if you have any questions, suggestions, or need assistance. We are always here to help.
+                    Feel free to contact us if you have any questions,
+                    suggestions, or need assistance. We are always here to help.
                   </>
                 )}
               </p>
@@ -113,12 +120,13 @@ const ContactUs = () => {
                     <p>
                       {language === "bn" ? (
                         <>
-                          ঢাকা: জুরিস্টস চেম্বার্স, লেভেল ৩, হাউজ ৩৯এ, রোড ৭, ধানমন্ডি ১২০৯
+                          জুরিস্ট চেম্বারস, ৩য় তলা, হোল্ডিং ৩৯এ, রোড ৭,
+                          ধানমন্ডি, ঢাকা ১২০৯
                         </>
                       ) : (
                         <>
-                          Dhaka: Jurists Chambers, Level 3, House 39A, Road 7,
-                          Dhanmandi 1209
+                          Jurists Chambers, Level 3, House 39A, Road 7,
+                          Dhanmandi, Dhaka 1209
                         </>
                       )}
                     </p>
@@ -138,7 +146,9 @@ const ContactUs = () => {
                     <MdOutlineMailOutline />
                   </div>
                   <div className="contact-list-text">
-                    <h4>{language === "bn" ? "ইমেইল ঠিকানা" : "Email Address"}</h4>
+                    <h4>
+                      {language === "bn" ? "ইমেইল ঠিকানা" : "Email Address"}
+                    </h4>
                     <a href="mailto:nawshad.bnp@gmail.com">
                       nawshad.bnp@gmail.com
                     </a>
@@ -162,7 +172,11 @@ const ContactUs = () => {
                         onChange={handleChange}
                         name="name"
                         id="name"
-                        placeholder={language === "bn" ? "আপনার নাম লিখুন" : "Enter your name"}
+                        placeholder={
+                          language === "bn"
+                            ? "আপনার নাম লিখুন"
+                            : "Enter your name"
+                        }
                       />
                     </div>
                   </div>
@@ -177,7 +191,11 @@ const ContactUs = () => {
                         onChange={handleChange}
                         name="email"
                         id="email"
-                        placeholder={language === "bn" ? "আপনার ইমেইল লিখুন" : "Enter your email"}
+                        placeholder={
+                          language === "bn"
+                            ? "আপনার ইমেইল লিখুন"
+                            : "Enter your email"
+                        }
                       />
                     </div>
                   </div>
@@ -207,7 +225,11 @@ const ContactUs = () => {
                         onChange={handleChange}
                         name="subject"
                         id="subject"
-                        placeholder={language === "bn" ? "বিষয় লিখুন" : "Enter your subject"}
+                        placeholder={
+                          language === "bn"
+                            ? "বিষয় লিখুন"
+                            : "Enter your subject"
+                        }
                       />
                     </div>
                   </div>
@@ -223,12 +245,20 @@ const ContactUs = () => {
                         id="message"
                         cols="30"
                         rows="4"
-                        placeholder={language === "bn" ? "আপনার বার্তা লিখুন" : "Enter your message"}
+                        placeholder={
+                          language === "bn"
+                            ? "আপনার বার্তা লিখুন"
+                            : "Enter your message"
+                        }
                       ></textarea>
                     </div>
                   </div>
                   <div className="contact-us-btn">
-                    <button type="submit" className="custom-btn" disabled={loading}>
+                    <button
+                      type="submit"
+                      className="custom-btn"
+                      disabled={loading}
+                    >
                       <span>
                         {loading
                           ? language === "bn"

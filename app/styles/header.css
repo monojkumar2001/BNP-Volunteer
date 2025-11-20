@@ -241,11 +241,11 @@ span.logo-name.logo-bn {
     width: 55px;
   }
   .header-section.scrolled span.logo-name.logo-bn {
-    font-size: 25px;
+    font-size: 24px;
     line-height: 30px;
   }
   .header-section.scrolled .logo-name-text {
-    font-size: 15px;
+    font-size: 14px;
   }
   .site-logo {
     gap: 14px;
@@ -276,7 +276,7 @@ span.logo-name.logo-bn {
     background: #0000005c;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    padding: 12px 0;
+    padding: 8px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   }
 
@@ -296,7 +296,7 @@ span.logo-name.logo-bn {
 
   .header-section.single-page span.logo-name.logo-bn {
     color: var(--black-color);
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
   }
 
@@ -306,6 +306,9 @@ span.logo-name.logo-bn {
 
   .header-section.single-page .close-menu-btn {
     color: var(--black-color);
+  }
+  .logo-name-text{
+    font-size: 14px;
   }
 }
 

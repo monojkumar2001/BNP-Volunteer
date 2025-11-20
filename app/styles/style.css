@@ -1667,3 +1667,23 @@ padding-bottom: 20px;
   position: absolute;
   left: 15px;
 }
+.lang-contact-bn .section-title{
+  font-family: var(--bangla-font);
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+.lang-contact-bn .sub-title{
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 700;
+}
+.lang-contact-bn .contact-us-left p{
+  font-family: var(--bangla-font);
+
+}
+.lang-contact-bn .contact-us-left h4{
+  font-family: var(--bangla-font);
+
+}
