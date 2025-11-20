@@ -178,6 +178,43 @@ span.logo-name.logo-bn {
 .header-section.scrolled.logo-name-text {
   font-size: 16px;
 }
+
+/* Single Page Header Styles (News/Event Single Pages) */
+.header-section.single-page {
+  background: #0000005c;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 12px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-section.single-page .site-logo .logo-name,
+.header-section.single-page .logo-name-text {
+  color: var(--white-color);
+}
+
+.header-section.single-page span.logo-name.logo-bn {
+  color: var(--white-color);
+  font-size: 31px;
+  line-height: 44px;
+}
+
+.header-section.single-page .site-logo img {
+  width: 65px;
+}
+
+.header-section.single-page .main-menu {
+  padding: 10px 15px 10px 24px;
+}
+
+.header-section.single-page .menu-btn-ber {
+  color: var(--white-color);
+}
+
+.header-section.single-page .close-menu-btn {
+  color: var(--white-color);
+}
+
 @media (max-width: 1200px) {
   .menu-btn-ber {
     display: block;
@@ -241,6 +278,34 @@ span.logo-name.logo-bn {
     -webkit-backdrop-filter: blur(20px);
     padding: 12px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  /* Single Page Header Styles for Mobile */
+  .header-section.single-page {
+  background: #0000005c;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 12px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .header-section.single-page .site-logo .logo-name,
+  .header-section.single-page .logo-name-text {
+    color: var(--black-color);
+  }
+
+  .header-section.single-page span.logo-name.logo-bn {
+    color: var(--black-color);
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .header-section.single-page .menu-btn-ber {
+    color: var(--black-color);
+  }
+
+  .header-section.single-page .close-menu-btn {
+    color: var(--black-color);
   }
 }
 

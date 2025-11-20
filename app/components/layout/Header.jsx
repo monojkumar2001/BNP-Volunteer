@@ -16,6 +16,9 @@ const Header = () => {
   const { language, setLanguage } = useLanguage();
 
   const isNewsPage = pathname.startsWith("/news/");
+  const isEventPage = pathname.startsWith("/events/");
+  const isSinglePage = isNewsPage || isEventPage;
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -28,6 +31,13 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  // Set scrolled state on single pages by default
+  useEffect(() => {
+    if (isSinglePage) {
+      setScrolled(true);
+    }
+  }, [isSinglePage]);
   const navLinks = {
     bn: [
       { href: "/", label: "হোম" },
@@ -49,6 +59,7 @@ const Header = () => {
     <header
       className={`header-section 
   ${scrolled ? "scrolled" : ""} 
+  ${isSinglePage ? "single-page" : ""}
   ${language === "bn" ? "lang-header-bn" : "lang-header-en"}`}
     >
       <div className="container">
@@ -63,9 +74,7 @@ const Header = () => {
             />
             <div className="logo-name-item">
               <span
-                style={{
-                  color: isNewsPage ? "#000000" : "",
-                }}
+               
                 className={`logo-name ${
                   language === "bn" ? "logo-bn" : "logo-en"
                 }`}
@@ -78,10 +87,7 @@ const Header = () => {
 
           {/* Menu Button for Mobile */}
           <button
-            style={{
-              color: isNewsPage ? "#000000" : "",
-            }}
-            className={`menu-btn-ber ${scrolled ? "scrolled" : ""}`}
+            className={`menu-btn-ber ${scrolled ? "scrolled" : ""} ${isSinglePage ? "single-page" : ""}`}
             onClick={() => setMenuOpen(true)}
             aria-label="Open Menu"
           >
@@ -91,10 +97,7 @@ const Header = () => {
           {/* Navigation */}
           <nav className={`main-menu ${menuOpen ? "open" : ""}`}>
             <button
-              style={{
-                color: isNewsPage ? "#000000" : "",
-              }}
-              className="close-menu-btn"
+              className={`close-menu-btn ${isSinglePage ? "single-page" : ""}`}
               onClick={() => setMenuOpen(false)}
               aria-label="Close Menu"
             >
