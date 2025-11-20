@@ -1511,3 +1511,68 @@ ul.contact-us-info li:hover .contact-icon {
 .lang-leadership-bn .leadership-3-item-head .why-choose-list {
   gap: 35px;
 }
+
+.opinion-form-title{
+  font-size: 30px;
+  text-align: center;
+}
+.opinion-form-description{
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+}
+.lang-volunteer-bn.opinion-form-description{
+  font-family: var(--bangla-font);
+  line-height: 30px;
+}
+
+.opinion-form-btn{
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.opinion-form-btn .custom-btn-alt{
+color: var(--black-color);
+border: 1px solid var(--black-color);
+}
+
+.opinion-form-content .form-group-item input{
+  padding: 10px 16px;
+}
+.opinion-form-content.lang-opinion-bn .form-group-item label {
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+
+}
+.opinion-form-content.lang-opinion-bn .form-group-item input::placeholder {
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.opinion-form-content.lang-opinion-bn .form-group-item textarea::placeholder {
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.opinion-form-content.lang-opinion-bn .form-group-item select{
+  font-family: var(--bangla-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.opinion-form-content .form-group-item{
+  padding-bottom: 15px;
+  gap: 8px;
+}
+
+.opinion-form-content select{
+  padding: 10px 16px;
+}
