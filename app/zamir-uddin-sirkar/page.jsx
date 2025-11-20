@@ -35,7 +35,7 @@ const ZamirUddinPage = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="who-content">
+              <div className="who-content leadership-list-content">
                 <div className="subtitle">
                   {language === "bn"
                     ? "ব্যারিস্টার, রাজনীতিবিদ"
@@ -47,131 +47,125 @@ const ZamirUddinPage = () => {
                     : " Zamir Uddin Sirker"}
                 </h2>
 
-                <ul>
+                <ul className="why-choose-list leadership-list-item">
                   <li>
-                    {language === "bn" ? (
-                      <>
-                        বেসরকারী বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন – ফলশ্রুতিতে
-                        বর্তমানে দেশে ১১২ টি নিবন্ধিত বেসরকারী বিশ্ববিদ্যালয়ে
-                        ৩,৫৮,৪১৪ জন শিক্ষার্থী পড়াশুনা করছে (বাংলাদেশ
-                        বিশ্ববিদ্যালয় মঞ্জুরী কমিশন, ২০২৩)
-                      </>
-                    ) : (
-                      <>
-                        Enacted the Private Universities Act 1992 – as a result,
-                        currently 3,58,414 students are studying in 112
-                        registered private universities in the country
-                        (Bangladesh University Grants Commission, 2023)
-                      </>
-                    )}
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? "পঞ্চগড় ১-এর শিক্ষাখাতে প্রায় ১৫ হাজার কোটি টাকা (মুদ্রাস্ফীতি সমন্বয়কৃত) রাষ্ট্রীয় বিনিয়োগ"
+                          : "State investment of about 15 thousand crore taka (inflation adjusted) in the education sector of Panchagarh 1"}
+                      </h5>
+                    </div>
                   </li>
                   <li>
-                    {language === "bn" ? (
-                      <>
-                        বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় আইন ১৯৯২ প্রণয়ন করেন -
-                        তালিকাভুক্ত শিক্ষার্থী সংখ্যার ভিত্তিতে এটি বিশ্বের ৮ম
-                        বৃহত্তম বিশ্ববিদ্যালয় (উইকিপিডিয়া)। ২০২০ সালে বাউবির
-                        সমস্ত আনুষ্ঠানিক প্রোগ্রামে মোট শিক্ষার্থীর সংখ্যা ছিল
-                        ৯,৬৫,৮৩৮।
-                      </>
-                    ) : (
-                      <>
-                        Bangladesh Open University Act 1992 - It is the 8th
-                        largest university in the world based on the number of
-                        enrolled students (Wikipedia). In 2020, BAU had a total
-                        enrollment of 965,838 students in all formal programs.
-                      </>
-                    )}
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? "দেশে বেসরকারী বিশ্ববিদ্যালয় চালু"
+                          : "Private universities launched in the country"}
+                      </h5>
+                    </div>
                   </li>
                   <li>
-                    {language === "bn" ? (
-                      <>
-                        জাতীয় বিশ্ববিদ্যালয় আইন, ১৯৯২ প্রণয়ন করেন – শিক্ষার্থীর
-                        সংখ্যা অনুযায়ী এটি বিশ্বের দ্বিতীয় বৃহত্তম
-                        বিশ্ববিদ্যালয়। অধিভুক্ত ২২৫৭ টি শিক্ষা প্রতিষ্ঠানে
-                        ৩৪,২৫,৮৩২ জন শিক্ষার্থী লেখাপড়া করছে (জাতীয়
-                        বিশ্ববিদ্যালয় ওয়েবসাইট)।
-                      </>
-                    ) : (
-                      <>
-                        Enacted the National University Act, 1992 – It is the
-                        second largest university in the world in terms of
-                        student population. 34,25,832 students are studying in
-                        2,257 affiliated educational institutions (National
-                        University website).
-                      </>
-                    )}
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? " জাতীয় বিশ্ববিদ্যালয় প্রতিষ্ঠা"
+                          : "Establishment of the National University"}
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? " উন্মুক্ত বিশ্ববিদ্যালয় স্থাপন"
+                          : "Establishment of open universities"}
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (কুয়েট) তৈরি"
+                          : "Khulna University of Engineering and Technology (KUET) was established"}
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? "জাতীয় সংসদ ভবনকে পার্লামেন্ট সেশনের উপযুক্ত করে তোলা"
+                          : "Making the National Parliament Building suitable for parliamentary sessions"}
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn"
+                          ? "জিয়া আন্তর্জাতিক বিমানবন্দর নির্মাণ"
+                          : "Construction of Zia International Airport"}
+                      </h5>
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="leader-ship-single-content">
-            <ul>
-              <li>
-                {language === "bn" ? (
-                  <>
-                    খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (KUET) - ২০০৩ সালে
-                    বিআইটি খুলনাকে পরিপূর্ণ গবেষণাধর্মী বিশ্ববিদ্যালয়ে পরিণত
-                    করেন। এখানে প্রায় আট হাজার জন ছাত্রছাত্রী স্নাতক ও
-                    স্নাতকোত্তর প্রকৌশল ও প্রযুক্তি নিয়ে পড়াশোনা করছে।
-                  </>
-                ) : (
-                  <>
-                    Khulna University of Engineering and Technology (KUET) - In
-                    2003, BIT transformed Khulna into a full-fledged research
-                    university. Around eight thousand students are studying
-                    undergraduate and postgraduate engineering and technology
-                    here.
-                  </>
-                )}
-              </li>
-              <li>
-                {language === "bn" ? (
-                  <>
-                    বাংলাদেশ জাতীয় সংসদ ভবন উদ্বোধন - ১৯৭৯ তিনি গণপূর্ত ও নগর
-                    উন্নয়ন মন্ত্রণালয়ের দায়িত্বভার নেয়ার পর পূর্ণাঙ্গ সংসদ
-                    অধিবেশন পরিচালনার উপযুক্ত হয়। সেসময় বিশ্বখ্যাত স্থপতি লুই
-                    কানের ডিজাইন করা সংসদ ভবন কমপ্লেক্সের ৭০-৮০ ভাগ কাজই অসমাপ্ত
-                    ছিল। তিনি এর সংরক্ষিত নকশা ও অঙ্কন সংগ্রহ করেন। ফলে সংসদ ভবন
-                    “ব্যবহারযোগ্য” থেকে “রাষ্ট্রের গণতান্ত্রিক কেন্দ্র” হয়ে ওঠে।
-                  </>
-                ) : (
-                  <>
-                    Inauguration of the Bangladesh National Parliament Building
-                    - 1979 After he took charge of the Ministry of Public Works
-                    and Urban Development, he was able to conduct a full
-                    parliamentary session. At that time, 70-80 percent of the
-                    work of the Parliament Building complex designed by
-                    world-renowned architect Louis Kahn was unfinished. He
-                    collected its preserved designs and drawings. As a result,
-                    the Parliament Building became the &quot;democratic center
-                    of the state&quot; from a &quot;usable building&quot;.
-                  </>
-                )}
-              </li>
-              <li>
-                {language === "bn" ? (
-                  <>
-                    জিয়া আন্তর্জাতিক বিমানবন্দর (বর্তমানে হযরত শাহজালাল
-                    আন্তর্জাতিক বিমানবন্দর) নির্মাণ - ১৯৭৯ সালে গণপূর্ত ও নগর
-                    উন্নয়ন প্রতিমন্ত্রী হিসেবে তিনি ঢাকার নতুন আন্তর্জাতিক
-                    বিমানবন্দর নির্মাণ কাজের দায়িত্ব নেন। প্রথমবারের মতো
-                    বাংলাদেশে একটি পূর্ণাঙ্গ আন্তর্জাতিক বিমানবন্দর গড়ে তোলেন
-                    তিনি।
-                  </>
-                ) : (
-                  <>
-                    Construction of Zia International Airport (now Hazrat
-                    Shahjalal International Airport) - As the State Minister for
-                    Public Works and Urban Development in 1979, he took charge
-                    of the construction of Dhaka&apos;s new international
-                    airport. He built a full-fledged international airport for
-                    the first time in Bangladesh.
-                  </>
-                )}
-              </li>
-            </ul>
+         
             {language === "bn" ? (
               <>
                 <h4>বিস্তারিত</h4>
@@ -220,9 +214,8 @@ const ZamirUddinPage = () => {
                   তেঁতুলিয়ার নয়াবাড়ি গ্রামে। ঢাকা বিশ্ববিদ্যালয় থেকে এমএ ও
                   এলএলবি এবং লন্ডনের লিংকনস ইন থেকে ব্যারিস্টারি পাশ করার পর
                   তৎকালীন পূর্ব পাকিস্তান হাইকোর্ট থেকে সনদ নিয়ে ১৯৬০ সালে তিনি
-                  ঢাকা হাইকোর্টে
+                  ঢাকা হাইকোর্টে আইন পেশায় যোগদান করেন।
                 </p>
-                <p>আইন পেশায় যোগদান করেন। </p>
                 <p>
                   ১৯৪৫ সালে ছাত্র থাকা অবস্থায় তৎকালীন ছাত্র ফেডারেশনের মাধ্যমে
                   তাঁর রাজনৈতিক জীবনের শুরু। তিনি আওয়ামী মুসলিমের লীগের একজন
@@ -308,9 +301,9 @@ const ZamirUddinPage = () => {
                   from Dhaka University and barristership from Lincoln&apos;s
                   Inn, London, he was admitted to the Dhaka High Court in 1960
                   after obtaining a certificate from the then East Pakistan High
-                  Court.
+                  Court Joined the legal profession.
                 </p>
-                <p>Joined the legal profession.</p>
+              
                 <p>
                   His political career began in 1945, when he was still a
                   student, through the then Students&apos; Federation. He was a

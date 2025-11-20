@@ -1499,3 +1499,15 @@ ul.contact-us-info li:hover .contact-icon {
 .lang-leadership-bn .leadership-item-head {
   padding-top: 40px;
 }
+.leadership-3-list {
+  gap: 35px;
+}
+.lang-leadership-bn .leadership-3-title {
+    font-size: 39px;
+}
+.lang-leadership-bn .leadership-3-item-head{
+  padding-top: 60px;
+}
+.lang-leadership-bn .leadership-3-item-head .why-choose-list {
+  gap: 35px;
+}

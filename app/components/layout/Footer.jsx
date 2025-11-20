@@ -10,7 +10,6 @@ import { usePathname } from "next/navigation";
 
 const Footer = () => {
   const pathname = usePathname();
-
   const isContactPage = pathname === "/contact-us";
   const { language } = useLanguage();
   return (
@@ -20,10 +19,11 @@ const Footer = () => {
           {!isContactPage && (
             <div className="footer-content">
               <h2> {language === "bn" ? "যোগাযোগ করুন" : "Contact US"}</h2>
-              <p>Head Office:</p>
+              <p>{language === "bn" ? "প্রধান কার্যালয়ঃ" : "Head Office:"}</p>
               <p>
-                Dhaka: Jurists Chambers, Level 3, House 39A, Road 7, Dhanmandi
-                1209
+                {language === "bn"
+                  ? "জুরিস্ট চেম্বারস, ৩য় তলা, হোল্ডিং ৩৯এ, রোড ৭, ধানমন্ডি, ঢাকা ১২০৯"
+                  : "Jurists Chambers, Level 3, House 39A, Road 7, Dhanmandi, Dhaka 1209"}
               </p>
             </div>
           )}

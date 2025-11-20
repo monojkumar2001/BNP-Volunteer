@@ -6,6 +6,7 @@ import HeroSection from "./components/Home/HeroSection";
 import LatestNews from "./components/Home/LatestNews";
 import Leadership1 from "./components/Home/Leadership1";
 import Leadership2 from "./components/Home/Leadership2";
+import Leadership3 from "./components/Home/Leadership3";
 import OurConcern from "./components/Home/OurConcern";
 import PromiseTracker from "./components/Home/PromiseTracker";
 import WhoWeAre from "./components/Home/WhoWeAre";
@@ -51,7 +52,7 @@ export default function Home({ language }) {
       <WhyChooseUs />
       <Leadership1 />
       <Leadership2 />
-
+      <Leadership3 />
       {/* <ElectionCampaign />
       <ElectionCard />
       <PromiseTracker /> */}
