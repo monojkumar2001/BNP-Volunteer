@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -10,42 +10,59 @@ import "swiper/css/navigation";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { useLanguage } from "../../../context/languageContext";
+import ReactLoadingSkeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const LatestNews = () => {
   const swiperRef = useRef(null);
   const { language } = useLanguage();
-  const newsItems = [
-    {
-      id: 1,
-      img: "/assets/images/news/1.png",
-      title: "Parturient dis torquent nostra mattis congue",
-      date: "April 20, 2024",
-    },
-    {
-      id: 2,
-      img: "/assets/images/news/2.png",
-      title: "Euismod vulputate sit amet sapien dictum",
-      date: "May 10, 2024",
-    },
-    {
-      id: 3,
-      img: "/assets/images/news/3.png",
-      title: "Consectetur adipiscing elit sed do eiusmod",
-      date: "June 5, 2024",
-    },
-    {
-      id: 4,
-      img: "/assets/images/news/4.png",
-      title: "Felis donec et odio pellentesque diam volutpat",
-      date: "July 15, 2024",
-    },
-    {
-      id: 5,
-      img: "/assets/images/news/2.png",
-      title: "Mauris in aliquam sem fringilla ut morbi",
-      date: "August 2, 2024",
-    },
-  ];
+  const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ;
+
+  // Fetch news from API
+  useEffect(() => {
+    const fetchNews = async () => {
+      try {
+        setLoading(true);
+        const res = await fetch(`${baseUrl}/api/news`);
+        const data = await res.json();
+
+        if (res.ok) {
+          // Only show active news (status = 1) and limit to 8-10 for slider
+          const activeNews = data.filter((item) => item.status === 1).slice(0, 10);
+          setNews(activeNews);
+        }
+      } catch (error) {
+        console.error("Error fetching news:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchNews();
+  }, []);
+
+  // Format date
+  const formatDate = (dateString) => {
+    if (!dateString) return "";
+    const date = new Date(dateString);
+    return date.toLocaleDateString(
+      language === "bn" ? "bn-BD" : "en-US",
+      {
+        day: "numeric",
+        month: language === "bn" ? "long" : "short",
+        year: "numeric",
+      }
+    );
+  };
+
+  // Get image URL
+  const getImageUrl = (imagePath) => {
+    if (!imagePath) return "/assets/images/placeholder.png";
+    if (imagePath.startsWith("http")) return imagePath;
+    return `${baseUrl}/${imagePath.replace(/^\/+/, "")}`;
+  };
 
   return (
     <section
@@ -82,56 +99,90 @@ const LatestNews = () => {
           </div>
         </div>
         <div className="latest-news-wrapper">
-          <Swiper
-            modules={[Navigation, Autoplay]}
-            onBeforeInit={(swiper) => {
-              swiperRef.current = swiper;
-            }}
-            spaceBetween={24}
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            speed={800}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-              },
-              640: {
-                slidesPerView: 2,
-              },
-              1024: {
-                slidesPerView: 3,
-              },
-              1280: {
-                slidesPerView: 4, // ✅ show 4 cards on large screens
-              },
-            }}
-          >
-            {newsItems.map((item) => (
-              <SwiperSlide key={item.id}>
-                <div className="latest-news-card">
-                  <div className="latest-news-img">
-                    <Image
-                      src={item.img}
-                      alt={item.title}
-                      width={305}
-                      height={214}
-                    />
-                  </div>
-                  <div className="latest-news-content">
-                    <Link href="#" className="news-title">
-                      {item.title}
-                    </Link>
-                    <p className="news-meta">
-                      <span>{item.date}</span> · <span>No Comments</span>
-                    </p>
+          {loading ? (
+            <div className="row">
+              {[1, 2, 3, 4].map((index) => (
+                <div key={index} className="col-lg-3 col-md-6 mb-4">
+                  <div className="latest-news-card">
+                    <div className="latest-news-img">
+                      <ReactLoadingSkeleton height={214} />
+                    </div>
+                    <div className="latest-news-content">
+                      <ReactLoadingSkeleton height={20} width="90%" style={{ marginTop: 15 }} />
+                      <ReactLoadingSkeleton height={14} width={120} style={{ marginTop: 10 }} />
+                    </div>
                   </div>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+              ))}
+            </div>
+          ) : news.length > 0 ? (
+            <Swiper
+              modules={[Navigation, Autoplay]}
+              onBeforeInit={(swiper) => {
+                swiperRef.current = swiper;
+              }}
+              spaceBetween={24}
+              loop={news.length > 4}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              speed={800}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                },
+                640: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+                1280: {
+                  slidesPerView: 4,
+                },
+              }}
+            >
+              {news.map((item) => {
+                const imageUrl = getImageUrl(item.image);
+                const newsSlug = item.slug || item.id;
+                
+                return (
+                  <SwiperSlide key={item.id}>
+                    <div className="latest-news-card">
+                      <div className="latest-news-img">
+                        <Image
+                          src={imageUrl}
+                          alt={language === "bn" ? item.title_bn : item.title_en}
+                          width={305}
+                          height={214}
+                          style={{ objectFit: "cover" }}
+                        />
+                      </div>
+                      <div className="latest-news-content">
+                        <Link href={`/news/${newsSlug}`} className="news-title">
+                          {language === "bn"
+                            ? item.title_bn || item.title_en
+                            : item.title_en || item.title_bn}
+                        </Link>
+                        <p className="news-meta">
+                          <span>{formatDate(item.created_at)}</span>
+                        </p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          ) : (
+            <div className="text-center py-5">
+              <p>
+                {language === "bn"
+                  ? "কোন সংবাদ পাওয়া যায়নি"
+                  : "No news found"}
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>

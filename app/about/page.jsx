@@ -6,6 +6,7 @@ import OurConcern from "../components/Home/OurConcern";
 import MyPromises from "../components/About/MyPromises";
 import MyPromisesCard from "../components/About/MyPromisesCard";
 import BecomeVolunteer from "../components/Home/BecomeVolunteer";
+import Leadership2 from "../components/Home/Leadership2";
 export const metadata = {
   title: "Together for a Better Tomorrow",
   description: "Building a stronger future through unity and leadership.",
@@ -47,8 +48,8 @@ const AboutPage = () => {
   return (
     <>
       <Banner bannerData={bannerData} />
-      <AboutSection />
-      <WorkSection />
+      <Leadership2/>
+      {/* <WorkSection /> */}
       <OurConcern />
       {/* <MyPromises /> */}
       {/* <MyPromisesCard /> */}

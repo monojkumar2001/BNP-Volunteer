@@ -1624,3 +1624,46 @@ border: 1px solid var(--black-color);
   font-weight: 400;
   line-height: 35px;
 }
+
+/* Search Modal Styles */
+.search-modal-overlay {
+  animation: slideDown 0.3s ease-out;
+}
+
+.search-modal-content {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.single-news-content {
+  padding: 50px 40px;
+}
+.search-modal-title{
+font-family: var(--bangla-font);
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+padding-bottom: 20px;
+}
+.search-modal-title h2{
+  padding-bottom: 20px;
+}
+.search-modal-input-wrap{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-modal-icon{
+  position: absolute;
+  left: 15px;
+}

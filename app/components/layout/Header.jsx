@@ -6,10 +6,13 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { useLanguage } from "../../../context/languageContext";
+import SearchModal from "./SearchModal";
+
 const Header = () => {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
 
   const isNewsPage = pathname.startsWith("/news/");
@@ -35,7 +38,7 @@ const Header = () => {
     ],
     en: [
       { href: "/", label: "Home" },
-      { href: "/about", label: "About Us" },
+      { href: "/about", label: "About Me" },
       { href: "/events", label: "Event" },
       { href: "/gallery", label: "Media" },
       { href: "/contact-us ", label: "Contact" },
@@ -114,7 +117,11 @@ const Header = () => {
             <div className="header-right">
               <div className="header-action">
                 <div className="header-search-item">
-                  <button type="button">
+                  <button
+                    type="button"
+                    onClick={() => setSearchOpen(true)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <Image
                       src="/assets/images/icon/search.svg"
                       alt="Site search"
@@ -157,6 +164,9 @@ const Header = () => {
           </nav>
         </div>
       </div>
+
+      {/* Search Modal */}
+      <SearchModal isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
     </header>
   );
 };

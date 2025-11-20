@@ -17,7 +17,7 @@ const SingleEventSection = ({ slug }) => {
   const [event, setEvent] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showFullscreenVideo, setShowFullscreenVideo] = useState(false);
-  const baseUrl = (process.env.NEXT_PUBLIC_API_BASE_URL || "").replace(/\/$/, "");
+  const baseUrl = (process.env.NEXT_PUBLIC_API_BASE_URL );
 
   useEffect(() => {
     if (!slug) return;
@@ -179,6 +179,9 @@ const SingleEventSection = ({ slug }) => {
 
   const imageUrl = getImageUrl(event.image);
   const videoUrl = getVideoUrl(event.video_url);
+
+
+  
 
   return (
     <>
