@@ -55,7 +55,7 @@ const BecomeVolunteer = () => {
 
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/contact`,
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/opinion`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -65,9 +65,6 @@ const BecomeVolunteer = () => {
             category: formData.category || null,
             message: formData.message || null,
             location: formData.location || null,
-            subject: categoryOptions.find(
-              (opt) => opt.value === formData.category
-            )?.[language === "bn" ? "labelBn" : "labelEn"] || null,
           }),
         }
       );
