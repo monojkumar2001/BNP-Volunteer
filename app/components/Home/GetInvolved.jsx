@@ -1,12 +1,64 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { useLanguage } from "../../../context/languageContext";
+import ReactLoadingSkeleton from "react-loading-skeleton";
+import "react-loading-skeleton/dist/skeleton.css";
 
 const GetInvolved = () => {
   const { language } = useLanguage();
+  const [events, setEvents] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  // Fetch events from API
+  useEffect(() => {
+    const fetchEvents = async () => {
+      try {
+        setLoading(true);
+        const res = await fetch(
+          `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/events`
+        );
+        const data = await res.json();
+
+        if (res.ok) {
+          // Only show active events (status = 1) and limit to 6
+          const activeEvents = data.filter((event) => event.status === 1).slice(0, 6);
+          setEvents(activeEvents);
+        }
+      } catch (error) {
+        console.error("Error fetching events:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchEvents();
+  }, []);
+
+  // Format date
+  const formatDate = (dateString) => {
+    if (!dateString) return "";
+    const date = new Date(dateString);
+    return date.toLocaleDateString(
+      language === "bn" ? "bn-BD" : "en-US",
+      {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      }
+    );
+  };
+
+  // Get image URL
+  const getImageUrl = (imagePath) => {
+    if (!imagePath) return "/assets/images/placeholder.png";
+    if (imagePath.startsWith("http")) return imagePath;
+    return `${process.env.NEXT_PUBLIC_API_BASE_URL}/${imagePath.replace(/^\/+/, "")}`;
+  };
+
+
   return (
     <section
       className={`get-involed-live ${
@@ -63,184 +115,94 @@ const GetInvolved = () => {
           </div>
         </div>
         <div className="get-involved-wrapper">
-          <div className="row">
-            <div className="col-lg-4 col-md-6">
-              <div className="get-involved-card">
-                <div className="get-involved-img">
-                  <Image
-                    src={"/assets/images/event/1.png"}
-                    width={414}
-                    alt="event"
-                    height={575}
-                  />
+          {loading ? (
+            <div className="row">
+              {[1, 2, 3, 4, 5, 6].map((index) => (
+                <div key={index} className="col-lg-4 col-md-6 mb-4">
+                  <div className="get-involved-card">
+                    <div className="get-involved-img">
+                      <ReactLoadingSkeleton height={575} />
+                    </div>
+                    <div className="get-involved-date">
+                      <ReactLoadingSkeleton width={150} height={24} />
+                    </div>
+                    <div className="get-involved-card-content">
+                      <ReactLoadingSkeleton width={120} height={16} />
+                      <ReactLoadingSkeleton width={200} height={24} style={{ marginTop: 10 }} />
+                      <ReactLoadingSkeleton width={130} height={40} style={{ marginTop: 15 }} />
+                    </div>
+                  </div>
                 </div>
-                <div className="get-involved-date">
-                  <Image
-                    src={"/assets/images/icon/date.svg"}
-                    width={24}
-                    height={24}
-                  />
-                  <span>30 May 2025</span>
-                </div>
-                <div className="get-involved-card-content">
-                  <p>Tetulia, Panchagarh</p>
-                  <h3>Human Rights Conference</h3>
-                  <Link href="#" className="custom-btn">
-                    <span> Get Involved</span>
-                    <span>
-                      <GoArrowUpRight />
-                    </span>
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="get-involved-card">
-                <div className="get-involved-img">
-                  <Image
-                    src={"/assets/images/event/2.png"}
-                    width={414}
-                    height={575}
-                    alt="event"
-                  />
-                </div>
-                <div className="get-involved-date">
-                  <Image
-                    src={"/assets/images/icon/date.svg"}
-                    width={24}
-                    height={24}
-                  />
-                  <span>30 May 2025</span>
-                </div>
-                <div className="get-involved-card-content">
-                  <p>Tetulia, Panchagarh</p>
-                  <h3>Human Rights Conference</h3>
-                  <Link href="#" className="custom-btn">
-                    <span> Get Involved</span>
-                    <span>
-                      <GoArrowUpRight />
-                    </span>
-                  </Link>
-                </div>
-              </div>
+          ) : events.length > 0 ? (
+            <div className="row">
+              {events.map((event) => {
+                const imageUrl = getImageUrl(event.image);
+                const eventSlug = event.slug || event.id;
+                
+                return (
+                  <div key={event.id} className="col-lg-4 col-md-6">
+                    <Link href={`/events/${eventSlug}`}>
+                      <div
+                        className="get-involved-card"
+                        style={{ cursor: "pointer" }}
+                      >
+                        <div className="get-involved-img" style={{ position: "relative", overflow: "hidden" }}>
+                          <Image
+                            src={imageUrl}
+                            width={414}
+                            height={575}
+                            alt={language === "bn" ? event.title_bn : event.title_en}
+                            style={{ objectFit: "cover" }}
+                          />
+                        </div>
+                        <div className="get-involved-date">
+                          <Image
+                            src={"/assets/images/icon/date.svg"}
+                            width={24}
+                            height={24}
+                            alt="date"
+                          />
+                          <span>
+                            {event.event_date ? formatDate(event.event_date) : ""}
+                          </span>
+                        </div>
+                        <div className="get-involved-card-content">
+                          <p>
+                            {language === "bn"
+                              ? event.location_bn || event.location_en
+                              : event.location_en || event.location_bn}
+                          </p>
+                          <h3>
+                            {language === "bn"
+                              ? event.title_bn || event.title_en
+                              : event.title_en || event.title_bn}
+                          </h3>
+                          <div className="custom-btn">
+                            <span>
+                              {language === "bn" ? "জড়িত হন" : "Get Involved"}
+                            </span>
+                            <span>
+                              <GoArrowUpRight />
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </div>
+                );
+              })}
             </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="get-involved-card">
-                <div className="get-involved-img">
-                  <Image
-                    src={"/assets/images/event/3.png"}
-                    width={414}
-                    height={575}
-                  />
-                </div>
-                <div className="get-involved-date">
-                  <Image
-                    src={"/assets/images/icon/date.svg"}
-                    width={24}
-                    height={24}
-                  />
-                  <span>30 May 2025</span>
-                </div>
-                <div className="get-involved-card-content">
-                  <p>Tetulia, Panchagarh</p>
-                  <h3>Human Rights Conference</h3>
-                  <Link href="#" className="custom-btn">
-                    <span> Get Involved</span>
-                    <span>
-                      <GoArrowUpRight />
-                    </span>
-                  </Link>
-                </div>
-              </div>
+          ) : (
+            <div className="text-center py-5">
+              <p>
+                {language === "bn"
+                  ? "কোন ইভেন্ট পাওয়া যায়নি"
+                  : "No events found"}
+              </p>
             </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="get-involved-card">
-                <div className="get-involved-img">
-                  <Image
-                    src={"/assets/images/event/4.png"}
-                    width={414}
-                    height={575}
-                  />
-                </div>
-                <div className="get-involved-date">
-                  <Image
-                    src={"/assets/images/icon/date.svg"}
-                    width={24}
-                    height={24}
-                  />
-                  <span>30 May 2025</span>
-                </div>
-                <div className="get-involved-card-content">
-                  <p>Tetulia, Panchagarh</p>
-                  <h3>Human Rights Conference</h3>
-                  <Link href="#" className="custom-btn">
-                    <span> Get Involved</span>
-                    <span>
-                      <GoArrowUpRight />
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="get-involved-card">
-                <div className="get-involved-img">
-                  <Image
-                    src={"/assets/images/event/5.png"}
-                    width={414}
-                    height={575}
-                  />
-                </div>
-                <div className="get-involved-date">
-                  <Image
-                    src={"/assets/images/icon/date.svg"}
-                    width={24}
-                    height={24}
-                  />
-                  <span>30 May 2025</span>
-                </div>
-                <div className="get-involved-card-content">
-                  <p>Tetulia, Panchagarh</p>
-                  <h3>Human Rights Conference</h3>
-                  <Link href="#" className="custom-btn">
-                    <span> Get Involved</span>
-                    <span>
-                      <GoArrowUpRight />
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="get-involved-card">
-                <div className="get-involved-img">
-                  <Image
-                    src={"/assets/images/event/6.png"}
-                    width={414}
-                    height={575}
-                  />
-                </div>
-                <div className="get-involved-date">
-                  <Image
-                    src={"/assets/images/icon/date.svg"}
-                    width={24}
-                    height={24}
-                  />
-                  <span>30 May 2025</span>
-                </div>
-                <div className="get-involved-card-content">
-                  <p>Tetulia, Panchagarh</p>
-                  <h3>Human Rights Conference</h3>
-                  <Link href="#" className="custom-btn">
-                    <span> Get Involved</span>
-                    <span>
-                      <GoArrowUpRight />
-                    </span>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </section>
