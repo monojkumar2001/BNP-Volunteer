@@ -74,20 +74,25 @@ const Header = () => {
             />
             <div className="logo-name-item">
               <span
-               
                 className={`logo-name ${
                   language === "bn" ? "logo-bn" : "logo-en"
                 }`}
               >
                 {language === "bn" ? "নওশাদ জমির" : "Nawshad Zamir"}
               </span>
-              <p className="logo-name-text">আন্তর্জাতিক সম্পাদক - বিএনপি</p>
+              <p className="logo-name-text">
+                {language === "bn"
+                  ? "আন্তর্জাতিক সম্পাদক - বিএনপি"
+                  : "International Secretary - BNP"}
+              </p>
             </div>
           </Link>
 
           {/* Menu Button for Mobile */}
           <button
-            className={`menu-btn-ber ${scrolled ? "scrolled" : ""} ${isSinglePage ? "single-page" : ""}`}
+            className={`menu-btn-ber ${scrolled ? "scrolled" : ""} ${
+              isSinglePage ? "single-page" : ""
+            }`}
             onClick={() => setMenuOpen(true)}
             aria-label="Open Menu"
           >

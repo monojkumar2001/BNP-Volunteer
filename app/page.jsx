@@ -13,7 +13,8 @@ import WhoWeAre from "./components/Home/WhoWeAre";
 import WhyChooseUs from "./components/Home/WhyChooseUs";
 
 export const metadata = {
-  title: "Together for a Better Tomorrow",
+  title:
+    "Naushad Zamir | International Secretary, Bangladesh Nationalist Party",
   description: "Building a stronger future through unity and leadership.",
   keywords: "leadership, campaign, volunteer, community, development",
   icons: {

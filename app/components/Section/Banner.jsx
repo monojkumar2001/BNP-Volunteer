@@ -20,16 +20,16 @@ const Banner = ({ bannerData }) => {
         <div className="banner-content">
           <h1>
             {language === "bn" ? (
-              <>{bannerData.title_bn}</>
+              <>{bannerData?.title_bn}</>
             ) : (
-              <>{bannerData.title_en}</>
+              <>{bannerData?.title_en}</>
             )}
           </h1>
           <p>
             {language === "bn" ? (
-              <>{bannerData.des_bn}</>
+              <>{bannerData?.des_bn}</>
             ) : (
-              <>{bannerData.des_en}</>
+              <>{bannerData?.des_en}</>
             )}
           </p>
         </div>

@@ -41,8 +41,6 @@ const AboutPage = () => {
   const bannerData = {
     title_en: "About Us",
     title_bn: "আমাদের সম্পর্কে",
-    des_en: "Leadership, Experience, and values mean something",
-    des_bn: "নেতৃত্ব, অভিজ্ঞতা এবং মূল্যবোধের কিছু অর্থ আছে",
     img: "/assets/images/about-bg.png",
   };
   return (

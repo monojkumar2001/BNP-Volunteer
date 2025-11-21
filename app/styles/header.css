@@ -87,7 +87,12 @@
   font-family: "Italianno", cursive;
   font-size: 64px;
   letter-spacing: -0.25px;
+  line-height: 62px;
   color: var(--white-color);
+}
+.header-section.scrolled .site-logo .logo-name {
+  font-size: 46px;
+  line-height: 40px;
 }
 .site-logo img {
   width: 100px;
@@ -282,7 +287,7 @@ span.logo-name.logo-bn {
 
   /* Single Page Header Styles for Mobile */
   .header-section.single-page {
-  background: #0000005c;
+    background: #0000005c;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 12px 0;
@@ -307,8 +312,12 @@ span.logo-name.logo-bn {
   .header-section.single-page .close-menu-btn {
     color: var(--black-color);
   }
-  .logo-name-text{
+  .logo-name-text {
     font-size: 14px;
+  }
+  .header-section.scrolled .site-logo .logo-name {
+    font-size: 35px;
+    line-height: 32px;
   }
 }
 

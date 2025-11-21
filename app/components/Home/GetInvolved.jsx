@@ -24,7 +24,9 @@ const GetInvolved = () => {
 
         if (res.ok) {
           // Only show active events (status = 1) and limit to 6
-          const activeEvents = data.filter((event) => event.status === 1).slice(0, 6);
+          const activeEvents = data
+            .filter((event) => event.status === 1)
+            .slice(0, 6);
           setEvents(activeEvents);
         }
       } catch (error) {
@@ -41,23 +43,22 @@ const GetInvolved = () => {
   const formatDate = (dateString) => {
     if (!dateString) return "";
     const date = new Date(dateString);
-    return date.toLocaleDateString(
-      language === "bn" ? "bn-BD" : "en-US",
-      {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      }
-    );
+    return date.toLocaleDateString(language === "bn" ? "bn-BD" : "en-US", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
   };
 
   // Get image URL
   const getImageUrl = (imagePath) => {
     if (!imagePath) return "/assets/images/placeholder.png";
     if (imagePath.startsWith("http")) return imagePath;
-    return `${process.env.NEXT_PUBLIC_API_BASE_URL}/${imagePath.replace(/^\/+/, "")}`;
+    return `${process.env.NEXT_PUBLIC_API_BASE_URL}/${imagePath.replace(
+      /^\/+/,
+      ""
+    )}`;
   };
-
 
   return (
     <section
@@ -128,8 +129,16 @@ const GetInvolved = () => {
                     </div>
                     <div className="get-involved-card-content">
                       <ReactLoadingSkeleton width={120} height={16} />
-                      <ReactLoadingSkeleton width={200} height={24} style={{ marginTop: 10 }} />
-                      <ReactLoadingSkeleton width={130} height={40} style={{ marginTop: 15 }} />
+                      <ReactLoadingSkeleton
+                        width={200}
+                        height={24}
+                        style={{ marginTop: 10 }}
+                      />
+                      <ReactLoadingSkeleton
+                        width={130}
+                        height={40}
+                        style={{ marginTop: 15 }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -140,7 +149,7 @@ const GetInvolved = () => {
               {events.map((event) => {
                 const imageUrl = getImageUrl(event.image);
                 const eventSlug = event.slug || event.id;
-                
+
                 return (
                   <div key={event.id} className="col-lg-4 ">
                     <Link href={`/events/${eventSlug}`}>
@@ -152,7 +161,7 @@ const GetInvolved = () => {
                           className="get-involved-img"
                           style={{ position: "relative", overflow: "hidden" }}
                         >
-                          <Image
+                          {/* <Image
                             src={imageUrl}
                             width={414}
                             height={575}
@@ -162,6 +171,14 @@ const GetInvolved = () => {
                                 : event.title_en
                             }
                             style={{ objectFit: "cover" }}
+                          /> */}
+                          <img
+                            src={imageUrl}
+                            alt={
+                              language === "bn"
+                                ? event.title_bn
+                                : event.title_en
+                            }
                           />
                         </div>
                         <div className="get-involved-date">

@@ -168,7 +168,12 @@ const LatestNews = () => {
                           height={214}
                           style={{ objectFit: "cover" }}
                         /> */}
-                        <img src={imageUrl} alt="" />
+                        <img
+                          src={imageUrl}
+                          alt={
+                            language === "bn" ? item.title_bn : item.title_en
+                          }
+                        />
                       </div>
                       <div className="latest-news-content">
                         <Link href={`/news/${newsSlug}`} className="news-title">

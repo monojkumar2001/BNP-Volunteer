@@ -13,11 +13,11 @@ export const metadata = {
   openGraph: {
     title: "Together for a Better Tomorrow",
     description: "Building a stronger future through unity and leadership.",
-    url: "https://yourwebsite.com", // your actual site URL
+    url: "https://yourwebsite.com",
     siteName: "Your Site Name",
     images: [
       {
-        url: "/assets/images/meta-img.jpg", // 👈 path to your image
+        url: "/assets/images/meta-img.jpg",
         width: 1200,
         height: 630,
         alt: "Together for a Better Tomorrow",
@@ -37,8 +37,6 @@ const EventsPage = () => {
   const bannerData = {
     title_en: "Events",
     title_bn: "ইভেন্টগুলি",
-    des_en: "Leadership, Experience, and values mean something",
-    des_bn: "নেতৃত্ব, অভিজ্ঞতা এবং মূল্যবোধের কিছু অর্থ আছে",
     img: "/assets/images/event.png",
   };
   return (

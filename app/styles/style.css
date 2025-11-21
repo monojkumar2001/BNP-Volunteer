@@ -1274,6 +1274,7 @@
 }
 /* gallery section */
 .gallery-section {
+  padding-top: 197px;
   padding-bottom: 197px;
   position: relative;
 }
@@ -1691,4 +1692,22 @@ ul.contact-us-info li:hover .contact-icon {
 }
 .about-item-section {
   padding-top: 130px;
+}
+.lang-concern-en .section-title {
+  font-size: 43px;
+}
+.lang-concern-en .our-concern-list {
+  gap: 30px;
+}
+.lang-concern-en .concern-list-items {
+  gap: 30px;
+}
+.lang-concern-en .concern-list-items li {
+  font-size: 17px;
+}
+.lang-involed-en .section-title {
+  font-size: 35px;
+}
+.lang-involed-en .get-involved-card-content h3 {
+  font-size: 24px;
 }

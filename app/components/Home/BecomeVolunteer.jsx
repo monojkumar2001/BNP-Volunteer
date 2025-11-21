@@ -31,7 +31,8 @@ const BecomeVolunteer = () => {
     },
     {
       value: "3",
-      labelBn: "চাঁদাবাজি, সংঘর্ষ বা আইন-শৃঙ্খলা সংক্রান্ত ইনসিডেন্ট রিপোর্ট করুন",
+      labelBn:
+        "চাঁদাবাজি, সংঘর্ষ বা আইন-শৃঙ্খলা সংক্রান্ত ইনসিডেন্ট রিপোর্ট করুন",
       labelEn: "Report extortion, conflict or law and order incident",
     },
     {
@@ -116,7 +117,7 @@ const BecomeVolunteer = () => {
           language === "bn" ? "lang-volunteer-bn" : "lang-volunteer-en"
         }`}
         data-aos="fade-up"
-        data-aos-duration="3000"
+        data-aos-duration="1000"
       >
         <div className="container">
           <div className="become-volunteer-content">

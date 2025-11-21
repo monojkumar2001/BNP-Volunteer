@@ -166,6 +166,7 @@
     margin-top: 0;
   }
   .gallery-section {
+    padding-top: 60px;
     padding-bottom: 80px;
   }
   .gallery-concern .our-concern {
@@ -220,9 +221,9 @@
   .get-involved-title .section-title {
     font-size: 30px;
   }
-.lang-concern-bn .section-title {
-  font-size: 30px;
-}
+  .lang-concern-bn .section-title {
+    font-size: 30px;
+  }
   .get-involed-live {
     padding-top: 60px;
   }
@@ -448,24 +449,24 @@
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 15px;
-}
-.lang-involed-bn .custom-btn{
-  font-size: 17px;
-}
-.get-involved-date {
+  }
+  .lang-involed-bn .custom-btn {
+    font-size: 17px;
+  }
+  .get-involved-date {
     position: absolute;
     top: 26.5px;
   }
   .faq-question span {
-        font-size: 16px;
-    }
+    font-size: 16px;
+  }
 }
 @media (max-width: 576px) {
   .hero-title-1 h1 {
     font-size: 30px;
     font-weight: 800;
   }
-  .opinion-form-title{
+  .opinion-form-title {
     font-size: 20px;
   }
   .lang-hero-bn .hero-title-1 h1 {
@@ -494,7 +495,7 @@
     font-size: 30px;
     line-height: 40px;
   }
-  .lang-leadership-bn .leadership-3-title{
+  .lang-leadership-bn .leadership-3-title {
     font-size: 22px;
     line-height: 30px;
   }
@@ -547,13 +548,19 @@
     gap: 25px;
   }
   .who-section {
-    padding: 60px 0px;
+    padding: 60px 0 0 0;
   }
   .who-section .who-content {
     margin-top: 40px;
   }
   .election-content {
     padding-top: 60px;
+  }
+  .leadership-list-item li {
+    align-items: flex-start;
+  }
+  .lang-concern-en .section-title {
+    font-size: 30px;
   }
 
   .get-involved-card-content p {
@@ -633,13 +640,13 @@
     font-size: 30px;
     line-height: 140%;
   }
-    .opinion-form-title {
-        font-size: 20px;
-        padding-bottom: 10px;
-    }
-    .lang-volunteer-bn.opinion-form-description{
-      font-size: 16px;
-    }
+  .opinion-form-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .lang-volunteer-bn.opinion-form-description {
+    font-size: 16px;
+  }
   .hero-form-content h2 {
     font-size: 25px;
     line-height: 150%;
@@ -706,7 +713,8 @@
     margin-top: 0;
   }
   .gallery-section {
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .gallery-concern .our-concern {
     padding-bottom: 60px;
@@ -745,7 +753,7 @@
     font-size: 24px;
     line-height: 40px;
   }
-  .lang-news-bn .section-title{
+  .lang-news-bn .section-title {
     font-size: 24px;
   }
 }
