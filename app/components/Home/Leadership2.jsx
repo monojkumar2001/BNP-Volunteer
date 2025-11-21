@@ -85,7 +85,7 @@ const Leadership2 = () => {
                 </ul>
               </div>
 
-              <Link href="/nawshad-zamir" className="custom-btn">
+              <Link href="/about" className="custom-btn">
                 <span>{language === "bn" ? "আরও জানুন" : " Learn More"}</span>
                 <span>
                   <GoArrowUpRight />

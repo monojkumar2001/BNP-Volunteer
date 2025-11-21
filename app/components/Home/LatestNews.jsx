@@ -12,13 +12,14 @@ import { GrFormPrevious } from "react-icons/gr";
 import { useLanguage } from "../../../context/languageContext";
 import ReactLoadingSkeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
+import { GoArrowUpRight } from "react-icons/go";
 
 const LatestNews = () => {
   const swiperRef = useRef(null);
   const { language } = useLanguage();
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
-  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ;
+  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   // Fetch news from API
   useEffect(() => {
@@ -30,7 +31,9 @@ const LatestNews = () => {
 
         if (res.ok) {
           // Only show active news (status = 1) and limit to 8-10 for slider
-          const activeNews = data.filter((item) => item.status === 1).slice(0, 10);
+          const activeNews = data
+            .filter((item) => item.status === 1)
+            .slice(0, 10);
           setNews(activeNews);
         }
       } catch (error) {
@@ -47,14 +50,11 @@ const LatestNews = () => {
   const formatDate = (dateString) => {
     if (!dateString) return "";
     const date = new Date(dateString);
-    return date.toLocaleDateString(
-      language === "bn" ? "bn-BD" : "en-US",
-      {
-        day: "numeric",
-        month: language === "bn" ? "long" : "short",
-        year: "numeric",
-      }
-    );
+    return date.toLocaleDateString(language === "bn" ? "bn-BD" : "en-US", {
+      day: "numeric",
+      month: language === "bn" ? "long" : "short",
+      year: "numeric",
+    });
   };
 
   // Get image URL
@@ -70,7 +70,7 @@ const LatestNews = () => {
         language === "bn" ? "lang-news-bn" : "lang-news-en"
       }`}
       data-aos="fade-up"
-      data-aos-duration="3000"
+      data-aos-duration="2000"
     >
       <div className="container">
         <div className="latest-news-header">
@@ -108,8 +108,16 @@ const LatestNews = () => {
                       <ReactLoadingSkeleton height={214} />
                     </div>
                     <div className="latest-news-content">
-                      <ReactLoadingSkeleton height={20} width="90%" style={{ marginTop: 15 }} />
-                      <ReactLoadingSkeleton height={14} width={120} style={{ marginTop: 10 }} />
+                      <ReactLoadingSkeleton
+                        height={20}
+                        width="90%"
+                        style={{ marginTop: 15 }}
+                      />
+                      <ReactLoadingSkeleton
+                        height={14}
+                        width={120}
+                        style={{ marginTop: 10 }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -146,18 +154,21 @@ const LatestNews = () => {
               {news.map((item) => {
                 const imageUrl = getImageUrl(item.image);
                 const newsSlug = item.slug || item.id;
-                
+
                 return (
                   <SwiperSlide key={item.id}>
                     <div className="latest-news-card">
                       <div className="latest-news-img">
-                        <Image
+                        {/* <Image
                           src={imageUrl}
-                          alt={language === "bn" ? item.title_bn : item.title_en}
+                          alt={
+                            language === "bn" ? item.title_bn : item.title_en
+                          }
                           width={305}
                           height={214}
                           style={{ objectFit: "cover" }}
-                        />
+                        /> */}
+                        <img src={imageUrl} alt="" />
                       </div>
                       <div className="latest-news-content">
                         <Link href={`/news/${newsSlug}`} className="news-title">
@@ -183,6 +194,14 @@ const LatestNews = () => {
               </p>
             </div>
           )}
+        </div>
+        <div className="d-flex align-items-center justify-content-center mt-5">
+          <Link href="/news" className="custom-btn">
+            <span>{language === "bn" ? "আরও দেখুন" : " View More"}</span>
+            <span>
+              <GoArrowUpRight />
+            </span>
+          </Link>
         </div>
       </div>
     </section>

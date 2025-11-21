@@ -48,7 +48,7 @@ const AboutPage = () => {
   return (
     <>
       <Banner bannerData={bannerData} />
-      <Leadership2/>
+      <AboutSection />
       {/* <WorkSection /> */}
       <OurConcern />
       {/* <MyPromises /> */}
