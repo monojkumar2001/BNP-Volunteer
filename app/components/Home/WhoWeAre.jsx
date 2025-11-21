@@ -118,8 +118,8 @@ const WhoWeAre = () => {
             </button>
             <div className="video-wrapper">
               <iframe
-                src="https://www.youtube.com/embed/3-1jCSeuMl0?si=vBK5oJ4JCMmkEryR&amp;controls=0"
-                title="Who we are video"
+                src="https://www.youtube.com/embed/AyHa7J2RsaQ?si=rkKoBbfXYeqMYJxT"
+                title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin"
