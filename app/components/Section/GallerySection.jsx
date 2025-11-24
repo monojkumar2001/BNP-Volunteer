@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
-import { FaClosedCaptioning } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import { useLanguage } from "../../../context/languageContext";
 import ReactLoadingSkeleton from "react-loading-skeleton";
@@ -13,8 +12,8 @@ const GallerySection = () => {
   const [galleries, setGalleries] = useState({});
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [allGalleries, setAllGalleries] = useState([]);
   const [showAll, setShowAll] = useState(false);
+  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   // Fetch gallery data from API
   useEffect(() => {
@@ -27,9 +26,6 @@ const GallerySection = () => {
         const data = await res.json();
 
         if (res.ok) {
-          // Set all galleries
-          setAllGalleries(data.all_galleries || []);
-
           // Organize galleries by category slug
           const galleriesByCategory = {
             all: data.all_galleries || [],
@@ -68,6 +64,27 @@ const GallerySection = () => {
     setSelectedImage(null);
   };
 
+  const getImageUrl = (imageData) => {
+    if (!imageData) return "/assets/images/placeholder.png";
+
+    const rawPath =
+      typeof imageData === "string"
+        ? imageData
+        : imageData.image ||
+          imageData.image_url ||
+          imageData.url ||
+          imageData.src ||
+          "";
+
+    if (!rawPath) return "/assets/images/placeholder.png";
+    if (rawPath.startsWith("http")) return rawPath;
+    const normalized = rawPath.replace(/^\/+/, "");
+    if (baseUrl) {
+      return `${baseUrl}/${normalized}`;
+    }
+    return `/${normalized}`;
+  };
+
   // Get current images based on active gallery
   const allCurrentImages = galleries[activeGallery] || [];
   const displayLimit = 16;
@@ -76,6 +93,8 @@ const GallerySection = () => {
     ? allCurrentImages
     : allCurrentImages.slice(0, displayLimit);
 
+
+    console.log("currentImages", galleries);
   return (
     <section
       className="gallery-section"
@@ -148,7 +167,11 @@ const GallerySection = () => {
               <>
                 <div className="row">
                   {currentImages.map((item, index) => {
-                    const imageSrc = typeof item === "string" ? item : item.image;
+                    const imageSrc = getImageUrl(item);
+                    const altText =
+                      (typeof item === "string" ? null : item.title_en) ||
+                      (typeof item === "string" ? null : item.title_bn) ||
+                      `Gallery ${index + 1}`;
                     return (
                       <div
                         key={item.id || index}
@@ -156,15 +179,9 @@ const GallerySection = () => {
                         onClick={() => handleImageClick(imageSrc)}
                       >
                         <div className="gallery-card-img">
-                          <Image
-                            src={imageSrc || "/assets/images/placeholder.png"}
-                            width={305}
-                            height={200}
-                            alt={
-                              typeof item === "string"
-                                ? `Gallery ${index}`
-                                : item.title_en || item.title_bn || `Gallery ${index}`
-                            }
+                          <img
+                            src={imageSrc}
+                            alt={altText}
                             style={{ objectFit: "cover" }}
                           />
                         </div>
@@ -227,7 +244,13 @@ const GallerySection = () => {
           }}
         >
           <div className="gallery-model-content">
-            <Image src={selectedImage} alt="Large" width={1000} height={700} />
+            <Image
+              src={selectedImage}
+              alt="Large"
+              width={1000}
+              height={700}
+              unoptimized
+            />
             <button
               onClick={closeModal}
               style={{
