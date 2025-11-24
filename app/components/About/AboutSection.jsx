@@ -62,7 +62,7 @@ const AboutSection = () => {
                   <h2>
                     {language === "bn" ? "শিক্ষাজীবনঃ" : "Educational Career:"}
                   </h2>
-                  <ul className="why-choose-list leadership-list-item leadership-list-items">
+                  {/* <ul className="why-choose-list leadership-list-item leadership-list-items">
                     <li>
                       <div className="why-choose-icon">
                         <Image
@@ -111,6 +111,88 @@ const AboutSection = () => {
                         </h5>
                       </div>
                     </li>
+                  </ul> */}
+                  <ul className="why-choose-list leadership-list-item leadership-list-items">
+                    <li>
+                      <div className="why-choose-icon">
+                        <Image
+                          src={"/assets/images/icon/check-2.svg"}
+                          width={20}
+                          height={20}
+                        />
+                      </div>
+                      <div className="why-choose-list-text">
+                        <h5>
+                          {language === "bn"
+                            ? "হার্ভার্ড ল স্কুল (এলএলএম)"
+                            : "Harvard Law School (LLM)"}
+                        </h5>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="why-choose-icon">
+                        <Image
+                          src={"/assets/images/icon/check-2.svg"}
+                          width={20}
+                          height={20}
+                        />
+                      </div>
+                      <div className="why-choose-list-text">
+                        <h5>
+                          {language === "bn"
+                            ? "অক্সফোর্ড বিশ্ববিদ্যালয় (এমএসসি)"
+                            : "University of Oxford (MSc)"}
+                        </h5>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="why-choose-icon">
+                        <Image
+                          src={"/assets/images/icon/check-2.svg"}
+                          width={20}
+                          height={20}
+                        />
+                      </div>
+                      <div className="why-choose-list-text">
+                        <h5>
+                          {language === "bn"
+                            ? "ঢাকা বিশ্ববিদ্যালয় (এলএলবি, এলএলএম – ফার্স্ট ক্লাস ফার্স্ট)"
+                            : "Dhaka University (LLB, LLM – First Class First)"}
+                        </h5>
+                      </div>
+                    </li>
+                    {/* <li>
+                      <div className="why-choose-icon">
+                        <Image
+                          src={"/assets/images/icon/check-2.svg"}
+                          width={20}
+                          height={20}
+                        />
+                      </div>
+                      <div className="why-choose-list-text">
+                        <h5>
+                          {language === "bn"
+                            ? "বিএনপি-র আন্তর্জাতিক বিষয়ক সম্পাদক"
+                            : "BNP International Affairs Secretary"}
+                        </h5>
+                      </div>
+                    </li>
+                    <li>
+                      <div className="why-choose-icon">
+                        <Image
+                          src={"/assets/images/icon/check-2.svg"}
+                          width={20}
+                          height={20}
+                        />
+                      </div>
+                      <div className="why-choose-list-text">
+                        <h5>
+                          {language === "bn"
+                            ? " বেগম খালেদা জিয়া এবং জনাব তারেক রহমানের আইনজীবী"
+                            : "Lawyers of Begum Khaleda Zia and Mr. Tarique Rahman"}
+                        </h5>
+                      </div>
+                    </li> */}
                   </ul>
                 </div>
 

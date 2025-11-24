@@ -32,7 +32,7 @@ const Leadership3 = () => {
               <h2 className="section-title leadership-3-title">
                 {language === "bn"
                   ? "একনজরে ব্যারিস্টার জমির উদ্দিন সরকারের উল্লেখযোগ্য কাজগুলিঃ"
-                  : "Notable works of Zamir Uddin Sirker, the Barrister and Politician"}
+                  : "Notable works of Jamiruddin Sircar, the Barrister and Politician"}
               </h2>
               <ul className="why-choose-list leadership-3-list leadership-list-item">
                 <li>

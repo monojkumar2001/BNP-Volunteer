@@ -8,7 +8,7 @@ const ZamirUddinPage = () => {
   const { language } = useLanguage();
 
   const bannerData = {
-    title_en: "Zamir Uddin Sirker",
+    title_en: "Jamiruddin Sircar",
     title_bn: "জমির উদ্দিন সরকার",
     img: "/assets/images/about-bg.png",
   };
@@ -44,7 +44,7 @@ const ZamirUddinPage = () => {
                 <h2 className="section-title">
                   {language === "bn"
                     ? "জমির উদ্দিন সরকার"
-                    : " Zamir Uddin Sirker"}
+                    : " Jamiruddin Sircar"}
                 </h2>
 
                 <ul className="why-choose-list leadership-list-item">
@@ -59,8 +59,8 @@ const ZamirUddinPage = () => {
                     <div className="why-choose-list-text">
                       <h5>
                         {language === "bn"
-                          ? "পঞ্চগড় ১-এর শিক্ষাখাতে প্রায় ১৫ হাজার কোটি টাকা (মুদ্রাস্ফীতি সমন্বয়কৃত) রাষ্ট্রীয় বিনিয়োগ"
-                          : "State investment of about 15 thousand crore taka (inflation adjusted) in the education sector of Panchagarh 1"}
+                          ? "পঞ্চগড় ১-এর শিক্ষাখাতে প্রায় ১৫ কোটি টাকা (মুদ্রাস্ফীতি সমন্বয়কৃত) রাষ্ট্রীয় বিনিয়োগ"
+                          : "State investment of about 15 crore taka (inflation adjusted) in the education sector of Panchagarh 1"}
                       </h5>
                     </div>
                   </li>
@@ -165,7 +165,6 @@ const ZamirUddinPage = () => {
             </div>
           </div>
           <div className="leader-ship-single-content">
-         
             {language === "bn" ? (
               <>
                 <h4>বিস্তারিত</h4>
@@ -194,9 +193,10 @@ const ZamirUddinPage = () => {
                   তাঁর অনুমতিক্রমে বাংলাদেশে প্রথম বেসরকারী বিশ্ববিদ্যালয়গুলোর
                   যাত্রা শুরু হয়। আঞ্চলিক বৈষম্য দূরীকরণে খুলনা প্রকৌশল
                   বিশ্ববিদ্যালয় প্রতিষ্ঠা ও প্রযুক্তিগত শিক্ষা সম্প্রসারণে তাঁর
-                  অবদান বাংলাদেশের শিক্ষাব্যবস্থার ইতিহাসের গৌরবময় অধ্যায়। শুধু
-                  পঞ্চগড় ১ আসনের শিক্ষাখাতেই তিনি ৳২,০৫,৫৬,১২,৭২০ মূল্যমানের কাজ
-                  করেন, যার বর্তমান অর্থমান ৳১৪,৮০,০৪,১১,৫৮৪।
+                  অবদান বাংলাদেশের শিক্ষাব্যবস্থার ইতিহাসের গৌরবময় অধ্যায়।
+                  পঞ্চগড় ১ আসনের শিক্ষাখাতেই ১৯৯১-৯৬ সালে ২০৫ কোটি টাকা
+                  মূল্যমানের রাষ্ট্রীয় অর্থায়ন বরাদ্দকরণ, যার বর্তমান অর্থমান
+                  প্রায় ১৫ শ কোটি টাকা।
                 </p>
                 <p>
                   এছাড়া, সে সময় তিনি বিজ্ঞান ও প্রযুক্তি মন্ত্রী হিসেবেও
@@ -281,8 +281,9 @@ const ZamirUddinPage = () => {
                   Engineering University and the expansion of technical
                   education to eliminate regional disparities is a glorious
                   chapter in the history of the education system of Bangladesh.
-                  In the education sector of Panchagarh 1 alone, he did work
-                  worth ৳2,05,56,12,720, which is currently ৳14,80,04,11,584.
+                  The education sector in Panchagarh 1 constituency was
+                  allocated state funding worth Tk 205 crore in 1991-96, the
+                  current value of which is around Tk 1500 crore.
                 </p>
                 <p>
                   In addition, he also served as the Minister of Science and
@@ -303,7 +304,6 @@ const ZamirUddinPage = () => {
                   after obtaining a certificate from the then East Pakistan High
                   Court Joined the legal profession.
                 </p>
-              
                 <p>
                   His political career began in 1945, when he was still a
                   student, through the then Students&apos; Federation. He was a

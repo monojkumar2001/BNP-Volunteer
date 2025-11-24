@@ -78,11 +78,13 @@ const HeroSection = () => {
           <div className="hero-content">
             <div className="hero-title-item">
               <div className="hero-title-1">
-                <h1>{language === "bn" ? "আমার সাথে যোগ দিন" : "Join me"}</h1>
+                <h1>
+                  {language === "bn" ? "আমাদের সাথে যোগ দিন।" : "Join us."}
+                </h1>
                 <h1>
                   {language === "bn"
-                    ? "চলুন না, দেশটাকে গড়ি একসাথে!"
-                    : "Come on, let's build the Country together!"}
+                    ? "চলুন দেশ গড়ি একসাথে"
+                    : "Let's build the country together."}
                 </h1>
               </div>
               <p>
@@ -96,7 +98,7 @@ const HeroSection = () => {
                 <div className="hero-form-content">
                   <h2>
                     {language === "bn"
-                      ? "ভলান্টিয়ার কমিউনিটিতে যোগ দিন"
+                      ? "স্বেচ্ছাসেবী/ভলান্টিয়ার কমিউনিটিতে যোগ দিন"
                       : "Join the volunteer community"}
                   </h2>
                   <p>

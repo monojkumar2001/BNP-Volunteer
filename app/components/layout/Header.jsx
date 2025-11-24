@@ -16,9 +16,6 @@ const Header = () => {
   const { language, setLanguage } = useLanguage();
 
   const isNewsPage = pathname.startsWith("/news/");
-  const isEventPage = pathname.startsWith("/events/");
-  const isSinglePage = isNewsPage || isEventPage;
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -31,13 +28,6 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Set scrolled state on single pages by default
-  useEffect(() => {
-    if (isSinglePage) {
-      setScrolled(true);
-    }
-  }, [isSinglePage]);
   const navLinks = {
     bn: [
       { href: "/", label: "হোম" },
@@ -59,7 +49,6 @@ const Header = () => {
     <header
       className={`header-section 
   ${scrolled ? "scrolled" : ""} 
-  ${isSinglePage ? "single-page" : ""}
   ${language === "bn" ? "lang-header-bn" : "lang-header-en"}`}
     >
       <div className="container">
@@ -80,19 +69,16 @@ const Header = () => {
               >
                 {language === "bn" ? "নওশাদ জমির" : "Nawshad Zamir"}
               </span>
-              <p className="logo-name-text">
-                {language === "bn"
-                  ? "আন্তর্জাতিক সম্পাদক - বিএনপি"
-                  : "International Secretary - BNP"}
-              </p>
+              <p className="logo-name-text">আন্তর্জাতিক সম্পাদক - বিএনপি</p>
             </div>
           </Link>
 
           {/* Menu Button for Mobile */}
           <button
-            className={`menu-btn-ber ${scrolled ? "scrolled" : ""} ${
-              isSinglePage ? "single-page" : ""
-            }`}
+            style={{
+              color: isNewsPage ? "#000000" : "",
+            }}
+            className={`menu-btn-ber ${scrolled ? "scrolled" : ""}`}
             onClick={() => setMenuOpen(true)}
             aria-label="Open Menu"
           >
@@ -102,7 +88,10 @@ const Header = () => {
           {/* Navigation */}
           <nav className={`main-menu ${menuOpen ? "open" : ""}`}>
             <button
-              className={`close-menu-btn ${isSinglePage ? "single-page" : ""}`}
+              style={{
+                color: isNewsPage ? "#000000" : "",
+              }}
+              className="close-menu-btn"
               onClick={() => setMenuOpen(false)}
               aria-label="Close Menu"
             >
@@ -165,7 +154,7 @@ const Header = () => {
               </div>
               <div className="header-btn">
                 <Link href="#" className="latest-btn">
-                  {language === "bn" ? "সর্বশেষ আপডেট" : "Latest Update"}
+                  {language === "bn" ? "মতামত দিন" : "Leave a comment"}
                 </Link>
               </div>
             </div>

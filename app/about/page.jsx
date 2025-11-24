@@ -39,8 +39,8 @@ export const metadata = {
 };
 const AboutPage = () => {
   const bannerData = {
-    title_en: "About Us",
-    title_bn: "আমাদের সম্পর্কে",
+    title_en: "About Me",
+    title_bn: "আমার সম্পর্কে",
     img: "/assets/images/about-bg.png",
   };
   return (

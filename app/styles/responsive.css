@@ -96,7 +96,7 @@
     padding-bottom: 80px;
   }
   .our-concern-wrapper {
-    gap: 40px;
+    gap: 25px;
   }
   .our-concern-item-img {
     width: 100%;
@@ -319,7 +319,7 @@
   .our-concern-list {
     gap: 40px;
     width: 100%;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .our-concern-wrapper .who-content {
     max-width: 100%;

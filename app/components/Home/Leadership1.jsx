@@ -45,9 +45,7 @@ const Leadership = () => {
                   : "Barrister, Politician"}
               </div>
               <h2 className="section-title">
-                {language === "bn"
-                  ? "জমির উদ্দিন সরকার"
-                  : " Zamir Uddin Sirker"}
+                {language === "bn" ? "জমির উদ্দিন সরকার" : " Jamiruddin Sircar"}
               </h2>
               <ul className="why-choose-list leadership-list-item">
                 <li>
@@ -61,8 +59,8 @@ const Leadership = () => {
                   <div className="why-choose-list-text">
                     <h5>
                       {language === "bn"
-                        ? "পঞ্চগড় ১-এর শিক্ষাখাতে প্রায় ১৫ হাজার কোটি টাকা (মুদ্রাস্ফীতি সমন্বয়কৃত) রাষ্ট্রীয় বিনিয়োগ"
-                        : "State investment of about 15 thousand crore taka (inflation adjusted) in the education sector of Panchagarh 1"}
+                        ? "পঞ্চগড় ১-এর শিক্ষাখাতে প্রায় ১৫ কোটি টাকা (মুদ্রাস্ফীতি সমন্বয়কৃত) রাষ্ট্রীয় বিনিয়োগ"
+                        : "State investment of about 15 crore taka (inflation adjusted) in the education sector of Panchagarh 1"}
                     </h5>
                   </div>
                 </li>
