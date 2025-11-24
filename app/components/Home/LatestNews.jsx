@@ -69,8 +69,7 @@ const LatestNews = () => {
       className={`latest-news ${
         language === "bn" ? "lang-news-bn" : "lang-news-en"
       }`}
-      data-aos="fade-up"
-      data-aos-duration="2000"
+
     >
       <div className="container">
         <div className="latest-news-header">
