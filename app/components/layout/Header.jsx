@@ -14,6 +14,11 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const { language, setLanguage } = useLanguage();
+  const handleVolunteerModalOpen = (e) => {
+    e.preventDefault();
+    window.dispatchEvent(new Event("openVolunteerModal"));
+    setMenuOpen(false);
+  };
 
   const isNewsPage = pathname.startsWith("/news/");
   useEffect(() => {
@@ -153,7 +158,11 @@ const Header = () => {
                 </div>
               </div>
               <div className="header-btn">
-                <Link href="#" className="latest-btn">
+                <Link
+                  href="#"
+                  className="latest-btn"
+                  onClick={handleVolunteerModalOpen}
+                >
                   {language === "bn" ? "মতামত দিন" : "Leave a comment"}
                 </Link>
               </div>

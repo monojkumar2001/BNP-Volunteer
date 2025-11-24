@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
 import { IoMdClose } from "react-icons/io";
 import toast from "react-hot-toast";
@@ -107,6 +107,15 @@ const BecomeVolunteer = () => {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    const handleOpenModal = () => setIsModalOpen(true);
+    window.addEventListener("openVolunteerModal", handleOpenModal);
+
+    return () => {
+      window.removeEventListener("openVolunteerModal", handleOpenModal);
+    };
+  }, []);
 
   const isCategoryThree = formData.category === "3";
 
