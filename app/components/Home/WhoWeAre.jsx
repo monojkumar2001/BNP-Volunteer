@@ -68,7 +68,7 @@ const WhoWeAre = () => {
                 <div className="subtitle">
                   {language === "bn"
                     ? "কিভাবে দেশ গড়বো?"
-                    : "How to build a country?"}
+                    : "How do we build our country?"}
                 </div>
                 <h2 className="section-title">
                   {language === "bn" ? (
@@ -76,15 +76,13 @@ const WhoWeAre = () => {
                       আগামী গড়ি মিলেমিশে <br /> ভোট দিন ধানের শীষে
                     </>
                   ) : (
-                    <>
-                      Build the future together <br /> Vote for the rice grain
-                    </>
+                    <>Together for a Better Tomorrow</>
                   )}
                 </h2>
                 <p>
                   {language === "bn"
                     ? "বাংলাদেশের মানুষ সম্মানের মাথা উঁচু করে বাঁচতে চায়। কিন্তু জনস্বার্থে সকলে মিলে দীর্ঘমেয়াদী পরিকল্পনা বাস্তবায়নে আমরা কতটা সক্ষম? যখন আমি অক্সফোর্ডে পড়ি, তখন দেখতাম, নানান গোষ্ঠীর মাঝে যতই বিরোধ থাকুক, স্থানীয় সমস্যার সমাধানে সবাই মিলে কাজ করে। ক্ষুদ্র ব্যক্তিস্বার্থের তুলনায় সামষ্টিক সমৃদ্ধি বেশি প্রাধান্য পায়। নিজেদের ভবিষ্যতের স্বার্থে আমরা কেন পারবো না একযোগে কাজ করতে?"
-                    : "The people of Bangladesh want to live with dignity. But how capable are we of working together to implement long-term plans for the common good? When I was studying at Oxford, I saw that no matter how much conflict there was between different groups, everyone worked together to solve local problems. Collective prosperity took precedence over petty individual interests. Why can't we work together for our own future?"}
+                    : "When I was studying at Oxford, I observed something powerful: no matter how many divisions existed between groups, everyone came together to tackle local problems. The common good took precedence over individual interest. So why can’t we do the same for our future?"}
                 </p>
                 <Link href="/how-to-build" className="custom-btn">
                   <span>{language === "bn" ? "আরও জানুন" : " Learn More"}</span>

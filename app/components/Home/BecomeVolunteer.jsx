@@ -133,20 +133,20 @@ const BecomeVolunteer = () => {
             <span className="subtitle">
               {language === "bn"
                 ? "ক্যাম্পেইন ভলান্টিয়ার হবার সুযোগ"
-                : "Opportunity to become a campaign volunteer"}
+                : "From the Ground Up, For the People"}
             </span>
             <h2>
               {language === "bn"
                 ? "পরিবর্তনের অংশ হতে চান? চলুন, ভবিষ্যৎটাকে বদলে দিই।"
-                : "Want to be part of the change? Let's change the future."}
+                : "Whether it’s grassroots initiative or community engagement, I'm with you every moment. Together, let’s build a peaceful, prosperous Panchagarh."}
             </h2>
             <p>
               {language === "bn"
                 ? "আমাদের টিমে যোগ দিন। একসাথে স্বপ্ন দেখি, একসাথে পথ চলি। আপনার অপেক্ষায় আছি আমরা।"
-                : "Join our team. Let's dream together, let's walk together. We are waiting for you."}
+                : "If you’re ready to become part of this change, join our team of volunteers. Let’s dream together. Let's walk together. I’m waiting for you."}
             </p>
             <div className="become-volunteer-btn">
-              <Link href="#" className="custom-btn-alt">
+              <Link href="/#hero" className="custom-btn-alt">
                 <span>{language === "bn" ? "এখনই যোগ দিন" : "Join Now"}</span>
                 <span>
                   <GoArrowUpRight />

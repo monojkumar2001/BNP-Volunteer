@@ -1703,7 +1703,9 @@ ul.contact-us-info li:hover .contact-icon {
   padding-top: 130px;
 }
 .lang-concern-en .section-title {
-  font-size: 43px;
+  font-size: 35px;
+  line-height: 42px;
+  padding-bottom: 10px;
 }
 .lang-concern-en .our-concern-list {
   gap: 30px;
@@ -1721,5 +1723,12 @@ ul.contact-us-info li:hover .contact-icon {
   font-size: 24px;
 }
 .lang-choose-en .why-choose-me-wrapper {
-  height: 1000px;
+  height: 1065px;
+}
+.lang-leadership-en .section-title {
+  font-size: 40px;
+}
+.lang-leadership-en .who-content .subtitle {
+  font-size: 16px;
+  margin-bottom: 6px;
 }

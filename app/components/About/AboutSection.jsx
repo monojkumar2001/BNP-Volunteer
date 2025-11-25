@@ -56,7 +56,6 @@ const AboutSection = () => {
                   {language === "bn"
                     ? "মুহাম্মদ নওশাদ জমির"
                     : "Muhammad Nawshad Zamir"}
-                 
                 </h2>
                 <div className="leadership-item-head">
                   <h2>
@@ -303,7 +302,7 @@ const AboutSection = () => {
                     <h5>
                       {language === "bn"
                         ? "বিএনপি-র আন্তর্জাতিক বিষয়ক সম্পাদক"
-                        : "BNP International Affairs Secretary"}
+                        : "International Affairs Secretary, BNP"}
                     </h5>
                   </div>
                 </li>
@@ -319,7 +318,7 @@ const AboutSection = () => {
                     <h5>
                       {language === "bn"
                         ? "বেগম খালেদা জিয়া এবং জনাব তারেক রহমানের আইনজীবী"
-                        : "Lawyers for Begum Khaleda Zia and Mr. Tarique Rahman"}
+                        : "Lawyer of Begum Khaleda Zia and Tarique Rahman"}
                     </h5>
                   </div>
                 </li>
