@@ -74,7 +74,11 @@ const Header = () => {
               >
                 {language === "bn" ? "নওশাদ জমির" : "Nawshad Zamir"}
               </span>
-              <p className="logo-name-text">আন্তর্জাতিক সম্পাদক - বিএনপি</p>
+              <p className="logo-name-text">
+                {language === "bn"
+                  ? "আন্তর্জাতিক বিষয়ক সম্পাদক - বিএনপি"
+                  : "International Affairs Secretary - BNP"}
+              </p>
             </div>
           </Link>
 

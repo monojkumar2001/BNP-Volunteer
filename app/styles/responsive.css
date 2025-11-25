@@ -39,6 +39,9 @@
     position: relative;
     width: 100%;
   }
+  .lang-choose-en .why-choose-me-wrapper{
+    height: inherit;
+  }
   .hero-content {
     flex-direction: column;
     gap: 40px;

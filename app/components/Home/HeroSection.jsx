@@ -83,7 +83,7 @@ const HeroSection = () => {
                 </h1>
                 <h1>
                   {language === "bn"
-                    ? "চলুন দেশ গড়ি একসাথে"
+                    ? "চলুন দেশ গড়ি একসাথে।"
                     : "Let's build the country together."}
                 </h1>
               </div>

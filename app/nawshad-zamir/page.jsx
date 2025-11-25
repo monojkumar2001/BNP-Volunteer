@@ -172,22 +172,7 @@ const NawshadZamirPage = () => {
             <div className="leadership-item-head">
               <h2>{language === "bn" ? "কর্মজীবনঃ" : "Career:"}</h2>
               <ul className="why-choose-list leadership-list-item">
-                <li>
-                  <div className="why-choose-icon">
-                    <Image
-                      src={"/assets/images/icon/check-2.svg"}
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="why-choose-list-text">
-                    <h5>
-                      {language === "bn"
-                        ? "ঢাকা বিশ্ববিদ্যালয় (এলএলবি, এলএলএম – ফার্স্ট ক্লাস ফার্স্ট)"
-                        : "Dhaka University (LLB, LLM – First Class First)"}
-                    </h5>
-                  </div>
-                </li>
+         
                 <li>
                   <div className="why-choose-icon">
                     <Image

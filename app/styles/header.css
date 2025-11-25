@@ -75,7 +75,7 @@
   color: #000000;
   font-size: 16px;
   font-weight: 500;
-  transition: 0.4s;
+  transition: color 0.4s ease, background 0.4s ease, padding 0.4s ease;
   border: 1px solid #000000;
 }
 .site-logo {
@@ -89,6 +89,7 @@
   letter-spacing: -0.25px;
   line-height: 62px;
   color: var(--white-color);
+  transition: color 0.4s ease, font-size 0.4s ease, line-height 0.4s ease;
 }
 .header-section.scrolled .site-logo .logo-name {
   font-size: 46px;
@@ -96,12 +97,14 @@
 }
 .site-logo img {
   width: 100px;
+  transition: width 0.4s ease;
 }
 .logo-name-text {
   font-family: var(--bangla-font);
   font-size: 18px;
   font-weight: 400;
   color: var(--white-color);
+  transition: color 0.4s ease, font-size 0.4s ease;
 }
 
 .header-btn .latest-btn:hover {
@@ -172,7 +175,7 @@ span.logo-name.logo-bn {
 .header-section.scrolled .main-menu {
   padding: 10px 15px 10px 24px;
 }
-.header-section.scrolled.header-btn .latest-btn {
+.header-section.scrolled .header-btn .latest-btn {
   padding: 8.5px 15px;
 }
 
@@ -180,7 +183,7 @@ span.logo-name.logo-bn {
   font-size: 31px;
   line-height: 44px;
 }
-.header-section.scrolled.logo-name-text {
+.header-section.scrolled .logo-name-text {
   font-size: 16px;
 }
 

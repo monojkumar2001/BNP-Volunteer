@@ -59,8 +59,8 @@ const ZamirUddinPage = () => {
                     <div className="why-choose-list-text">
                       <h5>
                         {language === "bn"
-                          ? "পঞ্চগড় ১-এর শিক্ষাখাতে প্রায় ১৫ কোটি টাকা (মুদ্রাস্ফীতি সমন্বয়কৃত) রাষ্ট্রীয় বিনিয়োগ"
-                          : "State investment of about 15 crore taka (inflation adjusted) in the education sector of Panchagarh 1"}
+                          ? "পঞ্চগড় ১-এর শিক্ষাখাতে প্রায় ১৫ শ' কোটি টাকা (মুদ্রাস্ফীতি সমন্বয়কৃত) রাষ্ট্রীয় বিনিয়োগ"
+                          : "In Panchagarh-1, the government has invested approximately 1,500 crore taka (inflation-adjusted) in the education sector."}
                       </h5>
                     </div>
                   </li>

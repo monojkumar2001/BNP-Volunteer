@@ -275,7 +275,7 @@ const AboutSection = () => {
             <div className="leadership-item-head">
               <h2>{language === "bn" ? "কর্মজীবনঃ" : "Career:"}</h2>
               <ul className="why-choose-list leadership-list-item">
-                <li>
+                {/* <li>
                   <div className="why-choose-icon">
                     <Image
                       src={"/assets/images/icon/check-2.svg"}
@@ -290,7 +290,7 @@ const AboutSection = () => {
                         : "Dhaka University (LLB, LLM – First Class First)"}
                     </h5>
                   </div>
-                </li>
+                </li> */}
                 <li>
                   <div className="why-choose-icon">
                     <Image

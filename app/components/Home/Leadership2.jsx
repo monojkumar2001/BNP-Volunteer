@@ -26,7 +26,7 @@ const Leadership2 = () => {
               </div>
               <h2 className="section-title">
                 {language === "bn"
-                  ? "মুহম্মদ নওশাদ জমির"
+                  ? "মুহাম্মদ নওশাদ জমির"
                   : "Muhammad Nawshad Zamir"}
               </h2>
               <div className="leadership-item-head">
