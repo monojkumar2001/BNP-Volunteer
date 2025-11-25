@@ -532,7 +532,15 @@
   .latest-news-content .news-title {
     padding-bottom: 15px;
   }
-
+.single-event-content{
+  padding: 30px 20px;
+}
+.single-news-content {
+    padding: 30px 20px;
+}
+.lang-who-en .who-single-content-3{
+  padding-top: 15px;
+}
   .latest-news-header {
     gap: 10px;
   }

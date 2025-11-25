@@ -45,122 +45,113 @@ const Leadership = () => {
                   : "Barrister, Politician"}
               </div>
               <h2 className="section-title">
-                {language === "bn" ? "জমির উদ্দিন সরকার" : " Jamiruddin Sircar"}
+                {language === "bn"
+                  ? "মুহাম্মদ জমির উদ্দিন সরকার"
+                  : " Muhammad Jamiruddin Sircar"}
               </h2>
-              <ul className="why-choose-list leadership-list-item">
-                <li>
-                  <div className="why-choose-icon">
-                    <Image
-                      src={"/assets/images/icon/check-2.svg"}
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="why-choose-list-text">
-                    <h5>
-                      {language === "bn"
-                        ? "পঞ্চগড় ১-এর শিক্ষাখাতে প্রায় ১৫ শ' কোটি টাকা (মুদ্রাস্ফীতি সমন্বয়কৃত) রাষ্ট্রীয় বিনিয়োগ"
-                        : "In Panchagarh-1, the government has invested approximately 1,500 crore taka (inflation-adjusted) in the education sector."}
-                    </h5>
-                  </div>
-                </li>
-                <li>
-                  <div className="why-choose-icon">
-                    <Image
-                      src={"/assets/images/icon/check-2.svg"}
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="why-choose-list-text">
-                    <h5>
-                      {language === "bn"
-                        ? "দেশে বেসরকারী বিশ্ববিদ্যালয় চালু"
-                        : "Private universities launched in the country"}
-                    </h5>
-                  </div>
-                </li>
-                <li>
-                  <div className="why-choose-icon">
-                    <Image
-                      src={"/assets/images/icon/check-2.svg"}
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="why-choose-list-text">
-                    <h5>
-                      {language === "bn"
-                        ? " জাতীয় বিশ্ববিদ্যালয় প্রতিষ্ঠা"
-                        : "Establishment of the National University"}
-                    </h5>
-                  </div>
-                </li>
-                <li>
-                  <div className="why-choose-icon">
-                    <Image
-                      src={"/assets/images/icon/check-2.svg"}
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="why-choose-list-text">
-                    <h5>
-                      {language === "bn"
-                        ? " উন্মুক্ত বিশ্ববিদ্যালয় স্থাপন"
-                        : "Establishment of open universities"}
-                    </h5>
-                  </div>
-                </li>
-                <li>
-                  <div className="why-choose-icon">
-                    <Image
-                      src={"/assets/images/icon/check-2.svg"}
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="why-choose-list-text">
-                    <h5>
-                      {language === "bn"
-                        ? "খুলনা প্রকৌশল ও প্রযুক্তি বিশ্ববিদ্যালয় (কুয়েট) তৈরি"
-                        : "Khulna University of Engineering and Technology (KUET) was established"}
-                    </h5>
-                  </div>
-                </li>
-                <li>
-                  <div className="why-choose-icon">
-                    <Image
-                      src={"/assets/images/icon/check-2.svg"}
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="why-choose-list-text">
-                    <h5>
-                      {language === "bn"
-                        ? "জাতীয় সংসদ ভবনকে পার্লামেন্ট সেশনের উপযুক্ত করে তোলা"
-                        : "Making the National Parliament Building suitable for parliamentary sessions"}
-                    </h5>
-                  </div>
-                </li>
-                <li>
-                  <div className="why-choose-icon">
-                    <Image
-                      src={"/assets/images/icon/check-2.svg"}
-                      width={20}
-                      height={20}
-                    />
-                  </div>
-                  <div className="why-choose-list-text">
-                    <h5>
-                      {language === "bn"
-                        ? "জিয়া আন্তর্জাতিক বিমানবন্দর নির্মাণ"
-                        : "Construction of Zia International Airport"}
-                    </h5>
-                  </div>
-                </li>
-              </ul>
+              <div className="leadership-item-head">
+                <h2>
+                  {language === "bn"
+                    ? "উল্লেখযোগ্য জাতীয় ও আঞ্চলিক অবদান"
+                    : "National and Regional Contributions"}
+                </h2>
+                <ul className="why-choose-list leadership-list-item">
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn" ? (
+                          <>
+                            <strong>পঞ্চগড় ১-এর শিক্ষাখাতে</strong> প্রায় ১৫00{" "}
+                            <strong>কোটি টাকা</strong> (মুদ্রাস্ফীতি সমন্বয়কৃত)
+                            রাষ্ট্রীয় বিনিয়োগ
+                          </>
+                        ) : (
+                          <>
+                            In Panchagarh-1, the government has invested
+                            approximately 1,500 crore taka (inflation-adjusted)
+                            in the education sector.
+                          </>
+                        )}
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn" ? (
+                          <>
+                            <strong> বেসরকারি বিশ্ববিদ্যালয় আইন , ১৯৯২</strong>
+                            প্রণয়ন — যার ফলস্বরূপ বর্তমানে দেশে ১১২টি নিবন্ধিত
+                            বেসরকারি বিশ্ববিদ্যালয়ে{" "}
+                            <strong>
+                              ৩,৫৮,৪১৪ জন ছাত্র-ছাত্রী অধ্যয়ন
+                            </strong>{" "}
+                            করছে (বাংলাদেশ বিশ্ববিদ্যালয় মঞ্জুরী কমিশন, ২০২৩)।
+                          </>
+                        ) : (
+                          <>
+                            The Private Universities Act 1992 was enacted – as a
+                            result, there are currently 3,58,414 students
+                            studying in 112 registered private universities in
+                            the country (Bangladesh University Grants
+                            Commission, 2023).
+                          </>
+                        )}
+                      </h5>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="why-choose-icon">
+                      <Image
+                        src={"/assets/images/icon/check-2.svg"}
+                        width={20}
+                        height={20}
+                      />
+                    </div>
+                    <div className="why-choose-list-text">
+                      <h5>
+                        {language === "bn" ? (
+                          <>
+                            <strong>
+                              {" "}
+                              বাংলাদেশ উন্মুক্ত বিশ্ববিদ্যালয় আইন, ১৯৯২
+                            </strong>{" "}
+                            প্রতিষ্ঠা — যা বর্তমানে শিক্ষার্থীর সংখ্যার ভিত্তিতে
+                            বিশ্বের অষ্টম বৃহত্তম বিশ্ববিদ্যালয়। ২০২০ সালে এর
+                            সকল আনুষ্ঠানিক প্রোগ্রামে মোট{" "}
+                            <strong>৯,৬৫,৮৩৮ জন</strong> শিক্ষার্থী নথিভুক্ত
+                            ছিল।
+                          </>
+                        ) : (
+                          <>
+                            Bangladesh Open University Act 1992 - It is the 8th
+                            largest university in the world based on the number
+                            of enrolled students (Wikipedia). In 2020, BAU had a
+                            total enrolment of 965,838 students in all formal
+                            programs.
+                          </>
+                        )}
+                      </h5>
+                    </div>
+                  </li>
+             
+                </ul>
+              </div>
+
               <Link href="/zamir-uddin-sirkar" className="custom-btn">
                 <span>{language === "bn" ? "আরও জানুন" : " Learn More"}</span>
                 <span>
