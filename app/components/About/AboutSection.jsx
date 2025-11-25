@@ -56,7 +56,7 @@ const AboutSection = () => {
                   {language === "bn"
                     ? "মুহাম্মদ নওশাদ জমির"
                     : "Muhammad Nawshad Zamir"}
-                  ?
+                 
                 </h2>
                 <div className="leadership-item-head">
                   <h2>
