@@ -64,9 +64,14 @@ const CentralBnpSlider = () => {
     return `${baseUrl}/${imagePath.replace(/^\/+/, "")}`;
   };
 
+  // Don't render if no data after loading
+  if (!loading && centralBnp.length === 0) {
+    return null;
+  }
+
   return (
     <section
-      className={`latest-news ${
+      className={`latest-news central-bnp-slider ${
         language === "bn" ? "lang-news-bn" : "lang-news-en"
       }`}
     >
@@ -75,8 +80,8 @@ const CentralBnpSlider = () => {
           <div>
             <h2 className="section-title">
               {language === "bn"
-                ? "কেন্দ্রীয় বিএনপি"
-                : "Central BNP"}
+                ? "কেন্দ্রীয় বিএনপি - সংবাদ, ইভেন্ট, প্রেস রিলিজ, গণসংযোগ, মিডিয়া সেল"
+                : "Central BNP - News, Events, Pres Release, Public Relations, Media Cell Activities"}
             </h2>
             <div className="bar"></div>
           </div>

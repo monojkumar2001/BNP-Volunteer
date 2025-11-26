@@ -994,6 +994,12 @@
   background: #f5f5f5;
 }
 
+.central-bnp-slider {
+  padding: 96px 0 0px 0;
+  background: none;
+}
+
+
 .latest-news-header {
   display: flex;
   justify-content: space-between;
@@ -1044,6 +1050,11 @@
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
+}
+.central-bnp-slider .latest-news-card {
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e062;
 }
 .latest-news-img {
   overflow: hidden;
