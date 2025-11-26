@@ -69,6 +69,7 @@ const HeroSection = () => {
   };
   return (
     <section
+      id="hero"
       className={`hero-section ${
         language === "bn" ? "lang-hero-bn" : "lang-hero-en"
       }`}
@@ -79,18 +80,18 @@ const HeroSection = () => {
             <div className="hero-title-item">
               <div className="hero-title-1">
                 <h1>
-                  {language === "bn" ? "আমাদের সাথে যোগ দিন।" : "Join us."}
+                  {language === "bn" ? "আমাদের সাথে যোগ দিন।" : "Join us!"}
                 </h1>
                 <h1>
                   {language === "bn"
                     ? "চলুন দেশ গড়ি একসাথে।"
-                    : "Let's build the country together."}
+                    : "Let's build our country together!"}
                 </h1>
               </div>
               <p>
                 {language === "bn"
                   ? "দেশ গড়ায় যোগ দিন, ভলান্টিয়ার হিসেবে নাম লেখান"
-                  : "Join in building the Country, Sign up as a Volunteer"}
+                  : "Join in building the Bangladesh, Sign up as a Volunteer"}
               </p>
             </div>
             <div className="hero-form">
@@ -104,7 +105,7 @@ const HeroSection = () => {
                   <p>
                     {language === "bn"
                       ? "আসুন, একসাথে দেশ গড়ি!"
-                      : "Let's build a country together!"}
+                      : "For a better future"}
                   </p>
                 </div>
                 <div className="hero-form-input-wrap">

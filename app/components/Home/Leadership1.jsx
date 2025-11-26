@@ -20,10 +20,10 @@ const Leadership = () => {
           <h4>
             {language === "bn"
               ? "নেতৃত্বের উত্তরাধিকার"
-              : "A Legacy of Leadership"}
+              : "A LEGACY OF LEADERSHIP"}
           </h4>
           <h1 className="section-title leadership-titles">
-            {language === "bn" ? "আশার ভবিষ্যৎ" : " A Future of Hope"}
+            {language === "bn" ? "আশার ভবিষ্যৎ" : " A Beacon of Panchagarh"}
           </h1>
         </div>
         <div className="row align-items-center">
@@ -41,13 +41,13 @@ const Leadership = () => {
             <div className="who-content leadership-list-content">
               <div className="subtitle">
                 {language === "bn"
-                  ? "ব্যারিস্টার, রাজনীতিবিদ"
-                  : "Barrister, Politician"}
+                  ? "প্রাক্তন ভারপ্রাপ্ত রাষ্ট্রপতি এবং সংসদের প্রাক্তন স্পিকার"
+                  : "Ex Acting President and Ex Speaker of the Parliament"}
               </div>
               <h2 className="section-title">
                 {language === "bn"
-                  ? "মুহাম্মদ জমির উদ্দিন সরকার"
-                  : " Muhammad Jamiruddin Sircar"}
+                  ? "ব্যারিস্টার জমির উদ্দিন সরকার"
+                  : " Barrister Jamiruddin Sircar"}
               </h2>
               <div className="leadership-item-head">
                 <h2>
@@ -148,7 +148,6 @@ const Leadership = () => {
                       </h5>
                     </div>
                   </li>
-             
                 </ul>
               </div>
 

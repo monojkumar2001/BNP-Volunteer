@@ -30,23 +30,25 @@ const OurConcern = () => {
               <div className="subtitle">
                 {language === "bn"
                   ? "আমাদের উদ্বেগের বিষয়গুলি"
-                  : "Our Concern Issues"}
+                  : "OUR CHALLENGES"}
               </div>
               <h2 className="section-title">
-                {language === "bn" ? "উপযুক্ত সময়ে " : "At the right time"}
+                {language === "bn" ? "উপযুক্ত সময়ে " : "Identify the right job"}
               </h2>
               <h2 className="section-title">
                 {language === "bn"
                   ? "উপযুক্ত কাজের জন্য "
-                  : "For the right job"}
+                  : "At the right time"}
               </h2>
               <h2 className="section-title">
-                {language === "bn" ? " উপযুক্ত নেতা" : "The right leader"}
+                {language === "bn"
+                  ? " উপযুক্ত নেতা"
+                  : "Choose the right leader"}
               </h2>
               <p>
                 {language === "bn"
                   ? " পঞ্চগড়ের জনগণের সমস্যাগুলো সমাধানে বিগত দুই দশকে তেমন কোন কাজ হয়নি। এবার সুযোগ এসেছে অপূর্ণ প্রতিশ্রুতিগুলো পূরণ করে মানুষের মুখে নিশ্চিন্ত হাসি ফোটাবার।"
-                  : "Not much has been done in the last two decades to solve the problems of the people of Panchagarh. Now is the time to fulfill the unfulfilled promises and bring a smile to the faces of the people."}
+                  : "In the past two decades, the people of Panchagarh have seen few tangible solutions to their problems. Now is the opportunity to fulfil incomplete promises and bring genuine smiles to people’s faces."}
               </p>
               <Link href="/events" className="custom-btn">
                 <span>
@@ -61,37 +63,37 @@ const OurConcern = () => {
               <li>
                 {language === "bn"
                   ? "শিক্ষা ও স্বাস্থ্যব্যবস্থার নাজুক অবস্থা"
-                  : "Poor state of education and healthcare systems"}
+                  : "The fragile state of our education and healthcare systems"}
               </li>
               <li>
                 {language === "bn"
                   ? "ক্রমবর্ধমান বেকারত্ব ও অর্থনৈতিক মন্দা"
-                  : "Rising unemployment and economic recession"}
+                  : "Rising unemployment and economic downturn"}
               </li>
               <li>
                 {language === "bn"
                   ? "কৃষক-শ্রমিকের দুর্দশা "
-                  : "The plight of farmers and workers"}
+                  : "The hardships faced by farmers and workers"}
               </li>
               <li>
                 {language === "bn"
                   ? "গণ যোগাযোগ ব্যবস্থা যুগপোযগীকরণ"
-                  : "Modernization of mass communication systems"}
+                  : "Modernising public transport systems"}
               </li>
               <li>
                 {language === "bn"
                   ? "পৌর-অঞ্চলে সীমিত নাগরিক সুবিধা"
-                  : "Limited civic amenities in municipal areas"}
+                  : "Limited civic amenities in urban and semi-urban areas"}
               </li>
               <li>
                 {language === "bn"
                   ? "রাস্তা-ঘাট সহ যোগাযোগ ব্যবস্থার সার্বিক দুরাবস্থা"
-                  : "Overall poor condition of the communication system, including roads and bridges"}
+                  : "Overall deterioration of roads and connectivity"}
               </li>
               <li>
                 {language === "bn"
                   ? "আইন-শৃঙ্খলা পরিস্থিতির তীব্র অবনতি"
-                  : "Severe deterioration of the law and order situation"}
+                  : "A drastic decline in law and order"}
               </li>
             </ul>
           </div>

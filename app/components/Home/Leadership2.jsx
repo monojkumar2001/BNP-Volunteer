@@ -22,7 +22,7 @@ const Leadership2 = () => {
               <div className="subtitle">
                 {language === "bn"
                   ? "ব্যারিস্টার, প্রার্থী"
-                  : "Barrister, The candidate"}
+                  : "BARRISTER, THE CANDIDATE"}
               </div>
               <h2 className="section-title">
                 {language === "bn"
@@ -94,7 +94,7 @@ const Leadership2 = () => {
                       <h5>
                         {language === "bn"
                           ? "বিএনপি-র আন্তর্জাতিক বিষয়ক সম্পাদক"
-                          : "BNP International Affairs Secretary"}
+                          : "International Affairs Secretary, BNP"}
                       </h5>
                     </div>
                   </li>
@@ -110,7 +110,7 @@ const Leadership2 = () => {
                       <h5>
                         {language === "bn"
                           ? " বেগম খালেদা জিয়া এবং জনাব তারেক রহমানের আইনজীবী"
-                          : "Lawyers of Begum Khaleda Zia and Mr. Tarique Rahman"}
+                          : "Lawyer of Begum Khaleda Zia and Tarique Rahman"}
                       </h5>
                     </div>
                   </li>

@@ -1,11 +1,11 @@
 "use client";
 
-import React from 'react'
-import Image from 'next/image';
-import { useLanguage } from '../../../context/languageContext';
+import React from "react";
+import Image from "next/image";
+import { useLanguage } from "../../../context/languageContext";
 
 const ZamirUddin = () => {
-      const { language } = useLanguage();
+  const { language } = useLanguage();
   return (
     <>
       <section
@@ -414,103 +414,459 @@ const ZamirUddin = () => {
               </>
             ) : (
               <>
-                ` <h4>Details</h4>
+                `
+                <h4>
+                  <strong>Details</strong>
+                </h4>
                 <p>
-                  A respected son of Panchagarh, Zamir Uddin Sarkar is a
-                  renowned lawyer, a veteran politician and always a fearless
-                  soldier in protecting the interests of Bangladesh.
+                  Barrister Muhammad Jamiruddin Sircar, a distinguished son of
+                  Panchagarh, is a renowned lawyer, a senior statesman, and an
+                  unwavering guardian of Bangladesh’s national interests.
                 </p>
                 <p>
-                  He is a five-time elected member of parliament. He has served
-                  as the Speaker of the National Parliament of Bangladesh for
-                  two terms and as the Acting President of Bangladesh for two
-                  terms.
+                  He was elected to Parliament <strong>five times</strong>. He
+                  served <strong>twice as Speaker</strong> of the Jatiya Sangsad
+                  (National Parliament) and{" "}
+                  <strong>twice as Acting President of Bangladesh</strong>.
                 </p>
                 <p>
-                  While serving as the State Minister for Public Works and Urban
-                  Development in the cabinet of late President Ziaur Rahman, he
-                  completed the unfinished work of the current Parliament
-                  Building. Dhaka&apos;s Zia International Airport was built by
-                  him.
+                  As the State Minister for Public Works and Urban Development
+                  in the cabinet of President Ziaur Rahman, he completed the
+                  unfinished work of the present Parliament Building. Under his
+                  leadership,{" "}
+                  <strong>Dhaka&apos;s Zia International Airport</strong> was
+                  brought to completion.
                 </p>
                 <p>
-                  He served as the Minister of State for Foreign Affairs in
-                  Abdus Sattar&apos;s cabinet. In the first cabinet of Begum
-                  Khaleda Zia in the fifth parliament, he first served as the
-                  Minister of State for Land and later as the Minister of
-                  Education. The National University and the Open University
-                  were established under his leadership. With his permission,
-                  the journey of the first private universities in Bangladesh
-                  began. His contribution to the establishment of Khulna
-                  Engineering University and the expansion of technical
-                  education to eliminate regional disparities is a glorious
-                  chapter in the history of the education system of Bangladesh.
-                  The education sector in Panchagarh 1 constituency was
-                  allocated state funding worth Tk 205 crore in 1991-96, the
-                  current value of which is around Tk 1500 crore.
+                  In the cabinet of President Abdus Sattar, he served as{" "}
+                  <strong>State Minister for Foreign Affairs</strong>. In the
+                  Fifth Parliament, he joined the first cabinet of Prime
+                  Minister Begum Khaleda Zia, initially as{" "}
+                  <strong>State Minister for Land</strong> and later as{" "}
+                  <strong>Minister of Education</strong>. Both the{" "}
+                  <strong>National University</strong> and the{" "}
+                  <strong>Open University</strong>
+                  were established under his leadership. With his approval,
+                  Bangladesh’s first private universities began their journey.
+                  His role in establishing{" "}
+                  <strong>
+                    Khulna University of Engineering & Technology (KUET)
+                  </strong>{" "}
+                  and expanding technical education marked a historic chapter in
+                  the country’s education sector. In his tenure, over 200
+                  <strong>cyclone shelter cum primary schools</strong> were
+                  established in the coastal areas of Bangladesh, which had a
+                  significant impact in reducing the death toll during natural
+                  disasters.
                 </p>
                 <p>
-                  In addition, he also served as the Minister of Science and
-                  Technology at that time.
+                  During 1991–1996 alone, he allocated{" "}
+                  <strong>205 crore BDT</strong> to the education sector of
+                  Panchagarh-1 constituency, equivalent to roughly{" "}
+                  <strong>1,500 crore BDT</strong> in today’s value.
                 </p>
                 <p>
-                  In the cabinet of the short-lived BNP government formed in the
-                  Sixth National Parliament, he served as the Minister of Law,
-                  Justice and Parliamentary Affairs from 19 March 1996 to 30
-                  March 1996 and played an important role in formulating the
-                  caretaker government bills.
+                  He also served as{" "}
+                  <strong> Minister of Science and Technology</strong> during
+                  that period.
                 </p>
                 <p>
-                  Zamir Uddin Sarkar was born in 1931 in Nayabari village of
-                  Tentulia, then British India. After completing his MA and LLB
-                  from Dhaka University and barristership from Lincoln&apos;s
-                  Inn, London, he was admitted to the Dhaka High Court in 1960
-                  after obtaining a certificate from the then East Pakistan High
-                  Court Joined the legal profession.
+                  In the short-lived BNP government formed during the Sixth
+                  Parliament, he served as{" "}
+                  <strong>
+                    Minister for Law, Justice and Parliamentary Affairs
+                  </strong>{" "}
+                  from 19 March 1996 to 30 March 1996, where he played an
+                  essential role in drafting the{" "}
+                  <strong>Caretaker Government Bill</strong>.
                 </p>
                 <p>
-                  His political career began in 1945, when he was still a
-                  student, through the then Students&apos; Federation. He was a
-                  founding member of the Awami Muslim League and an associate of
-                  Maulana Bhasani.
+                  Jamiruddin Sircar was born in 1931 in Nayabari village of
+                  Tetulia, then part of British India. After earning an MA and
+                  LLB from the University of Dhaka and completing his Bar-at-Law
+                  from Lincoln’s Inn in London, he joined the legal profession
+                  at the Dhaka High Court in 1960, obtaining his certification
+                  from the then East Pakistan High Court.
                 </p>
                 <p>
-                  Zamir Uddin Sarkar was one of the group of lawyers who played
-                  an active role in the Liberation War in the High Court in
-                  1971. Due to his reputation and fame in the legal profession,
-                  late President Ziaur Rahman sent him as Bangladesh&apos;s
-                  representative to the United Nations General Assembly five
-                  times from 1977 to 1981. When Ziaur Rahman formed the Jagdal
-                  in the first stage of the party&apos;s formation, he joined
-                  it. Later, when the BNP was established, he became a member of
-                  the standing committee.
+                  His political journey began in 1945 while he was a student
+                  through the Student Federation. He was arrested due to
+                  participation in anti-government protests while merely 15
+                  years old, prior to 1947. He was the elected VP of Iqbal Hall
+                  (presently Surgent Zahirul Haq Hall) in 1953. He was a close
+                  associate of <strong>Maulana Bhashani</strong> and served as
+                  an activist for the{" "}
+                  <strong>United Front (যুক্তফ্রন্ট)</strong> candidate, Mirza
+                  Golam Hafeez, in the 1954 election in Panchagarh.
                 </p>
                 <p>
-                  His profound scholarship and ease in both the worlds of law
-                  and politics left an unforgettable mark on the country&apos;s
-                  political arena. He was one of Bangladesh&apos;s pioneers in
-                  complex and specialized fields such as industrial and
-                  commercial law, maritime law, environmental law, and
-                  international treaty drafting.
+                  He participated in the Pakistan general election in 1970 as an
+                  independent candidate and also in the First National
+                  Parliamentary Election of Bangladesh as an independent
+                  candidate in 1973, in the Panchagar 1 constituency. He was
+                  elected to Parliament for the first time in 1979 from the
+                  Panchagarh 1 constituency.
                 </p>
                 <p>
-                  Under his visionary leadership, important tasks such as
-                  demarcation of Bangladesh&apos;s maritime boundaries, creation
-                  of an investment-friendly environment, and protection of
-                  natural resources gained momentum. He was a strong advocate
-                  for the rights of coastal countries in international forums,
-                  which safeguarded Bangladesh&apos;s interests on the world
-                  stage. His deep love for the country and relentless efforts
-                  played a significant role in building Bangladesh into a strong
-                  nation.
+                  During the Liberation War of 1971, he was among the group of
+                  High Court lawyers who actively supported Bangladesh’s
+                  independence. Due to his reputation and prominence in the
+                  legal field and long political engagement, President Ziaur
+                  Rahman appointed him as a{" "}
+                  <strong>
+                    Bangladesh delegate to the United Nations General Assembly
+                    five times
+                  </strong>{" "}
+                  between 1977 and 1981.
+                </p>
+                <p>
+                  He was a founder member of the <strong>JAGODAL</strong> party
+                  when President Ziaur Rahman formed it, and later, upon the
+                  establishment of the{" "}
+                  <strong>Bangladesh Nationalist Party (BNP)</strong>, he became
+                  a founding member of its Standing Committee.
+                </p>
+                <p>
+                  In both law and politics, he was a scholar of exceptional
+                  depth, leaving an enduring mark on the national stage. He was
+                  one of Bangladesh’s pioneers in complex and specialised fields
+                  such as{" "}
+                  <strong>
+                    industrial and commercial law, maritime law, environmental
+                    law
+                  </strong>
+                  , and the formulation of{" "}
+                  <strong>international treaties.</strong>
+                </p>
+                <p>
+                  Under his farsighted leadership, Bangladesh made significant
+                  progress in defining its maritime boundaries, creating an
+                  investment-friendly environment, and safeguarding natural
+                  resources. On the international stage, he was a powerful
+                  advocate for the rights of coastal nations, ensuring that
+                  Bangladesh’s interests remained firmly protected. His deep
+                  dedication and tireless efforts played a vital role in shaping
+                  Bangladesh into a stronger nation.
+                </p>
+                <p>
+                  He has published 15 books, and his autobiography{" "}
+                  <strong>“ফেলে আসা দিনগুলো”</strong> is due to be published
+                  later this year.
                 </p>
               </>
             )}
+          </div>
+          <div className="leadership-item-head">
+            <h2>
+              {language === "bn" ? (
+                <>
+                  <strong>উল্লেখযোগ্য গ্রন্থসমূহ</strong>
+                </>
+              ) : (
+                <>
+                  <strong>Notable Works</strong>
+                </>
+              )}
+            </h2>
+            <ul className="why-choose-list leadership-list-item">
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>গ্লিম্পসেস অফ ইন্টারন্যাশনাল ল (১৯৯৭)</>
+                    ) : (
+                      <>Glimpses of International Law (1997)</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>
+                        স্ট্রংগার ইউনাইটেড নেশন্স ফর পিসফুল ওয়েলফেয়ার ওয়ার্ল্ড
+                        (২০০৩)
+                      </>
+                    ) : (
+                      <>
+                        Stronger United Nations for Peaceful Welfare World
+                        (2003)
+                      </>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>লন্ডনে ছাত্র আন্দোলন (২০০৫)</>
+                    ) : (
+                      <>লন্ডনে ছাত্র আন্দোলন (2005)</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>লন্ডনে বন্ধুবান্ধব (২০০৬)</>
+                    ) : (
+                      <>লন্ডনে বন্ধুবান্ধব (2006)</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>লন্ডনে ছাত্রজীবন (২০০৬)</>
+                    ) : (
+                      <>লন্ডনে ছাত্রজীবন (2006)</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>অষ্টম সংসদে স্পিকার (২০০৬)</>
+                    ) : (
+                      <>অষ্টম সংসদে স্পিকার (2006)</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>এক নজরে সংসদ সম্পর্কিত বিধিবিধান (২০০৬)</>
+                    ) : (
+                      <>এক নজরে সংসদ সম্পর্কিত বিধিবিধান (2006)</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>
+                        পাল রাজ থেকে পলাশী এবং ব্রিটিশ রাজ থেকে বঙ্গভবন (২০০৬)
+                      </>
+                    ) : (
+                      <>
+                        পাল রাজ থেকে পলাশী এবং ব্রিটিশ রাজ থেকে বঙ্গভবন (2006)
+                      </>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>দ্য ল অফ দ্য সি (২০০৩)</>
+                    ) : (
+                      <>The Law of the Sea (2003)</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>
+                        ল অফ দ্য ইন্টারন্যাশনাল রিভার্স অ্যান্ড আদার্স ওয়াটার
+                        কোর্সেস (২০০৭)
+                      </>
+                    ) : (
+                      <>
+                        Law of the International Rivers and others Water Courses
+                        (2007)
+                      </>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>ব্রিটিশ ভারতে গণতন্ত্রের উন্মেষ (২০০৭)</>
+                    ) : (
+                      <>ব্রিটিশ ভারতে গণতন্ত্রের উন্মেষ (2007)</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>
+                        পাকিস্তানে গণতন্ত্রের বিপর্যয় এবং স্বাধীন বাংলাদেশের
+                        অভ্যুদয় (২০০৮)
+                      </>
+                    ) : (
+                      <>
+                        পাকিস্তানে গণতন্ত্রের বিপর্যয় এবং স্বাধীন বাংলাদেশের
+                        অভ্যুদয় (2008)
+                      </>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>সুরাইয়া ফারাহ চৌধুরী</>
+                    ) : (
+                      <>সুরাইয়া ফারাহ চৌধুরী</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>বাংলাদেশের গণতন্ত্রের উত্তরণ এবং ডিগবাজি</>
+                    ) : (
+                      <>বাংলাদেশের গণতন্ত্রের উত্তরণ এবং ডিগবাজি</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+              <li>
+                <div className="why-choose-icon">
+                  <Image
+                    src={"/assets/images/icon/check-2.svg"}
+                    width={20}
+                    height={20}
+                  />
+                </div>
+                <div className="why-choose-list-text">
+                  <h5>
+                    {language === "bn" ? (
+                      <>গণতন্ত্রের উৎপত্তি এবং ক্রমবিকাশ</>
+                    ) : (
+                      <>গণতন্ত্রের উৎপত্তি এবং ক্রমবিকাশ</>
+                    )}
+                  </h5>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </>
   );
-}
+};
 
-export default ZamirUddin
+export default ZamirUddin;

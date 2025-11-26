@@ -17,7 +17,7 @@ const SingleEventSection = ({ slug }) => {
   const [event, setEvent] = useState(null);
   const [loading, setLoading] = useState(true);
   const [showFullscreenVideo, setShowFullscreenVideo] = useState(false);
-  const baseUrl = (process.env.NEXT_PUBLIC_API_BASE_URL );
+  const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
 
   useEffect(() => {
     if (!slug) return;
@@ -43,41 +43,45 @@ const SingleEventSection = ({ slug }) => {
   const formatDate = (dateString) => {
     if (!dateString) return "";
     const date = new Date(dateString);
-    return date.toLocaleDateString(
-      language === "bn" ? "bn-BD" : "en-US",
-      {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-      }
-    );
+    return date.toLocaleDateString(language === "bn" ? "bn-BD" : "en-US", {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+    });
   };
 
   // Format time with AM/PM
   const formatTime = (timeString) => {
     if (!timeString) return "";
-    
+
     try {
       // Handle time in format HH:MM:SS or HH:MM
       const timeParts = timeString.split(":");
       if (timeParts.length >= 2) {
         let hours = parseInt(timeParts[0], 10);
         const minutes = timeParts[1];
-        
+
         if (isNaN(hours)) return timeString;
-        
-        const period = hours >= 12 ? (language === "bn" ? "PM" : "PM") : (language === "bn" ? "AM" : "AM");
-        
+
+        const period =
+          hours >= 12
+            ? language === "bn"
+              ? "PM"
+              : "PM"
+            : language === "bn"
+            ? "AM"
+            : "AM";
+
         // Convert to 12-hour format
         if (hours === 0) {
           hours = 12;
         } else if (hours > 12) {
           hours = hours - 12;
         }
-        
+
         return `${hours}:${minutes} ${period}`;
       }
-      
+
       return timeString;
     } catch (error) {
       console.error("Error formatting time:", error);
@@ -95,25 +99,26 @@ const SingleEventSection = ({ slug }) => {
   // Convert YouTube URL to embed URL
   const convertYouTubeUrl = (url, autoplay = false) => {
     if (!url) return null;
-    
+
     // Check if it's a YouTube URL
-    const youtubeRegex = /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]+)/;
+    const youtubeRegex =
+      /(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]+)/;
     const match = url.match(youtubeRegex);
-    
+
     if (match) {
       const videoId = match[1];
       // Return embed URL with parameters
       const params = new URLSearchParams();
       if (autoplay) {
-        params.append('autoplay', '1');
-        params.append('mute', '1');
+        params.append("autoplay", "1");
+        params.append("mute", "1");
       }
-      params.append('controls', '1');
-      params.append('modestbranding', '1');
-      params.append('rel', '0');
+      params.append("controls", "1");
+      params.append("modestbranding", "1");
+      params.append("rel", "0");
       return `https://www.youtube.com/embed/${videoId}?${params.toString()}`;
     }
-    
+
     return null;
   };
 
@@ -166,7 +171,11 @@ const SingleEventSection = ({ slug }) => {
             <p>
               {language === "bn" ? "ইভেন্ট পাওয়া যায়নি" : "Event not found"}
             </p>
-            <Link href="/events" className="custom-btn" style={{ marginTop: 20 }}>
+            <Link
+              href="/events"
+              className="custom-btn"
+              style={{ marginTop: 20 }}
+            >
               <span>
                 {language === "bn" ? "ইভেন্টে ফিরে যান" : "Back to Events"}
               </span>
@@ -179,9 +188,6 @@ const SingleEventSection = ({ slug }) => {
 
   const imageUrl = getImageUrl(event.image);
   const videoUrl = getVideoUrl(event.video_url);
-
-
-  
 
   return (
     <>
@@ -301,7 +307,7 @@ const SingleEventSection = ({ slug }) => {
                     {(event.location_en || event.location_bn) && (
                       <div>
                         <span style={{ marginRight: "8px" }}>
-                          <FaMapMarkerAlt/>
+                          <FaMapMarkerAlt />
                         </span>
                         <span>
                           {language === "bn"
@@ -338,7 +344,6 @@ const SingleEventSection = ({ slug }) => {
                   {(event.description_en || event.description_bn) && (
                     <div
                       className="event-body"
-                      style={{ lineHeight: "1.8", marginBottom: "30px" }}
                       dangerouslySetInnerHTML={{
                         __html:
                           language === "bn"
@@ -348,7 +353,11 @@ const SingleEventSection = ({ slug }) => {
                     />
                   )}
 
-                  <Link href="/events" className="custom-btn" style={{ fontSize: "16px", lineHeight: "30px" }}>
+                  <Link
+                    href="/events"
+                    className="custom-btn"
+                    style={{ fontSize: "16px", lineHeight: "30px" }}
+                  >
                     <span>
                       <GoArrowUpLeft />
                     </span>
@@ -447,4 +456,3 @@ const SingleEventSection = ({ slug }) => {
 };
 
 export default SingleEventSection;
-

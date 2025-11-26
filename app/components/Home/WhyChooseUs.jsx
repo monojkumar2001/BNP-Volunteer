@@ -17,12 +17,14 @@ const WhyChooseUs = () => {
         <div className="why-choose-me-wrapper">
           <div className="why-choose-me-content">
             <span>
-              {language === "bn" ? "কেন আমার পাশে দাঁড়াবেন" : "Why stand by me"}
+              {language === "bn"
+                ? "কেন আমার পাশে দাঁড়াবেন?"
+                : "WHY STAND WITH ME?"}
             </span>
             <h4>
               {language === "bn"
                 ? "যদি সমৃদ্ধ ভবিষ্যৎ চান, আমাকে ভোট দিন"
-                : "If you want a prosperous future, vote for me."}
+                : "If you believe in a prosperous future, then I ask for your vote."}
             </h4>
             {language === "bn" ? (
               <p className="lang-choose-content">
@@ -33,17 +35,18 @@ const WhyChooseUs = () => {
               </p>
             ) : (
               <p className="lang-choose-content">
-                <strong>
-                  Come, let&apos;s make this country a better and more beautiful
-                  place to live
-                </strong>{" "}
-                A prosperous Bangladesh for everyone. Where it will be nice to
-                live. Where dreams can be seen without fear. This is not just a
-                promise, this is our firm commitment.
+                Come with me to build a stronger, more beautiful Bangladesh for
+                everyone — a place we feel proud to live in, where dreams are
+                seen without fear. This is not merely a promise. It is our firm
+                commitment.
               </p>
             )}
             <div className="list-item-head">
-              <h2>{language === "bn" ? "আমার ওয়াদা:" : "My promise:"}</h2>
+              <h2>
+                {language === "bn"
+                  ? "আমার ওয়াদা:"
+                  : "My pledges to the people:"}
+              </h2>
             </div>
             <ul className="why-choose-list">
               <li>
@@ -58,7 +61,7 @@ const WhyChooseUs = () => {
                   <h5>
                     {language === "bn"
                       ? "বিশ্ববিদ্যালয় ও মেডিক্যাল কলেজ স্থাপন"
-                      : "Establishment of universities and medical colleges"}
+                      : "Establishing a university and a medical college in Panchagarh"}
                   </h5>
                 </div>
               </li>
@@ -74,7 +77,7 @@ const WhyChooseUs = () => {
                   <h5>
                     {language === "bn"
                       ? "বেকারত্বের টেকসই সমাধান"
-                      : "Sustainable solution to unemployment"}
+                      : "Sustainable solutions to unemployment in Panchagarh"}
                   </h5>
                 </div>
               </li>
@@ -90,7 +93,7 @@ const WhyChooseUs = () => {
                   <h5>
                     {language === "bn"
                       ? " আধুনিক পৌরসভা ও উন্নত অবকাঠামো"
-                      : "Modern municipality and developed infrastructure"}
+                      : "Modern Panchagarh municipality and upgraded infrastructure"}
                   </h5>
                 </div>
               </li>
@@ -106,7 +109,7 @@ const WhyChooseUs = () => {
                   <h5>
                     {language === "bn"
                       ? " গ্রাম পর্যন্ত পাকা রাস্তার নেটওয়ার্ক"
-                      : "Paved road network to the village"}
+                      : "A fully‐paved road network right to the village level "}
                   </h5>
                 </div>
               </li>
@@ -122,7 +125,7 @@ const WhyChooseUs = () => {
                   <h5>
                     {language === "bn"
                       ? "দুর্নীতি প্রতিরোধ, আইন ও মানবাধিকারের সুরক্ষা"
-                      : "Preventing corruption, protecting the law and human rights"}
+                      : "Zero tolerance for corruption, and protection of the law and human rights"}
                   </h5>
                 </div>
               </li>
@@ -138,7 +141,7 @@ const WhyChooseUs = () => {
                   <h5>
                     {language === "bn"
                       ? "সার, বীজ ও কৃষিজাত পণ্যের ন্যায্যমূল্য"
-                      : "Fair price of fertilizers, seeds and agricultural products"}
+                      : "Fair pricing for fertiliser, seeds, and agricultural produce"}
                   </h5>
                 </div>
               </li>
@@ -154,7 +157,7 @@ const WhyChooseUs = () => {
                   <h5>
                     {language === "bn"
                       ? "পর্যটন শিল্পের সার্বিক উন্নয়ন"
-                      : "Overall development of the tourism industry"}
+                      : "Comprehensive development of the tourism industry in Panchagarh"}
                   </h5>
                 </div>
               </li>

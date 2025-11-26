@@ -39,7 +39,7 @@
     position: relative;
     width: 100%;
   }
-  .lang-choose-en .why-choose-me-wrapper{
+  .lang-choose-en .why-choose-me-wrapper {
     height: inherit;
   }
   .hero-content {
@@ -532,15 +532,15 @@
   .latest-news-content .news-title {
     padding-bottom: 15px;
   }
-.single-event-content{
-  padding: 30px 20px;
-}
-.single-news-content {
+  .single-event-content {
     padding: 30px 20px;
-}
-.lang-who-en .who-single-content-3{
-  padding-top: 15px;
-}
+  }
+  .single-news-content {
+    padding: 30px 20px;
+  }
+  .lang-who-en .who-single-content-3 {
+    padding-top: 15px;
+  }
   .latest-news-header {
     gap: 10px;
   }
@@ -615,10 +615,15 @@
   .election-wrapper {
     min-height: 824px;
   }
-
+  .lang-leadership-en .section-title {
+    font-size: 30px;
+  }
   .why-choose-me {
     position: relative;
     margin-top: 0;
+  }
+  .leadership-item-head h2 {
+    font-size: 20px;
   }
   .why-choose-list-text h5 {
     font-size: 20px;
