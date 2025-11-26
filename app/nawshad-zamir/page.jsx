@@ -106,7 +106,7 @@ const NawshadZamirPage = () => {
                       </>
                     ) : (
                       <>
-                        Muhammad Naushad is an experienced lawyer by profession.
+                        Muhammad Nawshad is an experienced lawyer by profession.
                         He was admitted as a Barrister from Lincoln&apos;s Inn,
                         London (1999) and an Advocate of the Supreme Court of
                         Bangladesh (1996). He holds an LLM from the
@@ -345,7 +345,7 @@ const NawshadZamirPage = () => {
               ) : (
                 <>
                   <p>
-                    Muhammad Naushad Zamir, the{" "}
+                    Muhammad Nawshad Zamir, the{" "}
                     <strong>International Affairs Secretary</strong> of the
                     Bangladesh Nationalist Party (BNP), is a barrister,
                     politician and international law expert. He holds an LLM
@@ -360,7 +360,7 @@ const NawshadZamirPage = () => {
                     Tarique Rahman.
                   </p>
                   <p>
-                    Muhammad Naushad has been directly involved in land politics
+                    Muhammad Nawshad has been directly involved in land politics
                     since 2001. He was the BNP candidate for Panchagarh-1
                     constituency in the{" "}
                     <strong>11th National Parliament election (2018)</strong>.
@@ -397,7 +397,7 @@ const NawshadZamirPage = () => {
                     finance, and constitutional writs.
                   </p>
                   <p>
-                    During his career, Naushad has served in important positions
+                    During his career, Nawshad has served in important positions
                     such as{" "}
                     <strong>
                       Director General of the Prime Minister&apos;s Office
