@@ -1,18 +1,5 @@
-import BecomeVolunteer from "./components/Home/BecomeVolunteer";
-import ElectionCampaign from "./components/Home/ElectionCampaign";
-import ElectionCard from "./components/Home/ElectionCard";
-import GetInvolved from "./components/Home/GetInvolved";
-import HeroSection from "./components/Home/HeroSection";
-import LatestNews from "./components/Home/LatestNews";
-import CentralBnpSlider from "./components/Home/CentralBnpSlider";
-import Leadership1 from "./components/Home/Leadership1";
-import Leadership2 from "./components/Home/Leadership2";
-import Leadership3 from "./components/Home/Leadership3";
-import OurConcern from "./components/Home/OurConcern";
-import PromiseTracker from "./components/Home/PromiseTracker";
-import WhoWeAre from "./components/Home/WhoWeAre";
-import WhyChooseUs from "./components/Home/WhyChooseUs";
-
+import React from "react";
+import SingleCentralBnpSection from "../../components/CentralBnp/SingleCentralBnpSection";
 export const metadata = {
   title: "Barrister Nawshad Zamir | International Affairs Secretary - BNP",
   description: "Building a stronger future through unity and leadership.",
@@ -50,25 +37,14 @@ export const metadata = {
     images: ["/assets/images/meta-img.jpg", "/assets/images/logo.png"], // same image works for Twitter
   },
 };
-
-export default function Home({ language }) {
+const SingleCentralBnpPage = ({ params }) => {
+  const { slug } = params || {};
   return (
     <>
-      <HeroSection language={language} />
-      <WhoWeAre />
-      <OurConcern />
-      <WhyChooseUs />
-      <Leadership1 />
-      <Leadership2 />
-      {/* <Leadership3 /> */}
-      {/* <ElectionCampaign />
-      <ElectionCard />
-      <PromiseTracker /> */}
-
-      <GetInvolved />
-      <BecomeVolunteer />
-      <LatestNews />
-      <CentralBnpSlider />
+      <SingleCentralBnpSection slug={slug} />
     </>
   );
-}
+};
+
+export default SingleCentralBnpPage;
+
