@@ -54,7 +54,7 @@ const EventsPage = () => {
       {/* <div className="gallery-campaign event-campain">
         <ElectionCampaign />
       </div> */}
-      <FaqSection />
+      {/* <FaqSection /> */}
     </>
   );
 };
