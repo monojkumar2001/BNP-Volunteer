@@ -240,16 +240,10 @@ const SingleEventSection = ({ slug }) => {
                       />
                     )
                   ) : (
-                    <Image
+                    <img
                       src={imageUrl}
                       alt={language === "bn" ? event.title_bn : event.title_en}
-                      width={1200}
-                      height={600}
-                      style={{
-                        width: "100%",
-                        height: "auto",
-                        display: "block",
-                      }}
+                      style={{ width: "100%", display: "block" }}
                     />
                   )}
                   {videoUrl && (
