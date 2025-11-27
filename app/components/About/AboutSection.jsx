@@ -402,7 +402,7 @@ const AboutSection = () => {
                     হিসেবে কর্মরত আছেন।
                   </p>
                   <p>
-                    তিনি প্রাক্তন প্রধানমন্ত্রী দেশনেত্রী বেগম খালেদা জিয়া এবং
+                    তিনি সাবেক প্রধানমন্ত্রী দেশনেত্রী বেগম খালেদা জিয়া এবং
                     বিএনপি-র ভারপ্রাপ্ত চেয়ারপার্সন জনাব তারেক রহমানের আইনজীবী।
                   </p>
                   <p>
@@ -433,9 +433,9 @@ const AboutSection = () => {
                   </p>
                   <p>
                     বর্তমানে তিনি ঢাকার <strong>জুরিস্টস চেম্বার্স</strong>-এর
-                    এ্যাক্টিং হেড অফ চেম্বার হিসেবে দায়িত্ব পালন করছেন। তাঁর
-                    আইনচর্চা মূলত করপোরেট আইন, ইসলামি অর্থায়ন, এবং সাংবিধানিক
-                    রিট নিয়ে আবর্তিত।
+                    হেড অফ চেম্বার হিসেবে দায়িত্ব পালন করছেন। তাঁর আইনচর্চা মূলত
+                    করপোরেট আইন, ইসলামি অর্থায়ন, এবং সাংবিধানিক রিট নিয়ে
+                    আবর্তিত।
                   </p>
                   <p>
                     কর্মজীবনে{" "}
@@ -468,9 +468,9 @@ const AboutSection = () => {
                     Bangladesh Nationalist Party (BNP), is a barrister,
                     politician and international law expert. He holds an LLM
                     degree from the world-renowned Harvard Law School and an MSc
-                    degree in taxation from Oxford University. He is an advocate
-                    of the Supreme Court of Bangladesh and a Barrister-at-Law at
-                    Lincoln&apos;s Inn, London.
+                    degree in taxation from Oxford University. He is a Senior
+                    Advocate of the Supreme Court of Bangaldesh and a
+                    Barrister-at-Law at Lincoln&apos;s Inn, London.
                   </p>
                   <p>
                     He is the lawyer of former Prime Minister and national
@@ -509,9 +509,9 @@ const AboutSection = () => {
                     local level.
                   </p>
                   <p>
-                    He is currently serving as the Acting Head of Chambers of
-                    the <strong>Jurists&apos; Chambers</strong>, Dhaka. His
-                    legal practice mainly revolves around corporate law, Islamic
+                    He is currently serving as the Head of Chambers of the{" "}
+                    <strong>Jurists&apos; Chambers</strong>, Dhaka. His legal
+                    practice mainly revolves around corporate law, Islamic
                     finance, and constitutional writs.
                   </p>
                   <p>

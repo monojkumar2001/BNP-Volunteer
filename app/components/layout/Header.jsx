@@ -165,7 +165,7 @@ const Header = () => {
               </div>
               <div className="header-btn">
                 <button
-                  
+                  type="button"
                   className="latest-btn"
                   onClick={handleVolunteerModalOpen}
                 >
