@@ -45,7 +45,7 @@ const ZamirUddinPage = () => {
   const bannerData = {
     title_en: "Muhammad Jamiruddin Sircar",
     title_bn: "মুহাম্মদ জমির উদ্দিন সরকার",
-    img: "/assets/images/about-bg.png",
+    img: "/assets/images/inner-bg.png",
   };
   return (
     <>  
