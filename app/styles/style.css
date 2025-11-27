@@ -118,6 +118,17 @@
   border-radius: 8px;
   border: none;
   width: 100%;
+  outline: none;
+  border: 1px solid #f2f2f2;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.hero-form-input-wrap input:focus {
+  outline: none;
+  border: 1px solid #218804;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 0 2px #21880451;
+  transform: translateY(-2px);
 }
 
 .hero-form-input-wrap input::placeholder {
@@ -1449,6 +1460,14 @@ ul.contact-us-info li:hover .contact-icon {
   border: 1px solid #f2f2f2;
   padding: 18px 16px;
   border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.form-group-item input:focus {
+  outline: none;
+  border-color: #218804;
+  box-shadow: 0 0 0 2px rgba(33, 136, 4, 0.1);
+  transform: translateY(-2px);
 }
 .form-group-item input::placeholder {
   color: #868181;
@@ -1458,6 +1477,14 @@ ul.contact-us-info li:hover .contact-icon {
   border: 1px solid #f2f2f2;
   padding: 18px 16px;
   border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.form-group-item textarea:focus {
+  outline: none;
+  border-color: #218804;
+  box-shadow: 0 0 0 2px rgba(33, 136, 4, 0.1);
+  transform: translateY(-2px);
 }
 
 .form-group-item label {
