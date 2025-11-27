@@ -1061,6 +1061,7 @@
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .central-bnp-slider .latest-news-card {
   margin-bottom: 20px;
