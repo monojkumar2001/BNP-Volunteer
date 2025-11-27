@@ -41,8 +41,8 @@ export const metadata = {
 };
 const EventsPage = () => {
   const bannerData = {
-    title_en: "Events",
-    title_bn: "ইভেন্টগুলি",
+    // title_en: "Events",
+    // title_bn: "ইভেন্টগুলি",
     img: "/assets/images/event.png",
   };
   return (

@@ -42,8 +42,6 @@ export const metadata = {
 };
 const GalleryPage = () => {
   const bannerData = {
-    title_en: "Gallery",
-    title_bn: "গ্যালারি",
     img: "/assets/images/gallery.png",
   };
   return (
