@@ -309,22 +309,22 @@ const ZamirUddin = () => {
                   <strong>Details</strong>
                 </h4>
                 <p>
-                Barrister Muhammad Jamiruddin Sircar, a distinguished son of Panchagarh, is a prominent senior lawyer, a senior statesman, and an unwavering guardian of Bangladesh’s national interests.
+                Barrister Muhammad Jamiruddin Sircar, a distinguished son of Panchagarh, is a prominent senior lawyer, a senior statesman, and an unwavering guardian of Bangladesh&apos;s national interests.
                 </p>
                 <p>
-                Muhammad Jamiruddin Sircar was born in 1931 at Nayabari village of Tetulia, then a part of British India. After earning an LLB and an MA from the University of Dhaka, he began practising at the Dinajpur District Bar. He obtained the prestigious title of Barrister-at-Law from the Honourable Society of Lincoln’s Inn, London, United Kingdom, and started practising at the Dhaka High Court in 1969.
+                Muhammad Jamiruddin Sircar was born in 1931 at Nayabari village of Tetulia, then a part of British India. After earning an LLB and an MA from the University of Dhaka, he began practising at the Dinajpur District Bar. He obtained the prestigious title of Barrister-at-Law from the Honourable Society of Lincoln&apos;s Inn, London, United Kingdom, and started practising at the Dhaka High Court in 1969.
 
                 </p>
                 <p>
                 His political journey began in 1945 while he was a student in class 8. Then, in 1948, whilst being a college student, he was arrested during the anti-government protests. He enrolled in the Department of Law at Dhaka University in 1953.   He was a close associate of <strong>Maulana Bhashani</strong> and served as an ally and activist for the <strong>United Front (যুক্তফ্রন্ট)</strong> candidate, Mirza Golam Hafeez, in the 1954 election in Panchagarh.  He was the elected VP of Iqbal Hall (presently Surgent Zahurul Haq Hall) in 1958.  
                 </p>
                 <p>
-                He participated in the Pakistan general election in 1970 and then again in 1973’s First National Parliamentary Election of Bangladesh
+                He participated in the Pakistan general election in 1970 and then again in 1973&apos;s First National Parliamentary Election of Bangladesh
 as an independent candidate in the Panchagar 1 constituency. He was elected to Parliament for the first time in 1979 from the Panchagarh 1 constituency.
 
                 </p>
                 <p>
-                During the Liberation War of 1971, he was among the group of High Court lawyers who actively supported Bangladesh&apos;s independence.  Due to his reputation and prominence in the legal arena and his long political engagement, President Ziaur Rahman appointed him as <strong>Bangladesh's delegate to the United Nations General Assembly five times</strong> between 1977 and 1981.
+                During the Liberation War of 1971, he was among the group of High Court lawyers who actively supported Bangladesh&apos;s independence.  Due to his reputation and prominence in the legal arena and his long political engagement, President Ziaur Rahman appointed him as <strong>Bangladesh&apos;s delegate to the United Nations General Assembly five times</strong> between 1977 and 1981.
 
                 </p>
                 <p>
@@ -338,7 +338,7 @@ as an independent candidate in the Panchagar 1 constituency. He was elected to P
 
                 </p>
                 <p>
-                President Ziaur Rahman appointed him as the State Minister for Public Works and Urban Development in 1979.  He completed the unfinished work of the present Parliament Building. Under his leadership, <strong>Dhaka's Zia International Airport</strong> was completed.
+                President Ziaur Rahman appointed him as the State Minister for Public Works and Urban Development in 1979.  He completed the unfinished work of the present Parliament Building. Under his leadership, <strong>Dhaka&apos;s Zia International Airport</strong> was completed.
 In the cabinet of President Abdus Sattar, he served as the <strong>State Minister of Foreign Affairs.</strong>
 
                 </p>
@@ -347,10 +347,10 @@ In the cabinet of President Abdus Sattar, he served as the <strong>State Ministe
 
                 </p>
                 <p>
-                Bangladesh’s first private universities began their journey during his tenure.  Both the <strong>National University</strong> and the <strong>Open University</strong> were established under his leadership. He played a vital role in establishing <strong>Khulna University of Engineering & Technology (KUET)</strong> and expanding the horizon of technical education. During this period, over 200 <strong>cyclone-shelter cum primary schools</strong> were established in Bangladesh's coastal areas, significantly reducing the death toll from natural disasters. All these achievements marked a historic chapter in the country&apos;s education sector.
+                Bangladesh&apos;s first private universities began their journey during his tenure.  Both the <strong>National University</strong> and the <strong>Open University</strong> were established under his leadership. He played a vital role in establishing <strong>Khulna University of Engineering & Technology (KUET)</strong> and expanding the horizon of technical education. During this period, over 200 <strong>cyclone-shelter cum primary schools</strong> were established in Bangladesh&apos;s coastal areas, significantly reducing the death toll from natural disasters. All these achievements marked a historic chapter in the country&apos;s education sector.
                 </p>
                 <p>
-                During 1991–1996, he allocated <strong>205 crore BDT</strong> to the education sector of Panchagarh-1 constituency, equivalent to roughly <strong>1,500 crore BDT</strong> in today’s value. 
+                During 1991–1996, he allocated <strong>205 crore BDT</strong> to the education sector of Panchagarh-1 constituency, equivalent to roughly <strong>1,500 crore BDT</strong> in today&apos;s value. 
 
                 </p>
                 <p>
@@ -366,7 +366,7 @@ In the cabinet of President Abdus Sattar, he served as the <strong>State Ministe
 
                 </p>
                 <p>
-                Under his farsighted leadership, Bangladesh made significant progress in defining its maritime boundaries, creating an investment-friendly environment, and safeguarding natural resources. On the international stage, he was a powerful advocate for the rights of coastal nations, ensuring Bangladesh’s interests remained firmly protected. His profound dedication and tireless efforts played a vital role in shaping Bangladesh into a stronger nation.
+                Under his farsighted leadership, Bangladesh made significant progress in defining its maritime boundaries, creating an investment-friendly environment, and safeguarding natural resources. On the international stage, he was a powerful advocate for the rights of coastal nations, ensuring Bangladesh&apos;s interests remained firmly protected. His profound dedication and tireless efforts played a vital role in shaping Bangladesh into a stronger nation.
 
                 </p>
                 <p>He has published 15 books, and his autobiography <strong>“ফেলে আসা দিনগুলি”</strong> is due later this year.
