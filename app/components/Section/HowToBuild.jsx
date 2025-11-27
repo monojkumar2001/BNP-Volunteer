@@ -114,7 +114,7 @@ export const HowToBuild = () => {
             </button>
             <div className="video-wrapper">
               <iframe
-                src="https://www.youtube.com/embed/3-1jCSeuMl0?si=vBK5oJ4JCMmkEryR&amp;controls=0"
+                src="https://www.youtube.com/embed/AyHa7J2RsaQ?si=rkKoBbfXYeqMYJxT"
                 title="Who we are video"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
