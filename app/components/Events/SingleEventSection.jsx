@@ -218,7 +218,7 @@ const SingleEventSection = ({ slug }) => {
                         src={convertYouTubeUrl(videoUrl, false)}
                         style={{
                           width: "100%",
-                          height: "450px",
+                          height:'100%',
                           display: "block",
                           border: "none",
                         }}

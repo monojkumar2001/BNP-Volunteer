@@ -221,6 +221,15 @@
 
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
+  .single-event-img {
+    width: 100%;
+    height: 391px;
+  }
+  
+  .single-event-img img{
+    height: 100%;
+  }
+  
   .get-involved-title .section-title {
     font-size: 30px;
   }
@@ -483,6 +492,15 @@
     font-size: 35px;
     line-height: 40px;
   }
+  .single-event-img {
+    width: 100%;
+    height: 291px;
+  }
+  
+  .single-event-img img{
+    height: 100%;
+  }
+  
   .lang-hero-bn .hero-title-1 {
     padding-bottom: 20px;
   }

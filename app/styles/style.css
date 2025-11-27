@@ -1758,24 +1758,13 @@ ul.contact-us-info li:hover .contact-icon {
 
 .single-event-img {
   width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 700px;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .single-event-img img{
-  width: 100%;
-  max-height: 800px;
-  object-fit: cover;
-  object-position: center;
-  object-fit: cover;
-  object-position: center;
-}
-.single-event-item-container {
-  width: 80%;
-  margin: 0 auto;
-}
-.single-news-item-container {
-  width: 80%;
-  margin: 0 auto;
+  height: 100%;
 }
