@@ -324,7 +324,7 @@ as an independent candidate in the Panchagar 1 constituency. He was elected to P
 
                 </p>
                 <p>
-                During the Liberation War of 1971, he was among the group of High Court lawyers who actively supported Bangladesh’s independence.  Due to his reputation and prominence in the legal arena and his long political engagement, President Ziaur Rahman appointed him as <strong>Bangladesh's delegate to the United Nations General Assembly five times</strong> between 1977 and 1981.
+                During the Liberation War of 1971, he was among the group of High Court lawyers who actively supported Bangladesh&apos;s independence.  Due to his reputation and prominence in the legal arena and his long political engagement, President Ziaur Rahman appointed him as <strong>Bangladesh's delegate to the United Nations General Assembly five times</strong> between 1977 and 1981.
 
                 </p>
                 <p>
@@ -347,7 +347,7 @@ In the cabinet of President Abdus Sattar, he served as the <strong>State Ministe
 
                 </p>
                 <p>
-                Bangladesh’s first private universities began their journey during his tenure.  Both the <strong>National University</strong> and the <strong>Open University</strong> were established under his leadership. He played a vital role in establishing <strong>Khulna University of Engineering & Technology (KUET)</strong> and expanding the horizon of technical education. During this period, over 200 <strong>cyclone-shelter cum primary schools</strong> were established in Bangladesh's coastal areas, significantly reducing the death toll from natural disasters. All these achievements marked a historic chapter in the country’s education sector.
+                Bangladesh’s first private universities began their journey during his tenure.  Both the <strong>National University</strong> and the <strong>Open University</strong> were established under his leadership. He played a vital role in establishing <strong>Khulna University of Engineering & Technology (KUET)</strong> and expanding the horizon of technical education. During this period, over 200 <strong>cyclone-shelter cum primary schools</strong> were established in Bangladesh's coastal areas, significantly reducing the death toll from natural disasters. All these achievements marked a historic chapter in the country&apos;s education sector.
                 </p>
                 <p>
                 During 1991–1996, he allocated <strong>205 crore BDT</strong> to the education sector of Panchagarh-1 constituency, equivalent to roughly <strong>1,500 crore BDT</strong> in today’s value. 
@@ -362,7 +362,7 @@ In the cabinet of President Abdus Sattar, he served as the <strong>State Ministe
 
                 </p>
                 <p>
-                In both law and politics, he was a scholar of exceptional depth, leaving an enduring mark on the national stage. He was one of Bangladesh’s pioneers in complex and specialised fields, including <strong>industrial and commercial law, maritime law, environmental law</strong>, and the formulation of <strong>international treaties</strong>.
+                In both law and politics, he was a scholar of exceptional depth, leaving an enduring mark on the national stage. He was one of Bangladesh&apos;s pioneers in complex and specialised fields, including <strong>industrial and commercial law, maritime law, environmental law</strong>, and the formulation of <strong>international treaties</strong>.
 
                 </p>
                 <p>
