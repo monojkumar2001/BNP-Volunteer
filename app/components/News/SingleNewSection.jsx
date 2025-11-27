@@ -40,6 +40,7 @@ const SingleNewSection = ({ slug }) => {
     return (
       <section className="single-news-item">
         <div className="container">
+          <div className="single-news-item-container">
           <div className="row">
             <div className="col-12">
               <div className="latest-news-card" style={{ padding: 0 }}>
@@ -66,6 +67,7 @@ const SingleNewSection = ({ slug }) => {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -104,44 +106,46 @@ const SingleNewSection = ({ slug }) => {
       }`}
     >
       <div className="container">
-        <div className="row">
-          <div className="col-12">
-            <div className="latest-news-card" style={{ padding: 0 }}>
-              {imageSrc && (
-                <div className="latest-news-img">
-                  <img
-                    src={imageSrc}
-                    alt={news.title_en || news.title}
-                    style={{ width: "100%", display: "block" }}
+        <div className="single-news-item-container">
+          <div className="row">
+            <div className="col-12">
+              <div className="latest-news-card" style={{ padding: 0 }}>
+                {imageSrc && (
+                  <div className="latest-news-img">
+                    <img
+                      src={imageSrc}
+                      alt={news.title_en || news.title}
+                      style={{ width: "100%", display: "block" }}
+                    />
+                  </div>
+                )}
+
+                <div className="latest-news-content single-news-content">
+                  <h1>{language === "bn" ? news.title_bn : news.title_en}</h1>
+
+                  <p className="news-meta">{formattedDate}</p>
+
+                  <div
+                    className="single-news-body"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        language === "bn"
+                          ? news.content_bn ||
+                            news.description_bn ||
+                            news.description_en
+                          : news.content_en || news.description_en,
+                    }}
                   />
+
+                  <Link href="/how-to-build" className="custom-btn">
+                    <span>
+                      <GoArrowUpLeft />
+                    </span>
+                    <span>
+                      {language === "bn" ? "পেছনে যান" : " Back to News"}
+                    </span>
+                  </Link>
                 </div>
-              )}
-
-              <div className="latest-news-content single-news-content">
-                <h1>{language === "bn" ? news.title_bn : news.title_en}</h1>
-
-                <p className="news-meta">{formattedDate}</p>
-
-                <div
-                  className="single-news-body"
-                  dangerouslySetInnerHTML={{
-                    __html:
-                      language === "bn"
-                        ? news.content_bn ||
-                          news.description_bn ||
-                          news.description_en
-                        : news.content_en || news.description_en,
-                  }}
-                />
-
-                <Link href="/how-to-build" className="custom-btn">
-                  <span>
-                    <GoArrowUpLeft />
-                  </span>
-                  <span>
-                    {language === "bn" ? "পেছনে যান" : " Back to News"}
-                  </span>
-                </Link>
               </div>
             </div>
           </div>

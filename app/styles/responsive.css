@@ -463,6 +463,13 @@
   .faq-question span {
     font-size: 16px;
   }
+  .single-event-item {
+    padding: 130px 0 70px 0;
+}
+.single-news-item-container {
+    width: 100%;
+    margin: 0 auto;
+}
 }
 @media (max-width: 576px) {
   .hero-title-1 h1 {

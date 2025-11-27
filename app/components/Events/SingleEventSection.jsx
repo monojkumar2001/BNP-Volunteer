@@ -138,6 +138,7 @@ const SingleEventSection = ({ slug }) => {
     return (
       <section className="single-event-item">
         <div className="container">
+          <div className="single-event-item-container">
           <div className="row">
             <div className="col-12">
               <div className="single-event-card" style={{ padding: 0 }}>
@@ -157,6 +158,7 @@ const SingleEventSection = ({ slug }) => {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -187,7 +189,7 @@ const SingleEventSection = ({ slug }) => {
   }
 
   const imageUrl = getImageUrl(event.image);
-  const videoUrl = getVideoUrl(event.video_url);
+  const videoUrl = getVideoUrl('');
 
   return (
     <>
@@ -197,6 +199,7 @@ const SingleEventSection = ({ slug }) => {
         }`}
       >
         <div className="container">
+          <div className="single-event-item-container">
           <div className="row">
             <div className="col-12">
               <div className="single-event-card" style={{ padding: 0 }}>
@@ -243,7 +246,7 @@ const SingleEventSection = ({ slug }) => {
                     <img
                       src={imageUrl}
                       alt={language === "bn" ? event.title_bn : event.title_en}
-                      style={{ width: "100%", display: "block" }}
+                     
                     />
                   )}
                   {videoUrl && (
@@ -337,7 +340,7 @@ const SingleEventSection = ({ slug }) => {
                   {/* Full Description */}
                   {(event.description_en || event.description_bn) && (
                     <div
-                      className="event-body"
+                      className="event-body pb-4"
                       dangerouslySetInnerHTML={{
                         __html:
                           language === "bn"
@@ -364,6 +367,7 @@ const SingleEventSection = ({ slug }) => {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>

@@ -21,6 +21,11 @@ const Header = () => {
   };
 
   const isNewsPage = pathname.startsWith("/news/");
+  const isEventSinglePage =
+    pathname.startsWith("/events/") && pathname !== "/events";
+  const isCentralBnpPage = pathname.startsWith("/central-bnp");
+  const isSinglePageHeader =
+    isNewsPage || isEventSinglePage || isCentralBnpPage;
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -54,7 +59,8 @@ const Header = () => {
     <header
       className={`header-section 
   ${scrolled ? "scrolled" : ""} 
-  ${language === "bn" ? "lang-header-bn" : "lang-header-en"}`}
+  ${language === "bn" ? "lang-header-bn" : "lang-header-en"}
+  ${isSinglePageHeader ? "single-page" : ""}`}
     >
       <div className="container">
         <div className="header-nav">
@@ -84,9 +90,7 @@ const Header = () => {
 
           {/* Menu Button for Mobile */}
           <button
-            style={{
-              color: isNewsPage ? "#000000" : "",
-            }}
+          
             className={`menu-btn-ber ${scrolled ? "scrolled" : ""}`}
             onClick={() => setMenuOpen(true)}
             aria-label="Open Menu"
@@ -97,9 +101,7 @@ const Header = () => {
           {/* Navigation */}
           <nav className={`main-menu ${menuOpen ? "open" : ""}`}>
             <button
-              style={{
-                color: isNewsPage ? "#000000" : "",
-              }}
+             
               className="close-menu-btn"
               onClick={() => setMenuOpen(false)}
               aria-label="Close Menu"
@@ -162,13 +164,13 @@ const Header = () => {
                 </div>
               </div>
               <div className="header-btn">
-                <Link
-                  href="#"
+                <button
+                  
                   className="latest-btn"
                   onClick={handleVolunteerModalOpen}
                 >
                   {language === "bn" ? "মতামত দিন" : "Leave a comment"}
-                </Link>
+                </button>
               </div>
             </div>
           </nav>
