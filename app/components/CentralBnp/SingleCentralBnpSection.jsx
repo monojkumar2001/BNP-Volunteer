@@ -40,6 +40,7 @@ const SingleCentralBnpSection = ({ slug }) => {
     return (
       <section className="single-news-item">
         <div className="container">
+          <div className="single-news-item-container">
           <div className="row">
             <div className="col-12">
               <div className="latest-news-card" style={{ padding: 0 }}>
@@ -66,6 +67,7 @@ const SingleCentralBnpSection = ({ slug }) => {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -104,6 +106,7 @@ const SingleCentralBnpSection = ({ slug }) => {
       }`}
     >
       <div className="container">
+        <div className="single-news-item-container">
         <div className="row">
           <div className="col-12">
             <div className="latest-news-card" style={{ padding: 0 }}>
@@ -145,6 +148,7 @@ const SingleCentralBnpSection = ({ slug }) => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

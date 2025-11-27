@@ -4,6 +4,7 @@ import AOS from "aos";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Header from "./components/layout/Header";
+import OpinionModal from "./components/layout/OpinionModal";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/layout/Footer";
 import React, { useEffect, useState } from "react";
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <OpinionModal />
           <Toaster />
         </LanguageProvider>
       </body>

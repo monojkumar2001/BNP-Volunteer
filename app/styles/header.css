@@ -299,17 +299,17 @@ span.logo-name.logo-bn {
 
   .header-section.single-page .site-logo .logo-name,
   .header-section.single-page .logo-name-text {
-    color: var(--black-color);
+    color: var(--white-color);
   }
 
   .header-section.single-page span.logo-name.logo-bn {
-    color: var(--black-color);
+    color: var(--white-color);
     font-size: 22px;
     line-height: 30px;
   }
 
   .header-section.single-page .menu-btn-ber {
-    color: var(--black-color);
+    color: var(--white-color);
   }
 
   .header-section.single-page .close-menu-btn {

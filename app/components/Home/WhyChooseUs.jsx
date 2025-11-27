@@ -28,16 +28,13 @@ const WhyChooseUs = () => {
             </h4>
             {language === "bn" ? (
               <p className="lang-choose-content">
-                আসুন, এদেশটাকে বসবাসের জন্য আরও উন্নত ও সুন্দর করে গড়ে তুলি সবার
-                জন্য একটি সমৃদ্ধ বাংলাদেশ। যেখানে বাঁচতে ভালো লাগবে। যেখানে
-                স্বপ্ন দেখা যাবে নির্ভয়ে। এটি শুধু প্রতিশ্রুতি নয়, এটি আমাদের
-                দৃঢ় অঙ্গীকার।
+                একটি দেশ, যেখানে জীবন হবে স্বস্তির; যেখানে নির্ভয়ে স্বপ্ন গড়া
+                যাবে, এটি শুধু প্রতিশ্রুতি নয়, আমাদের দৃঢ় অঙ্গীকার।
               </p>
             ) : (
               <p className="lang-choose-content">
-                Come with me to build a stronger, more beautiful Bangladesh for
-                everyone — a place we feel proud to live in, where dreams are
-                seen without fear. This is not merely a promise. It is our firm
+                A country where life is peaceful, where dreams can be built
+                without fear — this is not just a promise, it is our strong
                 commitment.
               </p>
             )}
@@ -76,7 +73,7 @@ const WhyChooseUs = () => {
                 <div className="why-choose-list-text">
                   <h5>
                     {language === "bn"
-                      ? "বেকারত্বের টেকসই সমাধান"
+                      ? "বেকারত্ব নিরসনে টেকসই সমাধান"
                       : "Sustainable solutions to unemployment in Panchagarh"}
                   </h5>
                 </div>
