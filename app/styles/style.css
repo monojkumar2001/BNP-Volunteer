@@ -818,7 +818,7 @@
 
 .get-involved-title {
   display: flex;
-  gap: 74px;
+  gap: 36px;
   flex-direction: column;
 }
 .get-involved-title .bar-item {

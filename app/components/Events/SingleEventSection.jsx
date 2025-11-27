@@ -189,7 +189,7 @@ const SingleEventSection = ({ slug }) => {
   }
 
   const imageUrl = getImageUrl(event.image);
-  const videoUrl = getVideoUrl('');
+  const videoUrl = getVideoUrl(event.video_url);
 
   return (
     <>

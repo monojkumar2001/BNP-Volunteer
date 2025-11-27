@@ -309,139 +309,67 @@ const ZamirUddin = () => {
                   <strong>Details</strong>
                 </h4>
                 <p>
-                  Barrister Muhammad Jamiruddin Sircar, a distinguished son of
-                  Panchagarh, is a renowned lawyer, a senior statesman, and an
-                  unwavering guardian of Bangladesh’s national interests.
+                Barrister Muhammad Jamiruddin Sircar, a distinguished son of Panchagarh, is a prominent senior lawyer, a senior statesman, and an unwavering guardian of Bangladesh’s national interests.
                 </p>
                 <p>
-                  He was elected to Parliament <strong>five times</strong>. He
-                  served <strong>twice as Speaker</strong> of the Jatiya Sangsad
-                  (National Parliament) and{" "}
-                  <strong>twice as Acting President of Bangladesh</strong>.
+                Muhammad Jamiruddin Sircar was born in 1931 at Nayabari village of Tetulia, then a part of British India. After earning an LLB and an MA from the University of Dhaka, he began practising at the Dinajpur District Bar. He obtained the prestigious title of Barrister-at-Law from the Honourable Society of Lincoln’s Inn, London, United Kingdom, and started practising at the Dhaka High Court in 1969.
+
                 </p>
                 <p>
-                  As the State Minister for Public Works and Urban Development
-                  in the cabinet of President Ziaur Rahman, he completed the
-                  unfinished work of the present Parliament Building. Under his
-                  leadership,{" "}
-                  <strong>Dhaka&apos;s Zia International Airport</strong> was
-                  brought to completion.
+                His political journey began in 1945 while he was a student in class 8. Then, in 1948, whilst being a college student, he was arrested during the anti-government protests. He enrolled in the Department of Law at Dhaka University in 1953.   He was a close associate of <strong>Maulana Bhashani</strong> and served as an ally and activist for the <strong>United Front (যুক্তফ্রন্ট)</strong> candidate, Mirza Golam Hafeez, in the 1954 election in Panchagarh.  He was the elected VP of Iqbal Hall (presently Surgent Zahurul Haq Hall) in 1958.  
                 </p>
                 <p>
-                  In the cabinet of President Abdus Sattar, he served as{" "}
-                  <strong>State Minister for Foreign Affairs</strong>. In the
-                  Fifth Parliament, he joined the first cabinet of Prime
-                  Minister Begum Khaleda Zia, initially as{" "}
-                  <strong>State Minister for Land</strong> and later as{" "}
-                  <strong>Minister of Education</strong>. Both the{" "}
-                  <strong>National University</strong> and the{" "}
-                  <strong>Open University</strong>
-                  were established under his leadership. With his approval,
-                  Bangladesh’s first private universities began their journey.
-                  His role in establishing{" "}
-                  <strong>
-                    Khulna University of Engineering & Technology (KUET)
-                  </strong>{" "}
-                  and expanding technical education marked a historic chapter in
-                  the country’s education sector. In his tenure, over 200
-                  <strong>cyclone shelter cum primary schools</strong> were
-                  established in the coastal areas of Bangladesh, which had a
-                  significant impact in reducing the death toll during natural
-                  disasters.
+                He participated in the Pakistan general election in 1970 and then again in 1973’s First National Parliamentary Election of Bangladesh
+as an independent candidate in the Panchagar 1 constituency. He was elected to Parliament for the first time in 1979 from the Panchagarh 1 constituency.
+
                 </p>
                 <p>
-                  During 1991–1996 alone, he allocated{" "}
-                  <strong>205 crore BDT</strong> to the education sector of
-                  Panchagarh-1 constituency, equivalent to roughly{" "}
-                  <strong>1,500 crore BDT</strong> in today’s value.
+                During the Liberation War of 1971, he was among the group of High Court lawyers who actively supported Bangladesh’s independence.  Due to his reputation and prominence in the legal arena and his long political engagement, President Ziaur Rahman appointed him as <strong>Bangladesh's delegate to the United Nations General Assembly five times</strong> between 1977 and 1981.
+
                 </p>
                 <p>
-                  He also served as{" "}
-                  <strong> Minister of Science and Technology</strong> during
-                  that period.
+                He was a founder member of the <strong>JAGODAL</strong> party when it was formed, and later, upon the establishment of the <strong>Bangladesh Nationalist Party (BNP)</strong>, he was a founding member of its Standing Committee.
+
+
+
                 </p>
                 <p>
-                  In the short-lived BNP government formed during the Sixth
-                  Parliament, he served as{" "}
-                  <strong>
-                    Minister for Law, Justice and Parliamentary Affairs
-                  </strong>{" "}
-                  from 19 March 1996 to 30 March 1996, where he played an
-                  essential role in drafting the{" "}
-                  <strong>Caretaker Government Bill</strong>.
+                He was elected to Parliament <strong>five times</strong>; served <strong>twice as the Speaker</strong> of the Jatiya Sangsad (National Parliament) and <strong>twice as the Acting President of Bangladesh.</strong>
+
                 </p>
                 <p>
-                  Jamiruddin Sircar was born in 1931 in Nayabari village of
-                  Tetulia, then part of British India. After earning an MA and
-                  LLB from the University of Dhaka and completing his Bar-at-Law
-                  from Lincoln’s Inn in London, he joined the legal profession
-                  at the Dhaka High Court in 1960, obtaining his certification
-                  from the then East Pakistan High Court.
+                President Ziaur Rahman appointed him as the State Minister for Public Works and Urban Development in 1979.  He completed the unfinished work of the present Parliament Building. Under his leadership, <strong>Dhaka's Zia International Airport</strong> was completed.
+In the cabinet of President Abdus Sattar, he served as the <strong>State Minister of Foreign Affairs.</strong>
+
                 </p>
                 <p>
-                  His political journey began in 1945 while he was a student
-                  through the Student Federation. He was arrested due to
-                  participation in anti-government protests while merely 15
-                  years old, prior to 1947. He was the elected VP of Iqbal Hall
-                  (presently Surgent Zahirul Haq Hall) in 1953. He was a close
-                  associate of <strong>Maulana Bhashani</strong> and served as
-                  an activist for the{" "}
-                  <strong>United Front (যুক্তফ্রন্ট)</strong> candidate, Mirza
-                  Golam Hafeez, in the 1954 election in Panchagarh.
+                In the 5<sup>th</sup> Parliament, he joined the first cabinet of Prime Minister Begum Khaleda Zia, as the <strong>State Minister of Land</strong> and later as the <strong>Education Minister</strong>. He also served the <strong>Ministry of Science and Technology</strong> during that period.  
+
                 </p>
                 <p>
-                  He participated in the Pakistan general election in 1970 as an
-                  independent candidate and also in the First National
-                  Parliamentary Election of Bangladesh as an independent
-                  candidate in 1973, in the Panchagar 1 constituency. He was
-                  elected to Parliament for the first time in 1979 from the
-                  Panchagarh 1 constituency.
+                Bangladesh’s first private universities began their journey during his tenure.  Both the <strong>National University</strong> and the <strong>Open University</strong> were established under his leadership. He played a vital role in establishing <strong>Khulna University of Engineering & Technology (KUET)</strong> and expanding the horizon of technical education. During this period, over 200 <strong>cyclone-shelter cum primary schools</strong> were established in Bangladesh's coastal areas, significantly reducing the death toll from natural disasters. All these achievements marked a historic chapter in the country’s education sector.
                 </p>
                 <p>
-                  During the Liberation War of 1971, he was among the group of
-                  High Court lawyers who actively supported Bangladesh’s
-                  independence. Due to his reputation and prominence in the
-                  legal field and long political engagement, President Ziaur
-                  Rahman appointed him as a{" "}
-                  <strong>
-                    Bangladesh delegate to the United Nations General Assembly
-                    five times
-                  </strong>{" "}
-                  between 1977 and 1981.
+                During 1991–1996, he allocated <strong>205 crore BDT</strong> to the education sector of Panchagarh-1 constituency, equivalent to roughly <strong>1,500 crore BDT</strong> in today’s value. 
+
                 </p>
                 <p>
-                  He was a founder member of the <strong>JAGODAL</strong> party
-                  when President Ziaur Rahman formed it, and later, upon the
-                  establishment of the{" "}
-                  <strong>Bangladesh Nationalist Party (BNP)</strong>, he became
-                  a founding member of its Standing Committee.
+                In the BNP regime, during the 6th Parliament, he served as the <strong>Minister of Law, Justice and Parliamentary Affairs</strong> from 19 March 1996 to 30 March 1996, where he played an essential role in drafting the <strong>Caretaker Government Bill</strong>.
+
                 </p>
                 <p>
-                  In both law and politics, he was a scholar of exceptional
-                  depth, leaving an enduring mark on the national stage. He was
-                  one of Bangladesh’s pioneers in complex and specialised fields
-                  such as{" "}
-                  <strong>
-                    industrial and commercial law, maritime law, environmental
-                    law
-                  </strong>
-                  , and the formulation of{" "}
-                  <strong>international treaties.</strong>
+                In the 8<sup>th</sup> parliament, he was appointed as the Speaker for National Parliament by Begum Khaleda Zia, the then Honourable Prime Minister of Bangladesh, for the tenure 2001 to 2008. He also served as the acting President of the country twice. He played a vital and distinctive role in the 1/11 crisis against the minus two formula. 
+
                 </p>
                 <p>
-                  Under his farsighted leadership, Bangladesh made significant
-                  progress in defining its maritime boundaries, creating an
-                  investment-friendly environment, and safeguarding natural
-                  resources. On the international stage, he was a powerful
-                  advocate for the rights of coastal nations, ensuring that
-                  Bangladesh’s interests remained firmly protected. His deep
-                  dedication and tireless efforts played a vital role in shaping
-                  Bangladesh into a stronger nation.
+                In both law and politics, he was a scholar of exceptional depth, leaving an enduring mark on the national stage. He was one of Bangladesh’s pioneers in complex and specialised fields, including <strong>industrial and commercial law, maritime law, environmental law</strong>, and the formulation of <strong>international treaties</strong>.
+
                 </p>
                 <p>
-                  He has published 15 books, and his autobiography{" "}
-                  <strong>“ফেলে আসা দিনগুলো”</strong> is due to be published
-                  later this year.
+                Under his farsighted leadership, Bangladesh made significant progress in defining its maritime boundaries, creating an investment-friendly environment, and safeguarding natural resources. On the international stage, he was a powerful advocate for the rights of coastal nations, ensuring Bangladesh’s interests remained firmly protected. His profound dedication and tireless efforts played a vital role in shaping Bangladesh into a stronger nation.
+
+                </p>
+                <p>He has published 15 books, and his autobiography <strong>“ফেলে আসা দিনগুলি”</strong> is due later this year.
                 </p>
               </>
             )}
