@@ -81,8 +81,8 @@ const GetInvolved = () => {
                     </>
                   ) : (
                     <>
-                      Among people, among people, <br /> from house to house,
-                      one by one
+                      ঘরে ঘরে, জনে জনে <br />
+                      মানুষের তরে, মানুষের মাঝে
                     </>
                   )}
                 </h1>

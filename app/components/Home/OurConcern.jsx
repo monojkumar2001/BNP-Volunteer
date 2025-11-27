@@ -47,7 +47,7 @@ const OurConcern = () => {
               </h2>
               <p>
                 {language === "bn"
-                  ? " পঞ্চগড়ের জনগণের সমস্যাগুলো সমাধানে বিগত দুই দশকে তেমন কোন কাজ হয়নি। এবার সুযোগ এসেছে অপূর্ণ প্রতিশ্রুতিগুলো পূরণ করে মানুষের মুখে নিশ্চিন্ত হাসি ফোটাবার।"
+                  ? " পঞ্চগড়ের জনগণের সমস্যাগুলো সমাধানে বিগত দুই দশকে উল্লেখযোগ্য কোন কাজ হয়নি। এবার সুযোগ এসেছে অপূর্ণ আবশ্যকতা গুলো সম্পূর্ণ করে মানুষের মুখে নিশ্চিন্ত হাসি ফোটাবার।"
                   : "In the past two decades, the people of Panchagarh have seen few tangible solutions to their problems. Now is the opportunity to fulfil incomplete promises and bring genuine smiles to people’s faces."}
               </p>
               <Link href="/events" className="custom-btn">

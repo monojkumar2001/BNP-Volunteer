@@ -509,9 +509,8 @@ const AboutSection = () => {
                     local level.
                   </p>
                   <p>
-                    He is currently serving as the Head of Chambers of the{" "}
-                    <strong>Jurists&apos; Chambers</strong>, Dhaka. His legal
-                    practice mainly revolves around corporate law, Islamic
+                    He is the Head of Chambers of the Jurists Chamber. His
+                    legal practice mainly revolves around corporate law, Islamic
                     finance, and constitutional writs.
                   </p>
                   <p>
