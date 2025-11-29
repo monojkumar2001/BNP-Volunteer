@@ -290,7 +290,9 @@ const SearchModal = ({ isOpen, onClose }) => {
                               backgroundColor:
                                 item.type === "news"
                                   ? "#007bff"
-                                  : "#28a745",
+                                  : item.type === "event"
+                                  ? "#28a745"
+                                  : "#ff6b35",
                               color: "#fff",
                               fontSize: "12px",
                               borderRadius: "4px",
@@ -301,9 +303,13 @@ const SearchModal = ({ isOpen, onClose }) => {
                               ? language === "bn"
                                 ? "সংবাদ"
                                 : "News"
+                              : item.type === "event"
+                              ? language === "bn"
+                                ? "ইভেন্ট"
+                                : "Event"
                               : language === "bn"
-                              ? "ইভেন্ট"
-                              : "Event"}
+                              ? "সেন্ট্রাল বিএনপি"
+                              : "Central BNP"}
                           </div>
                           <h3
                             style={{
