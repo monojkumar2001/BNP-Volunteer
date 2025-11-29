@@ -47,20 +47,6 @@ const ContactUs = () => {
     return { valid: true, message: "" };
   };
 
-  // Check if phone number already exists
-  const checkDuplicatePhone = async (phone) => {
-    try {
-      const cleanedPhone = phone.replace(/[\s\-\(\)]/g, "");
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/contact/check-phone?phone=${cleanedPhone}`
-      );
-      const data = await res.json();
-      return data.exists || false;
-    } catch (error) {
-      console.error("Error checking duplicate phone:", error);
-      return false;
-    }
-  };
 
   // Handle input change
   const handleChange = (e) => {
@@ -93,25 +79,6 @@ const ContactUs = () => {
           duration: 4000,
           position: "top-right",
         });
-        setLoading(false);
-        return;
-      }
-
-      // Clean phone number (remove spaces, dashes, etc.)
-      const cleanedPhone = formData.phone.replace(/[\s\-\(\)]/g, "");
-      
-      // Check for duplicate phone number
-      const isDuplicate = await checkDuplicatePhone(cleanedPhone);
-      if (isDuplicate) {
-        toast.error(
-          language === "bn" 
-            ? "এই ফোন নম্বরটি ইতিমধ্যে ব্যবহার করা হয়েছে" 
-            : "This phone number has already been used",
-          {
-            duration: 4000,
-            position: "top-right",
-          }
-        );
         setLoading(false);
         return;
       }
@@ -151,12 +118,7 @@ const ContactUs = () => {
           message: "",
         });
       } else {
-        // Check if error is due to duplicate phone
-        const errorMessage = data.message && (data.message.includes("phone") || data.message.includes("already"))
-          ? (language === "bn" 
-              ? "এই ফোন নম্বরটি ইতিমধ্যে ব্যবহার করা হয়েছে" 
-              : "This phone number has already been used")
-          : (data.message || (language === "bn" ? "কিছু ভুল হয়েছে!" : "Something went wrong!"));
+        const errorMessage = data.message || (language === "bn" ? "কিছু ভুল হয়েছে!" : "Something went wrong!");
         
         toast.error(errorMessage, {
           duration: 4000,

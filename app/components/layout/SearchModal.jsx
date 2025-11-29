@@ -17,11 +17,25 @@ const SearchModal = ({ isOpen, onClose }) => {
   const [hasSearched, setHasSearched] = useState(false);
   const searchInputRef = useRef(null);
 
-  // Focus input when modal opens
+  // Focus input when modal opens and prevent body scroll
   useEffect(() => {
-    if (isOpen && searchInputRef.current) {
-      searchInputRef.current.focus();
+    if (isOpen) {
+      // Prevent body scroll when modal is open
+      document.body.style.overflow = "hidden";
+      
+      // Focus input
+      if (searchInputRef.current) {
+        searchInputRef.current.focus();
+      }
+    } else {
+      // Restore body scroll when modal is closed
+      document.body.style.overflow = "";
     }
+
+    // Cleanup
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [isOpen]);
 
   // Handle search
@@ -32,6 +46,7 @@ const SearchModal = ({ isOpen, onClose }) => {
       } else {
         setSearchResults([]);
         setHasSearched(false);
+        setLoading(false);
       }
     }, 300); // Debounce 300ms
 
@@ -51,19 +66,35 @@ const SearchModal = ({ isOpen, onClose }) => {
   }, [isOpen, onClose]);
 
   const performSearch = async (query) => {
+    if (!query || query.trim().length < 2) {
+      setSearchResults([]);
+      setHasSearched(false);
+      setLoading(false);
+      return;
+    }
+
     try {
       setLoading(true);
       setHasSearched(true);
-      const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/search?q=${encodeURIComponent(query)}&lang=${language}`
-      );
-      const data = await res.json();
-
-      if (res.ok) {
-        setSearchResults(data.all || []);
-      } else {
-        setSearchResults([]);
+      
+      const apiUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/search?q=${encodeURIComponent(query.trim())}&lang=${language}`;
+      
+      const res = await fetch(apiUrl, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+      });
+      
+      if (!res.ok) {
+        const errorText = await res.text();
+        console.error("Search API error:", res.status, errorText);
+        throw new Error(`Search failed: ${res.status}`);
       }
+      
+      const data = await res.json();
+      setSearchResults(data.all || []);
     } catch (error) {
       console.error("Search error:", error);
       setSearchResults([]);
@@ -122,8 +153,10 @@ const SearchModal = ({ isOpen, onClose }) => {
           width: "100%",
           backgroundColor: "#fff",
           padding: "20px 0",
-          maxHeight: "90vh",
+          maxHeight: "100vh",
           overflowY: "auto",
+          overflowX: "hidden",
+          position: "relative",
         }}
       >
         <div className="container">
@@ -292,7 +325,9 @@ const SearchModal = ({ isOpen, onClose }) => {
                                   ? "#007bff"
                                   : item.type === "event"
                                   ? "#28a745"
-                                  : "#ff6b35",
+                                  : item.type === "central_bnp"
+                                  ? "#ff6b35"
+                                  : "#6c757d",
                               color: "#fff",
                               fontSize: "12px",
                               borderRadius: "4px",
@@ -307,9 +342,13 @@ const SearchModal = ({ isOpen, onClose }) => {
                               ? language === "bn"
                                 ? "ইভেন্ট"
                                 : "Event"
+                              : item.type === "central_bnp"
+                              ? language === "bn"
+                                ? "সেন্ট্রাল বিএনপি"
+                                : "Central BNP"
                               : language === "bn"
-                              ? "সেন্ট্রাল বিএনপি"
-                              : "Central BNP"}
+                              ? "পৃষ্ঠা"
+                              : "Page"}
                           </div>
                           <h3
                             style={{
