@@ -1482,7 +1482,7 @@ ul.contact-us-info li:hover .contact-icon {
 }
 .form-group-item textarea {
   width: 100%;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #c7c5c5;
   padding: 18px 16px;
   border-radius: 8px;
   outline: none;
@@ -1589,9 +1589,12 @@ ul.contact-us-info li:hover .contact-icon {
 }
 
 .opinion-form-title {
-  font-size: 30px;
+  font-size: 24px;
   text-align: center;
   line-height: 50px;
+}
+.modal-content.lang-modal-bn {
+  font-family: var(--bangla-font);
 }
 .opinion-form-description {
   text-align: center;
@@ -1827,4 +1830,8 @@ ul.contact-us-info li:hover .contact-icon {
   align-items: center;
   gap: 16px;
   margin-top: 30px;
+}
+
+.modal-content {
+  padding: 45px 30px 30px 30px;
 }

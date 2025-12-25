@@ -236,6 +236,10 @@
     height: 100%;
   }
 
+  .modal-content {
+    padding: 45px 20px 20px 20px;
+  }
+
   .get-involved-title .section-title {
     font-size: 30px;
   }
@@ -492,7 +496,7 @@
     font-weight: 800;
   }
   .opinion-form-title {
-    font-size: 20px;
+    font-size: 18px;
   }
   .lang-hero-bn .hero-title-1 h1 {
     font-size: 35px;
@@ -688,7 +692,7 @@
     line-height: 140%;
   }
   .opinion-form-title {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 10px;
   }
   .lang-volunteer-bn.opinion-form-description {

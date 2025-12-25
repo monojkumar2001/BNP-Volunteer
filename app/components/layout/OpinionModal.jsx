@@ -201,30 +201,38 @@ const OpinionModal = () => {
       }}
     >
       <div
-        className="modal-content"
         onClick={(e) => e.stopPropagation()}
         style={{
           backgroundColor: "#fff",
           borderRadius: "10px",
-          padding: "30px",
           maxWidth: "600px",
           width: "100%",
           maxHeight: "90vh",
           overflowY: "auto",
           position: "relative",
         }}
+        className={`modal-content ${
+          language === "bn" ? "lang-modal-bn" : "lang-modal-en"
+        }`}
       >
         <button
           onClick={() => setIsModalOpen(false)}
           style={{
             position: "absolute",
-            top: "15px",
-            right: "15px",
+            top: "10px",
+            right: "10px",
             background: "transparent",
             border: "none",
             fontSize: "24px",
+            backgroundColor: "#000000",
             cursor: "pointer",
-            color: "#333",
+            color: "#fff",
+            borderRadius: "50%",
+            width: "35px",
+            height: "35px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <IoMdClose />
@@ -339,7 +347,7 @@ const OpinionModal = () => {
                     ? "বিস্তারিত লিখুন..."
                     : "Write your message..."
                 }
-                rows={5}
+                rows={2}
               />
             </div>
           </div>

@@ -207,12 +207,13 @@ const VolunteerModel = () => {
       }}
     >
       <div
-        className="modal-content"
+        className={`modal-content ${
+          language === "bn" ? "lang-modal-bn" : "lang-modal-en"
+        }`}
         onClick={(e) => e.stopPropagation()}
         style={{
           backgroundColor: "#fff",
           borderRadius: "10px",
-          padding: "45px 30px 30px 30px",
           maxWidth: "600px",
           width: "100%",
           maxHeight: "90vh",
