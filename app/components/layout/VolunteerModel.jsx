@@ -291,7 +291,7 @@ const VolunteerModel = () => {
                 placeholder={language === "bn" ? "ফোন নম্বর " : "Phone Number "}
               />
             </div>
-            {phoneError && <p className="error-text">{phoneError}</p>}
+            {phoneError && <p className="error-text pb-2">{phoneError}</p>}
           </div>
           <button
             type="submit"

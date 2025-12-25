@@ -1835,3 +1835,8 @@ ul.contact-us-info li:hover .contact-icon {
 .modal-content {
   padding: 45px 30px 30px 30px;
 }
+.error-text {
+  font-size: 14px;
+  padding-bottom: 10px;
+  color: red;
+}
