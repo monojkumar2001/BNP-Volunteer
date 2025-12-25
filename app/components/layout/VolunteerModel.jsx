@@ -264,8 +264,7 @@ const VolunteerModel = () => {
           >
             <div className="form-group-item">
               <label htmlFor="name">
-                {language === "bn" ? "নাম" : "Name"} (
-                {language === "bn" ? "Optional" : "Optional"})
+                {language === "bn" ? "আপনার পুরো নাম" : "Your full name"}
               </label>
               <input
                 type="text"
