@@ -299,15 +299,14 @@ const VolunteerModel = () => {
             style={{ width: "100%", justifyContent: "center" }}
             disabled={loading}
           >
-            {loading
-              ? language === "bn"
-                ? "জমা হচ্ছে..."
-                : "Submitting..."
-              : language === "bn"
-              ? "এখুনি যোগ দিন"
-              : " Join us Now"}
             <span>
-              <GoArrowUpRight />
+              {loading
+                ? language === "bn"
+                  ? "পাঠানো হচ্ছে..."
+                  : "Submitting..."
+                : language === "bn"
+                ? "জমা দিন"
+                : "Submit"}
             </span>
           </button>
         </form>
