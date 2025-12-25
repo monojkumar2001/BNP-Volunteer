@@ -239,7 +239,7 @@ const OpinionModal = () => {
           }`}
         >
           {language === "bn"
-            ? "যেকোন রমের অভিযোগ বা মতামত নির্ভয়ে দিন। কথা দিচ্ছি, সম্পূর্ণ গোপনীয়তা রক্ষা করা হবে।"
+            ? "যেকোন রকমের অভিযোগ বা মতামত নির্ভয়ে দিন। কথা দিচ্ছি, সম্পূর্ণ গোপনীয়তা রক্ষা করা হবে।"
             : "Give any complaint or opinion without fear. We promise complete confidentiality will be maintained."}
         </p>
 
