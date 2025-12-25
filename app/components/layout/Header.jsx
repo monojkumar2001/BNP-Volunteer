@@ -90,7 +90,6 @@ const Header = () => {
 
           {/* Menu Button for Mobile */}
           <button
-          
             className={`menu-btn-ber ${scrolled ? "scrolled" : ""}`}
             onClick={() => setMenuOpen(true)}
             aria-label="Open Menu"
@@ -101,7 +100,6 @@ const Header = () => {
           {/* Navigation */}
           <nav className={`main-menu ${menuOpen ? "open" : ""}`}>
             <button
-             
               className="close-menu-btn"
               onClick={() => setMenuOpen(false)}
               aria-label="Close Menu"
@@ -163,7 +161,7 @@ const Header = () => {
                   </div>
                 </div>
               </div>
-              <div className="header-btn">
+              {/* <div className="header-btn">
                 <button
                   type="button"
                   className="latest-btn"
@@ -171,7 +169,7 @@ const Header = () => {
                 >
                   {language === "bn" ? "মতামত দিন" : "Leave a comment"}
                 </button>
-              </div>
+              </div> */}
             </div>
           </nav>
         </div>

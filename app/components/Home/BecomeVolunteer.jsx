@@ -9,7 +9,7 @@ const BecomeVolunteer = () => {
 
   const openOpinionModal = () => {
     if (typeof window !== "undefined") {
-      window.dispatchEvent(new Event("openVolunteerModal"));
+      window.dispatchEvent(new Event("openComplaintModal"));
     }
   };
 
@@ -19,7 +19,6 @@ const BecomeVolunteer = () => {
         className={`become-volunteer ${
           language === "bn" ? "lang-volunteer-bn" : "lang-volunteer-en"
         }`}
-     
       >
         <div className="container">
           <div className="become-volunteer-content">
@@ -45,7 +44,11 @@ const BecomeVolunteer = () => {
                   <GoArrowUpRight />
                 </span>
               </Link>
-              <button onClick={openOpinionModal} className="custom-btn" type="button">
+              <button
+                onClick={openOpinionModal}
+                className="custom-btn"
+                type="button"
+              >
                 <span>
                   {language === "bn" ? "যোগাযোগ করুন" : " Contact Us"}
                 </span>

@@ -22,7 +22,7 @@
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  padding: 14px 15px 14px 24px;
+  padding: 20px 60px 20px 60px;
   border-radius: 50px;
   transition: all 0.4s ease;
 }
@@ -173,7 +173,7 @@ span.logo-name.logo-bn {
   width: 65px;
 }
 .header-section.scrolled .main-menu {
-  padding: 10px 15px 10px 24px;
+  padding: 20px 60px 20px 60px;
 }
 .header-section.scrolled .header-btn .latest-btn {
   padding: 8.5px 15px;
@@ -212,7 +212,7 @@ span.logo-name.logo-bn {
 }
 
 .header-section.single-page .main-menu {
-  padding: 10px 15px 10px 24px;
+  padding: 20px 60px 20px 60px;
 }
 
 .header-section.single-page .menu-btn-ber {

@@ -38,9 +38,17 @@
 .lang-hero-bn .hero-title-1 {
   padding-bottom: 10px;
 }
+.hero-form-content {
+  max-width: 586px;
+}
+.custom-btn-join {
+  background: var(--white-color);
+  color: var(--black-color);
+  transition: 0.4s;
+}
 .lang-hero-bn .hero-form-content h2 {
-  font-size: 38px;
-  line-height: 60px;
+  font-size: 34px;
+  line-height: 50px;
   font-weight: 700;
   font-family: "Kohinoor Bangla";
   letter-spacing: 0.25px;
@@ -1010,7 +1018,6 @@
   background: none;
 }
 
-
 .latest-news-header {
   display: flex;
   justify-content: space-between;
@@ -1458,7 +1465,7 @@ ul.contact-us-info li:hover .contact-icon {
 
 .form-group-item input {
   width: 100%;
-  border: 1px solid #f2f2f2;
+  border: 1px solid #c7c5c5;
   padding: 18px 16px;
   border-radius: 8px;
   outline: none;
@@ -1584,6 +1591,7 @@ ul.contact-us-info li:hover .contact-icon {
 .opinion-form-title {
   font-size: 30px;
   text-align: center;
+  line-height: 50px;
 }
 .opinion-form-description {
   text-align: center;
@@ -1678,9 +1686,8 @@ ul.contact-us-info li:hover .contact-icon {
 }
 .lang-single-event-bn .event-body {
   font-family: var(--bangla-font);
-
 }
- .event-body {
+.event-body {
   font-size: 20px;
   font-weight: 400;
   color: #5f5f5f;
@@ -1790,21 +1797,19 @@ ul.contact-us-info li:hover .contact-icon {
   justify-content: center;
 }
 
-.single-event-img img{
+.single-event-img img {
   height: 100%;
 }
 
-
-.lang-single-event-bn .event-short-description{
-    font-family: var(--bangla-font);
- 
+.lang-single-event-bn .event-short-description {
+  font-family: var(--bangla-font);
 }
-.event-short-description{
-    font-size: 20px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #5f5f5f;
-    line-height: 35px;
+.event-short-description {
+  font-size: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #5f5f5f;
+  line-height: 35px;
 }
 
 /* Search Modal Animations */
@@ -1815,4 +1820,11 @@ ul.contact-us-info li:hover .contact-icon {
   to {
     opacity: 1;
   }
+}
+
+.hero-btn-items {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 30px;
 }

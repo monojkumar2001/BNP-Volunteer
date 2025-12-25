@@ -9,6 +9,7 @@ import { Toaster } from "react-hot-toast";
 import Footer from "./components/layout/Footer";
 import React, { useEffect, useState } from "react";
 import { LanguageProvider } from "../context/languageContext";
+import VolunteerModel from "./components/layout/VolunteerModel";
 export default function RootLayout({ children }) {
   useEffect(() => {
     require("bootstrap/dist/js/bootstrap.bundle.min.js");
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           {children}
           <Footer />
           <OpinionModal />
+          <VolunteerModel />
           <Toaster />
         </LanguageProvider>
       </body>

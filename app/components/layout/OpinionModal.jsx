@@ -19,10 +19,10 @@ const OpinionModal = () => {
 
   useEffect(() => {
     const handleOpenModal = () => setIsModalOpen(true);
-    window.addEventListener("openVolunteerModal", handleOpenModal);
+    window.addEventListener("openComplaintModal", handleOpenModal);
 
     return () => {
-      window.removeEventListener("openVolunteerModal", handleOpenModal);
+      window.removeEventListener("openComplaintModal", handleOpenModal);
     };
   }, []);
 
@@ -39,7 +39,8 @@ const OpinionModal = () => {
     },
     {
       value: "3",
-      labelBn: "চাঁদাবাজি, সংঘর্ষ বা আইন-শৃঙ্খলা সংক্রান্ত ইনসিডেন্ট রিপোর্ট করুন",
+      labelBn:
+        "চাঁদাবাজি, সংঘর্ষ বা আইন-শৃঙ্খলা সংক্রান্ত ইনসিডেন্ট রিপোর্ট করুন",
       labelEn: "Report extortion, conflict or law and order incident",
     },
     {
@@ -53,34 +54,35 @@ const OpinionModal = () => {
   const validatePhoneNumber = (phone) => {
     // Remove spaces, dashes, and other characters
     const cleanedPhone = phone.replace(/[\s\-\(\)]/g, "");
-    
+
     // Check for Bangladesh phone number format
     // Valid formats: 01XXXXXXXXX (11 digits), +8801XXXXXXXXX (14 digits), 8801XXXXXXXXX (13 digits)
     const phoneRegex = /^(\+880|880|0)?1[3-9]\d{8}$/;
-    
+
     if (!cleanedPhone) {
       return {
         valid: false,
-        message: language === "bn" ? "ফোন নম্বর প্রয়োজন" : "Phone number is required"
+        message:
+          language === "bn" ? "ফোন নম্বর প্রয়োজন" : "Phone number is required",
       };
     }
-    
+
     if (!phoneRegex.test(cleanedPhone)) {
       return {
         valid: false,
-        message: language === "bn" 
-          ? "সঠিক ফোন নম্বর দিন (01XXXXXXXXX বা +8801XXXXXXXXX)" 
-          : "Please enter a valid phone number (01XXXXXXXXX or +8801XXXXXXXXX)"
+        message:
+          language === "bn"
+            ? "সঠিক ফোন নম্বর দিন (01XXXXXXXXX বা +8801XXXXXXXXX)"
+            : "Please enter a valid phone number (01XXXXXXXXX or +8801XXXXXXXXX)",
       };
     }
-    
+
     return { valid: true, message: "" };
   };
 
-
   const handleChange = (e) => {
     const { name, value } = e.target;
-    
+
     if (name === "phone") {
       // Only allow numbers, +, spaces, dashes, parentheses
       const cleanedValue = value.replace(/[^\d\+\s\-\(\)]/g, "");
@@ -115,8 +117,10 @@ const OpinionModal = () => {
 
     try {
       // Clean phone number before sending
-      const cleanedPhone = formData.phone ? formData.phone.replace(/[\s\-\(\)]/g, "") : null;
-      
+      const cleanedPhone = formData.phone
+        ? formData.phone.replace(/[\s\-\(\)]/g, "")
+        : null;
+
       const res = await fetch(
         `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/opinion`,
         {
@@ -151,8 +155,10 @@ const OpinionModal = () => {
         });
         setIsModalOpen(false);
       } else {
-        const errorMessage = data.message || (language === "bn" ? "কিছু ভুল হয়েছে!" : "Something went wrong!");
-        
+        const errorMessage =
+          data.message ||
+          (language === "bn" ? "কিছু ভুল হয়েছে!" : "Something went wrong!");
+
         toast.error(errorMessage, {
           duration: 4000,
           position: "top-right",
@@ -225,9 +231,7 @@ const OpinionModal = () => {
         </button>
 
         <h2 className="section-title opinion-form-title">
-          {language === "bn"
-            ? "মতামত এবং অভিযোগঃ"
-            : "Opinions and Complaints"}
+          {language === "bn" ? "মতামত এবং অভিযোগঃ" : "Opinions and Complaints"}
         </h2>
         <p
           className={`opinion-form-description ${
@@ -271,9 +275,7 @@ const OpinionModal = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 placeholder={
-                  language === "bn"
-                    ? "আপনার ফোন নম্বর"
-                    : "Your phone number"
+                  language === "bn" ? "আপনার ফোন নম্বর" : "Your phone number"
                 }
                 style={{
                   padding: "10px 16px",
@@ -364,5 +366,3 @@ const OpinionModal = () => {
 };
 
 export default OpinionModal;
-
-
