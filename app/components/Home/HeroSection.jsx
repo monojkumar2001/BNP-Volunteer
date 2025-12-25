@@ -48,7 +48,7 @@ const HeroSection = () => {
               <h2>
                 {language === "bn"
                   ? "যেখানে দেখবেন অন্যায় অনিয়ম সেখানেই প্রতিরোধ গড়ে তুলুন ..."
-                  : "Join the volunteer community"}
+                  : "Wherever you see injustice and irregularities, build resistance there..."}
               </h2>
               <div className="hero-btn-items">
                 <button
