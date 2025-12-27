@@ -227,7 +227,7 @@
   }
   .hero-btn-items {
     gap: 16px;
-    margin-top: 30px;
+    margin-top: 20px;
     align-items: flex-start;
     flex-direction: column;
   }
@@ -703,8 +703,8 @@
     line-height: 150%;
   }
   .hero-form {
-    border-radius: 15px;
-    padding: 30px 20px;
+    border-radius: 10px;
+    padding: 30px 20px 40px 20px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     max-width: 798px;
     z-index: 1;

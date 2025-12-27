@@ -44,38 +44,39 @@ const HeroSection = () => {
                   : "Join in building the Bangladesh, Sign up as a Volunteer"}
               </p>
             </div>
-            <div className="hero-form-content">
-              <h2>
-                {language === "bn"
-                  ? "যেখানে দেখবেন অন্যায় অনিয়ম সেখানেই প্রতিরোধ গড়ে তুলুন ..."
-                  : "Wherever you see injustice and irregularities, build resistance there..."}
-              </h2>
-              <div className="hero-btn-items">
-                <button
-                  className="custom-btn custom-btn-join"
-                  type="button"
-                  onClick={handleVolunModalOpen}
-                >
-                  {language === "bn" ? "এখুনি যোগ দিন" : " Join us Now"}
-                  <span>
-                    <GoArrowUpRight />
-                  </span>
-                </button>
-                <button
-                  className="custom-btn"
-                  onClick={handleVolunteerModalOpen}
-                  type="button"
-                >
+            <div className="hero-form">
+              <div className="hero-form-content">
+                <h2>
                   {language === "bn"
-                    ? "এখুনি আপনার অভিযোগ দিন "
-                    : " Submit your complaint now."}
-                  <span>
-                    <GoArrowUpRight />
-                  </span>
-                </button>
+                    ? "যেখানে দেখবেন অন্যায় অনিয়ম সেখানেই প্রতিরোধ গড়ে তুলুন ..."
+                    : "Wherever you see injustice and irregularities, build resistance there..."}
+                </h2>
+                <div className="hero-btn-items">
+                  <button
+                    className="custom-btn-alt "
+                    type="button"
+                    onClick={handleVolunModalOpen}
+                  >
+                    {language === "bn" ? "এখুনি যোগ দিন" : " Join us Now"}
+                    <span>
+                      <GoArrowUpRight />
+                    </span>
+                  </button>
+                  <button
+                    className="custom-btn"
+                    onClick={handleVolunteerModalOpen}
+                    type="button"
+                  >
+                    {language === "bn"
+                      ? "এখুনি আপনার অভিযোগ দিন "
+                      : " Submit your complaint now."}
+                    <span>
+                      <GoArrowUpRight />
+                    </span>
+                  </button>
+                </div>
               </div>
             </div>
-
             {/* <div className="hero-form">
               <form onSubmit={handleSubmit}>
                 <div className="hero-form-content">
