@@ -61,9 +61,23 @@ const VolunteerModel = () => {
   const checkDuplicatePhone = async (phone) => {
     try {
       const cleanedPhone = phone.replace(/[\s\-\(\)]/g, "");
+      // Normalize phone number to standard format (01XXXXXXXXX)
+      let normalizedPhone = cleanedPhone;
+      if (cleanedPhone.startsWith("+880")) {
+        normalizedPhone = "0" + cleanedPhone.substring(4);
+      } else if (cleanedPhone.startsWith("880")) {
+        normalizedPhone = "0" + cleanedPhone.substring(3);
+      }
+      
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/volunteer/check-phone?phone=${cleanedPhone}`
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/volunteer/check-phone?phone=${normalizedPhone}`
       );
+      
+      if (!res.ok) {
+        console.error("Error checking duplicate phone:", res.status);
+        return false;
+      }
+      
       const data = await res.json();
       return data.exists || false;
     } catch (error) {
@@ -114,11 +128,23 @@ const VolunteerModel = () => {
     }
 
     // Clean phone number (remove spaces, dashes, etc.)
-    const cleanedPhone = formData.phone.replace(/[\s\-\(\)]/g, "");
+    let cleanedPhone = formData.phone.replace(/[\s\-\(\)]/g, "");
+    
+    // Normalize phone number to standard format (01XXXXXXXXX)
+    if (cleanedPhone.startsWith("+880")) {
+      cleanedPhone = "0" + cleanedPhone.substring(4);
+    } else if (cleanedPhone.startsWith("880")) {
+      cleanedPhone = "0" + cleanedPhone.substring(3);
+    }
 
-    // Check for duplicate phone number
+    // Check for duplicate phone number BEFORE submitting
     const isDuplicate = await checkDuplicatePhone(cleanedPhone);
     if (isDuplicate) {
+      setPhoneError(
+        language === "bn"
+          ? "এই ফোন নম্বরটি ইতিমধ্যে ব্যবহার করা হয়েছে"
+          : "This phone number has already been used"
+      );
       toast.error(
         language === "bn"
           ? "এই ফোন নম্বরটি ইতিমধ্যে ব্যবহার করা হয়েছে"

@@ -7,11 +7,11 @@ import { useLanguage } from "../../../context/languageContext";
 const BecomeVolunteer = () => {
   const { language } = useLanguage();
 
-  const openOpinionModal = () => {
-    if (typeof window !== "undefined") {
-      window.dispatchEvent(new Event("openComplaintModal"));
-    }
-  };
+   const openVolunteerModal = (e) => {
+     e.preventDefault();
+     router.push("/opinion");
+   };
+
 
   return (
     <>
@@ -45,7 +45,7 @@ const BecomeVolunteer = () => {
                 </span>
               </Link>
               <button
-                onClick={openOpinionModal}
+                onClick={openVolunteerModal}
                 className="custom-btn"
                 type="button"
               >

@@ -2,14 +2,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { GoArrowUpRight } from "react-icons/go";
+import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { useLanguage } from "../../../context/languageContext";
 const HeroSection = () => {
   const { language } = useLanguage();
+  const router = useRouter();
 
   const handleVolunteerModalOpen = (e) => {
     e.preventDefault();
-    window.dispatchEvent(new Event("openComplaintModal"));
+    router.push("/opinion");
   };
 
   const handleVolunModalOpen = (e) => {
