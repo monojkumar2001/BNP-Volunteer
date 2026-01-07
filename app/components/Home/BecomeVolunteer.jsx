@@ -7,11 +7,11 @@ import { useLanguage } from "../../../context/languageContext";
 const BecomeVolunteer = () => {
   const { language } = useLanguage();
 
-   const openVolunteerModal = (e) => {
-     e.preventDefault();
-     router.push("/opinion");
-   };
-
+  
+  const handleVolunteerModalOpen = (e) => {
+    e.preventDefault();
+    window.dispatchEvent(new Event("openVolunteerModal"));
+  };
 
   return (
     <>
@@ -38,24 +38,21 @@ const BecomeVolunteer = () => {
                 : "If you’re ready to become part of this change, join our team of volunteers. Let’s dream together. Let's walk together. I’m waiting for you."}
             </p>
             <div className="become-volunteer-btn">
-              <Link href="/#hero" className="custom-btn-alt">
+              <button type="button" onClick={handleVolunteerModalOpen} className="custom-btn-alt">
                 <span>{language === "bn" ? "এখনই যোগ দিন" : "Join Now"}</span>
                 <span>
                   <GoArrowUpRight />
                 </span>
-              </Link>
-              <button
-                onClick={openVolunteerModal}
+              </button>
+              <Link
+                href="/opinion"
                 className="custom-btn"
-                type="button"
               >
-                <span>
-                  {language === "bn" ? "যোগাযোগ করুন" : " Contact Us"}
-                </span>
+                {language === "bn" ? "এখুনি আপনার অভিযোগ দিন " : " Submit your complaint now."}
                 <span>
                   <GoArrowUpRight />
                 </span>
-              </button>
+              </Link>{" "}
             </div>
           </div>
         </div>
