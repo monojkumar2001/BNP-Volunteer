@@ -5,6 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 import { useLanguage } from "../../../context/languageContext";
+import Link from "next/link";
 const HeroSection = () => {
   const { language } = useLanguage();
   const router = useRouter();
@@ -64,18 +65,15 @@ const HeroSection = () => {
                       <GoArrowUpRight />
                     </span>
                   </button>
-                  <button
+                  <Link
                     className="custom-btn"
-                    onClick={handleVolunteerModalOpen}
-                    type="button"
+                    href="/opinion"
                   >
-                    {language === "bn"
-                      ? "এখুনি আপনার অভিযোগ দিন "
-                      : " Submit your complaint now."}
+                    {language === "bn" ? "এখুনি আপনার অভিযোগ দিন " : " Submit your complaint now."}
                     <span>
                       <GoArrowUpRight />
                     </span>
-                  </button>
+                  </Link>{" "}
                 </div>
               </div>
             </div>
